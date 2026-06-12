@@ -1,4 +1,988 @@
 <!DOCTYPE html>
-<html><head><title>iVisa Social Dashboard</title></head>
-<body><p>Loading...</p></body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iVisa Social Media Dashboard</title>
+<style>
+:root {
+  --blue: #0060C7;
+  --blue-dark: #004EA3;
+  --teal: #0099B8;
+  --bg: #F2F4F8;
+  --surface: #FFFFFF;
+  --surface-2: #F8F9FC;
+  --border: #E0E6EF;
+  --border-strong: #C8D3E0;
+  --text: #111827;
+  --text-2: #4B5563;
+  --text-3: #9CA3AF;
+
+  --s-writing-bg: #DBEAFE; --s-writing-text: #1D4ED8;
+  --s-waiting-bg: #FEF3C7; --s-waiting-text: #92400E;
+  --s-design-bg: #EDE9FE; --s-design-text: #5B21B6;
+  --s-feedback-bg: #FFEDD5; --s-feedback-text: #9A3412;
+  --s-approved-bg: #D1FAE5; --s-approved-text: #065F46;
+  --s-scheduled-bg: #CFFAFE; --s-scheduled-text: #155E75;
+  --s-done-bg: #F3F4F6; --s-done-text: #374151;
+
+  --p-instagram: #E1306C;
+  --p-tiktok: #111111;
+  --p-facebook: #1877F2;
+  --p-linkedin: #0A66C2;
+  --p-x: #111111;
+  --p-youtube: #FF0000;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}
+
+/* HEADER */
+.hdr{background:var(--blue);color:#fff;height:52px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.hdr-logo{font-size:15px;font-weight:700;letter-spacing:-.3px}
+.hdr-logo em{font-style:normal;opacity:.6;font-weight:400;font-size:12px;margin-left:10px}
+.hdr-meta{display:flex;align-items:center;gap:14px;font-size:12px;opacity:.85}
+.pulse{width:6px;height:6px;background:#4ADE80;border-radius:50%;display:inline-block;animation:pulse 2.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* NAV */
+.nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 16px;display:flex;overflow-x:auto;position:sticky;top:52px;z-index:100;-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{height:0}
+.tab{padding:13px 14px;font-size:12.5px;font-weight:500;color:var(--text-2);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .15s;user-select:none;flex-shrink:0}
+.tab:hover{color:var(--blue)}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue);font-weight:600}
+
+/* MAIN */
+.main{padding:20px 24px;max-width:1440px;margin:0 auto}
+.section{display:none}
+.section.active{display:block}
+
+/* SECTION HEADER */
+.sh{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px;gap:12px}
+.sh-left{}
+.sh-title{font-size:18px;font-weight:700;color:var(--text)}
+.sh-sub{font-size:12px;color:var(--text-3);margin-top:2px}
+
+/* CARD */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px}
+.card-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-3);margin-bottom:12px}
+
+/* GRID */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+
+/* STATUS BADGE */
+.badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:20px;font-size:10.5px;font-weight:600;white-space:nowrap}
+.badge-writing{background:var(--s-writing-bg);color:var(--s-writing-text)}
+.badge-waiting{background:var(--s-waiting-bg);color:var(--s-waiting-text)}
+.badge-design{background:var(--s-design-bg);color:var(--s-design-text)}
+.badge-feedback{background:var(--s-feedback-bg);color:var(--s-feedback-text)}
+.badge-approved{background:var(--s-approved-bg);color:var(--s-approved-text)}
+.badge-scheduled{background:var(--s-scheduled-bg);color:var(--s-scheduled-text)}
+.badge-done{background:var(--s-done-bg);color:var(--s-done-text)}
+
+/* PLATFORM TAG */
+.ptag{display:inline-flex;align-items:center;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;margin:1px}
+.ptag-instagram{background:#FCE7F3;color:#9D174D}
+.ptag-tiktok{background:#f0f0f0;color:#111}
+.ptag-facebook{background:#DBEAFE;color:#1E40AF}
+.ptag-linkedin{background:#DBEAFE;color:#1e3a5f}
+.ptag-x{background:#F3F4F6;color:#111}
+.ptag-youtube{background:#FEE2E2;color:#991B1B}
+
+/* PILLAR TAG */
+.piltag{display:inline-flex;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600;margin:1px}
+.piltag-edu{background:#D1FAE5;color:#065F46}
+.piltag-proof{background:#EDE9FE;color:#5B21B6}
+.piltag-humor{background:#FEF3C7;color:#92400E}
+
+/* AVATAR */
+.av{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8.5px;font-weight:700;color:#fff;flex-shrink:0}
+.av-m{background:#7C3AED}.av-n{background:#9333EA}.av-s{background:#6B7280}
+
+/* PIPELINE KANBAN */
+.kanban{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px;align-items:flex-start}
+.kanban::-webkit-scrollbar{height:6px}
+.kanban::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:3px}
+.kcol{min-width:210px;max-width:230px;flex-shrink:0}
+.kcol-head{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;border-radius:8px 8px 0 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.kcol-head .cnt{background:rgba(0,0,0,.12);border-radius:10px;padding:1px 7px;font-size:10px}
+.kcol-writing .kcol-head{background:var(--s-writing-bg);color:var(--s-writing-text)}
+.kcol-waiting .kcol-head{background:var(--s-waiting-bg);color:var(--s-waiting-text)}
+.kcol-design .kcol-head{background:var(--s-design-bg);color:var(--s-design-text)}
+.kcol-feedback .kcol-head{background:var(--s-feedback-bg);color:var(--s-feedback-text)}
+.kcol-approved .kcol-head{background:var(--s-approved-bg);color:var(--s-approved-text)}
+.kcol-scheduled .kcol-head{background:var(--s-scheduled-bg);color:var(--s-scheduled-text)}
+.ktask{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 11px;margin-bottom:7px;cursor:pointer;transition:box-shadow .15s}
+.ktask:hover{box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.ktask-name{font-size:12px;font-weight:600;color:var(--text);line-height:1.35;margin-bottom:6px}
+.ktask-meta{display:flex;flex-wrap:wrap;gap:2px;margin-top:4px}
+.ktask-date{font-size:10px;color:var(--text-3);margin-top:5px;display:flex;align-items:center;gap:3px}
+.ktask-avs{display:flex;gap:3px;margin-top:6px}
+.collab-chip{display:inline-flex;font-size:10px;background:#FEF3C7;color:#92400E;padding:2px 6px;border-radius:4px;font-weight:600;margin-top:4px}
+
+/* TODAY */
+.today-net{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.today-net-hdr{padding:11px 14px;font-size:12px;font-weight:700;color:#fff;display:flex;align-items:center;justify-content:space-between}
+.today-net-body{padding:12px 14px;min-height:60px}
+.today-post{padding:9px 0;border-bottom:1px solid var(--border)}
+.today-post:last-child{border-bottom:none}
+.today-post-time{font-size:10px;font-weight:700;color:var(--text-3);margin-bottom:2px}
+.today-post-name{font-size:12.5px;font-weight:600}
+.today-empty{text-align:center;padding:18px;color:var(--text-3);font-size:12px}
+
+/* PERF */
+.perf-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.perf-net{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.perf-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.perf-item{}
+.perf-label{font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-3);margin-bottom:1px}
+.perf-val{font-size:18px;font-weight:800;color:var(--text)}
+.perf-chg{font-size:10.5px;font-weight:600}
+.chg-up{color:#10B981}.chg-down{color:#EF4444}.chg-na{color:var(--text-3)}
+.er-floor{margin-top:8px;padding:5px 9px;border-radius:6px;font-size:10.5px;font-weight:600}
+.floor-ok{background:#D1FAE5;color:#065F46}
+.floor-warn{background:#FEF3C7;color:#92400E}
+.floor-fail{background:#FEE2E2;color:#991B1B}
+.floor-na{background:var(--s-done-bg);color:var(--s-done-text)}
+
+/* CALENDAR */
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}
+.cal-dh{text-align:center;font-size:10px;font-weight:700;text-transform:uppercase;color:var(--text-3);padding:7px 2px}
+.cal-day{min-height:80px;border:1px solid var(--border);border-radius:6px;padding:5px;background:var(--surface);overflow:hidden}
+.cal-day.today{border-color:var(--blue);background:#EFF6FF}
+.cal-day.other{background:var(--surface-2);opacity:.45}
+.cal-dn{font-size:10.5px;font-weight:600;color:var(--text-2);margin-bottom:3px}
+.cal-day.today .cal-dn{color:var(--blue)}
+.cal-dot{display:block;font-size:9.5px;font-weight:600;padding:1px 4px;border-radius:3px;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+
+/* GOALS */
+.goal-row{margin-bottom:16px}
+.goal-lbl{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:5px}
+.goal-bar-wrap{height:8px;background:var(--bg);border-radius:4px;overflow:hidden;border:1px solid var(--border)}
+.goal-bar{height:100%;border-radius:4px;background:var(--blue);transition:width .4s ease}
+.goal-bar.success{background:#10B981}.goal-bar.warn{background:#F59E0B}.goal-bar.danger{background:#EF4444}
+.goal-note{font-size:10.5px;color:var(--text-3);margin-top:3px}
+
+/* BOOST */
+.boost-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.boost-stat{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center}
+.boost-stat-v{font-size:22px;font-weight:800;color:var(--text)}
+.boost-stat-l{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-3);margin-top:3px}
+
+/* PENDING */
+.pending{text-align:center;padding:52px 24px;color:var(--text-3)}
+.pending-icon{font-size:30px;margin-bottom:10px}
+.pending-title{font-size:14px;font-weight:600;color:var(--text-2);margin-bottom:6px}
+.pending-txt{font-size:12.5px;max-width:380px;margin:0 auto;line-height:1.6}
+
+/* BTN */
+.btn{padding:7px 13px;border:1px solid var(--border);background:var(--surface);border-radius:7px;cursor:pointer;font-size:12px;color:var(--text-2);display:inline-flex;align-items:center;gap:5px}
+.btn:hover{background:var(--bg)}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#CBD5E1;border-radius:3px}
+
+@media(max-width:900px){
+  .g6{grid-template-columns:repeat(3,1fr)}
+  .g3{grid-template-columns:1fr 1fr}
+  .boost-stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .g2,.g3,.g6{grid-template-columns:1fr}
+  .main{padding:14px 14px}
+  .boost-stats{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-logo">iVisa Social<em>Brand &amp; Creative</em></div>
+  <div class="hdr-meta">
+    <span><span class="pulse"></span> Live</span>
+    <span id="last-upd">Loading...</span>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="tab active" data-s="today">Today</div>
+  <div class="tab" data-s="performance">Performance</div>
+  <div class="tab" data-s="calendar">Calendar</div>
+  <div class="tab" data-s="pipeline">Pipeline</div>
+  <div class="tab" data-s="goals">Goals &amp; KPIs</div>
+  <div class="tab" data-s="creators">Creators</div>
+  <div class="tab" data-s="content-ideas">Content ideas</div>
+  <div class="tab" data-s="search-demand">Search demand</div>
+  <div class="tab" data-s="competitor-watch">Competitor watch</div>
+  <div class="tab" data-s="brand-rep">Brand reputation</div>
+  <div class="tab" data-s="boost">Boost budget</div>
+  <div class="tab" data-s="debrief">Month debrief</div>
+</nav>
+
+<main class="main">
+
+  <!-- TODAY -->
+  <section id="today" class="section active">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title" id="today-title">Today</div>
+        <div class="sh-sub">Posts scheduled for today, by network</div>
+      </div>
+    </div>
+    <div class="g3" id="today-grid" style="grid-template-columns:repeat(3,1fr)"></div>
+  </section>
+
+  <!-- PERFORMANCE -->
+  <section id="performance" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Performance</div>
+        <div class="sh-sub">Week over week · Month over month · 1% engagement floor</div>
+      </div>
+    </div>
+    <div class="g3" id="perf-grid"></div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title" id="cal-title">Calendar</div>
+        <div class="sh-sub">Full content calendar for the month</div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn" onclick="calNav(-1)">&#8592;</button>
+        <button class="btn" onclick="calToday()">Today</button>
+        <button class="btn" onclick="calNav(1)">&#8594;</button>
+      </div>
+    </div>
+    <div class="card" style="padding:14px">
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section id="pipeline" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Pipeline</div>
+        <div class="sh-sub">Content status board — parent posts only · click any card to open in ClickUp</div>
+      </div>
+    </div>
+    <div class="kanban" id="kanban"></div>
+  </section>
+
+  <!-- GOALS & KPIs -->
+  <section id="goals" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Goals &amp; KPIs</div>
+        <div class="sh-sub">Q2/Q3 targets vs actuals</div>
+      </div>
+    </div>
+    <div class="g2" id="goals-grid"></div>
+  </section>
+
+  <!-- CREATORS -->
+  <section id="creators" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Creators</div>
+        <div class="sh-sub">Collaboration posts — creator publishes to their own channel</div>
+      </div>
+    </div>
+    <div id="creators-content"></div>
+  </section>
+
+  <!-- CONTENT IDEAS -->
+  <section id="content-ideas" class="section">
+    <div class="sh"><div class="sh-left">
+      <div class="sh-title">Content ideas</div>
+      <div class="sh-sub">Suggested posts based on keyword demand and content gaps</div>
+    </div></div>
+    <div class="pending">
+      <div class="pending-icon">&#128269;</div>
+      <div class="pending-title">Search demand not yet connected</div>
+      <div class="pending-txt">Semrush API units need to be allocated by your account owner. Once connected via n8n, this section will surface keyword opportunities matched to your content pillars.</div>
+    </div>
+  </section>
+
+  <!-- SEARCH DEMAND -->
+  <section id="search-demand" class="section">
+    <div class="sh"><div class="sh-left">
+      <div class="sh-title">Search demand</div>
+      <div class="sh-sub">Semrush keyword data — Visa Content Studio pull</div>
+    </div></div>
+    <div id="search-content">
+      <div class="pending">
+        <div class="pending-icon">&#128202;</div>
+        <div class="pending-title">Semrush not yet connected</div>
+        <div class="pending-txt">Keyword volume, difficulty, and content gap data will appear here once the n8n sync is running and API units are allocated.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITOR WATCH -->
+  <section id="competitor-watch" class="section">
+    <div class="sh"><div class="sh-left">
+      <div class="sh-title">Competitor watch</div>
+      <div class="sh-sub">What competitors are posting and how to adapt it</div>
+    </div></div>
+    <div class="pending">
+      <div class="pending-icon">&#128064;</div>
+      <div class="pending-title">No competitors configured yet</div>
+      <div class="pending-txt">Add competitor handles to the n8n workflow competitor_watch node to start tracking. Top-performing posts and suggested adaptations will surface here.</div>
+    </div>
+  </section>
+
+  <!-- BRAND REPUTATION -->
+  <section id="brand-rep" class="section">
+    <div class="sh"><div class="sh-left">
+      <div class="sh-title">Brand reputation</div>
+      <div class="sh-sub">Share of voice and sentiment</div>
+    </div></div>
+    <div id="brand-rep-content">
+      <div class="pending">
+        <div class="pending-icon">&#127991;</div>
+        <div class="pending-title">CSOV board not yet embedded</div>
+        <div class="pending-txt">Set <code style="background:var(--bg);padding:1px 5px;border-radius:3px">brand_reputation.embed_url</code> in data.json to your CSOV board URL and it will load here automatically.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOST BUDGET -->
+  <section id="boost" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Boost budget</div>
+        <div class="sh-sub" id="boost-sub">$1,100 monthly — TikTok, Instagram, Facebook, X</div>
+      </div>
+    </div>
+    <div id="boost-content"></div>
+  </section>
+
+  <!-- MONTH DEBRIEF -->
+  <section id="debrief" class="section">
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Month debrief</div>
+        <div class="sh-sub">Auto-generated on the last day of each month and posted to #ivisa-socialmedia</div>
+      </div>
+    </div>
+    <div id="debrief-content"></div>
+  </section>
+
+</main>
+
+<script>
+// ================================================================
+// CONFIG
+// ================================================================
+const DATA_URL = 'data.json';
+const POLL_MS = 60000;
+
+const NETWORKS = ['instagram','tiktok','facebook','x','linkedin','youtube'];
+const NET_LABEL = {instagram:'Instagram',tiktok:'TikTok',facebook:'Facebook',x:'X',linkedin:'LinkedIn',youtube:'YouTube'};
+const NET_COLOR = {instagram:'#E1306C',tiktok:'#111',facebook:'#1877F2',x:'#111',linkedin:'#0A66C2',youtube:'#FF0000'};
+
+const STATUS_ORDER = ['writing','waiting for material',"ready for nic's creatives",'awaiting feedback','approved','scheduled'];
+const STATUS_KEY = {
+  'writing':'writing',
+  'waiting for material':'waiting',
+  "ready for nic's creatives":'design',
+  'awaiting feedback':'feedback',
+  'approved':'approved',
+  'scheduled':'scheduled'
+};
+const STATUS_LABEL = {
+  'writing':'Writing',
+  'waiting for material':'Waiting for material',
+  "ready for nic's creatives":'In design',
+  'awaiting feedback':'Awaiting feedback',
+  'approved':'Approved',
+  'scheduled':'Scheduled'
+};
+const PILLAR_KEY = {'Educational':'edu','Social Proof':'proof','Humor/Relatability/Entertainment':'humor'};
+const PILLAR_SHORT = {'Educational':'Educational','Social Proof':'Social Proof','Humor/Relatability/Entertainment':'Humor'};
+
+let D = null;
+let calY, calM;
+const _now = new Date();
+calY = _now.getFullYear();
+calM = _now.getMonth();
+
+// ================================================================
+// DATA
+// ================================================================
+async function load() {
+  try {
+    const r = await fetch(DATA_URL + '?_=' + Date.now());
+    D = await r.json();
+    render();
+    const el = document.getElementById('last-upd');
+    if (D.meta && D.meta.last_updated) {
+      const d = new Date(D.meta.last_updated);
+      const mins = Math.round((Date.now() - d) / 60000);
+      el.textContent = mins < 2 ? 'Just updated' : `Updated ${mins}m ago`;
+    } else {
+      el.textContent = 'Data loaded';
+    }
+  } catch(e) {
+    document.getElementById('last-upd').textContent = 'Load error';
+    console.error(e);
+  }
+}
+
+function render() {
+  renderToday();
+  renderPerf();
+  renderCalendar();
+  renderPipeline();
+  renderGoals();
+  renderCreators();
+  renderBoost();
+  renderDebrief();
+  if (D.brand_reputation && D.brand_reputation.embed_url) renderBrandRep();
+}
+
+// ================================================================
+// TODAY
+// ================================================================
+function renderToday() {
+  const now = new Date();
+  document.getElementById('today-title').textContent =
+    now.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric'});
+  const todayISO = isoDate(now);
+  const posts = (D.pipeline || []).filter(p =>
+    p.publication_date && p.publication_date.startsWith(todayISO) && p.status !== 'done'
+  );
+
+  const grid = document.getElementById('today-grid');
+  grid.innerHTML = '';
+  NETWORKS.forEach(net => {
+    const np = posts.filter(p => (p.platforms||[]).map(x=>x.toLowerCase()).includes(net));
+    const el = document.createElement('div');
+    el.className = 'today-net';
+    let inner = `<div class="today-net-hdr" style="background:${NET_COLOR[net]}">
+      <span>${NET_LABEL[net]}</span><span>${np.length} post${np.length!==1?'s':''}</span>
+    </div><div class="today-net-body">`;
+    if (!np.length) {
+      inner += `<div class="today-empty">No posts today</div>`;
+    } else {
+      np.forEach(p => {
+        inner += `<div class="today-post">
+          ${p.publish_time?`<div class="today-post-time">${p.publish_time}</div>`:''}
+          <div class="today-post-name">${p.name}</div>
+          <div style="margin-top:4px">${pillarTags(p.content_pillar)}${typeTag(p.type)}</div>
+        </div>`;
+      });
+    }
+    inner += '</div>';
+    el.innerHTML = inner;
+    grid.appendChild(el);
+  });
+
+  // If no posts today anywhere, show a friendly message
+  if (!posts.length) {
+    const msg = document.createElement('div');
+    msg.style.cssText = 'grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:13px';
+    msg.innerHTML = 'No posts scheduled for today across any network. Check the Calendar for upcoming posts.';
+    grid.appendChild(msg);
+  }
+}
+
+// ================================================================
+// PERFORMANCE
+// ================================================================
+function renderPerf() {
+  const perf = D.performance || {};
+  const grid = document.getElementById('perf-grid');
+  grid.innerHTML = '';
+
+  NETWORKS.forEach(net => {
+    const d = perf[net] || {};
+    const er = d.engagement_rate || 0;
+    const floorClass = er===0?'floor-na':er>=1?'floor-ok':er>=0.7?'floor-warn':'floor-fail';
+    const floorLabel = {floor_ok:'Above 1% floor',floor_warn:'Approaching 1% floor',floor_fail:'Below 1% floor',floor_na:'Not yet connected'}[floorClass] ||
+      (er===0?'Not yet connected':er>=1?'Above 1% floor':er>=0.7?'Approaching 1% floor':'Below 1% floor');
+
+    const el = document.createElement('div');
+    el.className = 'perf-card';
+
+    const isYT = net === 'youtube';
+    el.innerHTML = `
+      <div class="perf-net" style="color:${NET_COLOR[net]}">${NET_LABEL[net]}</div>
+      <div class="perf-row">
+        <div class="perf-item">
+          <div class="perf-label">${isYT?'Subscribers':'Followers'}</div>
+          <div class="perf-val">${fmtN(isYT?d.subscribers:d.followers)}</div>
+          <div class="perf-chg ${chgClass(isYT?d.subscribers_wow:d.followers_wow)}">${fmtChg(isYT?d.subscribers_wow:d.followers_wow,'WoW')}</div>
+        </div>
+        <div class="perf-item">
+          <div class="perf-label">${isYT?'Views':'Reach'}</div>
+          <div class="perf-val">${fmtN(isYT?d.views:d.reach)}</div>
+          <div class="perf-chg ${chgClass(isYT?d.views_wow:d.reach_wow)}">${fmtChg(isYT?d.views_wow:d.reach_wow,'WoW')}</div>
+        </div>
+      </div>
+      <div class="perf-row">
+        <div class="perf-item">
+          <div class="perf-label">Eng. rate</div>
+          <div class="perf-val">${er?er.toFixed(2)+'%':'—'}</div>
+          <div class="perf-chg ${chgClass(d.engagement_rate_wow)}">${fmtChg(d.engagement_rate_wow,'WoW')}</div>
+        </div>
+        <div class="perf-item">
+          <div class="perf-label">${isYT?'Watch hrs':'Impressions'}</div>
+          <div class="perf-val">${fmtN(isYT?d.watch_time_hours:d.impressions)}</div>
+          <div class="perf-chg ${chgClass(isYT?d.watch_time_wow:d.impressions_wow)}">${fmtChg(isYT?d.watch_time_wow:d.impressions_wow,'WoW')}</div>
+        </div>
+      </div>
+      <div class="er-floor ${floorClass}">${er===0?'— Not yet connected':er>=1?'&#10003; Above 1% floor':er>=0.7?'&#9888; Approaching 1% floor':'&#10007; Below 1% floor'}</div>
+    `;
+    grid.appendChild(el);
+  });
+}
+
+// ================================================================
+// CALENDAR
+// ================================================================
+function renderCalendar() {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('cal-title').textContent = `${months[calM]} ${calY}`;
+
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+
+  ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(d => {
+    const el = document.createElement('div');
+    el.className = 'cal-dh';
+    el.textContent = d;
+    grid.appendChild(el);
+  });
+
+  const firstDow = new Date(calY, calM, 1).getDay();
+  const daysInMonth = new Date(calY, calM+1, 0).getDate();
+  const today = new Date();
+  const pipeline = D.pipeline || [];
+
+  for (let i = 0; i < firstDow; i++) {
+    const el = document.createElement('div');
+    el.className = 'cal-day other';
+    grid.appendChild(el);
+  }
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = `${calY}-${pad(calM+1)}-${pad(d)}`;
+    const isToday = today.getFullYear()===calY && today.getMonth()===calM && today.getDate()===d;
+    const dayPosts = pipeline.filter(p => p.publication_date && p.publication_date.startsWith(dateStr));
+
+    const el = document.createElement('div');
+    el.className = 'cal-day' + (isToday?' today':'');
+    let h = `<div class="cal-dn">${d}${isToday?' ●':''}</div>`;
+    dayPosts.slice(0,4).forEach(p => {
+      const net = (p.platforms||[])[0]?.toLowerCase() || 'x';
+      const col = NET_COLOR[net] || '#6B7280';
+      const isDark = net==='tiktok'||net==='x';
+      const bg = isDark?'#E5E7EB':col;
+      const tc = isDark?'#111':'#fff';
+      const shortName = p.name.replace(/^(Post: |IG Story - )/,'');
+      h += `<span class="cal-dot" style="background:${bg};color:${tc}" title="${p.name}">${shortName}</span>`;
+    });
+    if (dayPosts.length > 4) {
+      h += `<span style="font-size:9px;color:var(--text-3);display:block;margin-top:1px">+${dayPosts.length-4} more</span>`;
+    }
+    el.innerHTML = h;
+    grid.appendChild(el);
+  }
+}
+
+function calNav(dir) { calM += dir; if(calM<0){calM=11;calY--}if(calM>11){calM=0;calY++} renderCalendar(); }
+function calToday() { calY=new Date().getFullYear(); calM=new Date().getMonth(); renderCalendar(); }
+
+// ================================================================
+// PIPELINE
+// ================================================================
+function renderPipeline() {
+  const pipeline = (D.pipeline || []).filter(p => p.status !== 'done' && p.status !== 'backlog');
+  const container = document.getElementById('kanban');
+  container.innerHTML = '';
+
+  STATUS_ORDER.forEach(status => {
+    const tasks = pipeline.filter(p => {
+      const s = (p.status||'').toLowerCase();
+      if (status === 'awaiting feedback') return s.includes('awaiting feedback');
+      return s === status;
+    });
+
+    const col = document.createElement('div');
+    col.className = `kcol kcol-${STATUS_KEY[status]}`;
+    col.innerHTML = `<div class="kcol-head"><span>${STATUS_LABEL[status]}</span><span class="cnt">${tasks.length}</span></div>`;
+
+    if (!tasks.length) {
+      const empty = document.createElement('div');
+      empty.style.cssText = 'text-align:center;padding:18px;color:var(--text-3);font-size:11px';
+      empty.textContent = 'No tasks';
+      col.appendChild(empty);
+    } else {
+      tasks.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'ktask';
+        card.onclick = () => t.url && window.open(t.url, '_blank');
+
+        let h = `<div class="ktask-name">${t.name}</div>`;
+        if (t.platforms && t.platforms.length) {
+          h += `<div class="ktask-meta">${t.platforms.map(p=>`<span class="ptag ptag-${p.toLowerCase()}">${p}</span>`).join('')}</div>`;
+        }
+        if (t.content_pillar && t.content_pillar.length) {
+          h += `<div class="ktask-meta">${t.content_pillar.map(p=>`<span class="piltag piltag-${PILLAR_KEY[p]||'edu'}">${PILLAR_SHORT[p]||p}</span>`).join('')}</div>`;
+        }
+        if (t.type) h += `<div class="ktask-meta"><span style="font-size:10px;color:var(--text-3)">${t.type}</span></div>`;
+        if (t.collaboration) h += `<div><span class="collab-chip">&#129309; Collab</span></div>`;
+        if (t.publication_date) {
+          const d = new Date(t.publication_date + 'T00:00:00');
+          const daysTo = Math.round((d - new Date(isoDate(new Date())+'T00:00:00')) / 86400000);
+          const urgency = daysTo < 0 ? '#EF4444' : daysTo <= 2 ? '#F59E0B' : 'var(--text-3)';
+          h += `<div class="ktask-date" style="color:${urgency}">&#128197; ${fmtDate(t.publication_date)}${daysTo===0?' (today)':daysTo===1?' (tomorrow)':daysTo<0?` (${Math.abs(daysTo)}d overdue)`:''}</div>`;
+        }
+        if (t.assignees && t.assignees.length) {
+          h += `<div class="ktask-avs">${t.assignees.map(a => {
+            const n = a.split(' ')[0].charAt(0)+a.split(' ').slice(-1)[0].charAt(0);
+            const cl = a.toLowerCase().includes('maritza')?'av-m':a.toLowerCase().includes('nicole')?'av-n':'av-s';
+            return `<div class="av ${cl}" title="${a}">${n}</div>`;
+          }).join('')}</div>`;
+        }
+        if (t.boost_budget > 0) {
+          h += `<div style="margin-top:5px;font-size:10px;font-weight:700;color:#0A66C2">Boost: $${t.boost_budget}</div>`;
+        }
+        card.innerHTML = h;
+        col.appendChild(card);
+      });
+    }
+    container.appendChild(col);
+  });
+}
+
+// ================================================================
+// GOALS & KPIs
+// ================================================================
+function renderGoals() {
+  const goals = D.goals || {};
+  const perf = D.performance || {};
+  const pipeline = D.pipeline || [];
+  const grid = document.getElementById('goals-grid');
+  grid.innerHTML = '';
+
+  // --- Audience goal ---
+  const aud = document.createElement('div');
+  aud.className = 'card';
+  const audTarget = goals.q2_q3_combined_audience_target || 0;
+  const audCurrent = goals.current_combined_audience || 0;
+  const audPct = audTarget ? Math.min(audCurrent/audTarget*100,100) : 0;
+  aud.innerHTML = `
+    <div class="card-title">Q2/Q3 Combined audience</div>
+    ${audTarget===0 ? `<div style="color:var(--text-3);font-size:12px">Set <code>goals.q2_q3_combined_audience_target</code> in data.json to track progress.</div>`
+    : `<div class="goal-row">
+        <div class="goal-lbl"><span>${fmtN(audCurrent)}</span><span style="color:var(--text-3)">${fmtN(audTarget)} target</span></div>
+        <div class="goal-bar-wrap"><div class="goal-bar ${audPct>=80?'success':audPct>=50?'':''}" style="width:${audPct}%"></div></div>
+        <div class="goal-note">${audPct.toFixed(1)}% of target · ${fmtN(audTarget-audCurrent)} remaining</div>
+      </div>`}
+  `;
+  grid.appendChild(aud);
+
+  // --- Engagement rate ---
+  const erCard = document.createElement('div');
+  erCard.className = 'card';
+  let erH = '<div class="card-title">Engagement rate — 1% floor</div>';
+  const erColors = {ok:'#10B981', warn:'#F59E0B', fail:'#EF4444', na:'#CBD5E1'};
+  NETWORKS.forEach(net => {
+    const er = (perf[net]&&perf[net].engagement_rate) ? perf[net].engagement_rate : 0;
+    const k = er===0?'na':er>=1?'ok':er>=0.7?'warn':'fail';
+    erH += `
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:5px">
+        <span style="font-size:12px;font-weight:600;color:${NET_COLOR[net]}">${NET_LABEL[net]}</span>
+        <span style="font-size:12px;font-weight:700;color:${erColors[k]}">${er?er.toFixed(2)+'%':'—'}</span>
+      </div>
+      <div class="goal-bar-wrap" style="margin-bottom:10px">
+        <div class="goal-bar" style="width:${Math.min(er/2*100,100)}%;background:${erColors[k]}"></div>
+      </div>
+    `;
+  });
+  erCard.innerHTML = erH;
+  grid.appendChild(erCard);
+
+  // --- Boost budget ---
+  const boost = D.boost || {};
+  const budget = goals.monthly_boost_budget_usd || 1100;
+  const spent = boost.spent_usd || 0;
+  const committed = boost.committed_usd || 0;
+  const usedPct = budget ? Math.min((spent+committed)/budget*100,100) : 0;
+  const bCard = document.createElement('div');
+  bCard.className = 'card';
+  bCard.innerHTML = `
+    <div class="card-title">Boost budget — ${new Date().toLocaleDateString('en-US',{month:'long'})}</div>
+    <div class="goal-row">
+      <div class="goal-lbl">
+        <span>$${(spent+committed).toLocaleString()} used</span>
+        <span style="color:var(--text-3)">$${budget.toLocaleString()} budget</span>
+      </div>
+      <div class="goal-bar-wrap"><div class="goal-bar ${usedPct>=90?'danger':usedPct>=70?'warn':'success'}" style="width:${usedPct}%"></div></div>
+      <div class="goal-note">$${(budget-spent-committed).toLocaleString()} remaining · ${daysLeft()} days left in month</div>
+    </div>
+  `;
+  grid.appendChild(bCard);
+
+  // --- Pillar mix ---
+  const targetMix = goals.target_pillar_mix_pct || {};
+  const pillarCard = document.createElement('div');
+  pillarCard.className = 'card';
+  let pillarH = '<div class="card-title">Content pillar mix — this month</div>';
+  const pillarColors = {'Educational':'#10B981','Social Proof':'#8B5CF6','Humor/Relatability/Entertainment':'#F59E0B'};
+
+  const thisMonthISO = `${new Date().getFullYear()}-${pad(new Date().getMonth()+1)}`;
+  const monthPosts = pipeline.filter(p => p.publication_date && p.publication_date.startsWith(thisMonthISO) && p.status==='done');
+  const pillarCounts = {};
+  monthPosts.forEach(p => (p.content_pillar||[]).forEach(pl => { pillarCounts[pl]=(pillarCounts[pl]||0)+1; }));
+  const total = monthPosts.length || 1;
+
+  if (!Object.keys(targetMix).length) {
+    pillarH += '<div style="color:var(--text-3);font-size:12px">Set <code>goals.target_pillar_mix_pct</code> in data.json to track pillar balance.</div>';
+  } else {
+    Object.entries(targetMix).forEach(([pillar, target]) => {
+      const actual = Math.round((pillarCounts[pillar]||0)/total*100);
+      const c = pillarColors[pillar]||'#6B7280';
+      pillarH += `
+        <div style="margin-bottom:12px">
+          <div class="goal-lbl">
+            <span style="color:${c}">${PILLAR_SHORT[pillar]||pillar}</span>
+            <span style="font-weight:400;color:var(--text-3)">${actual}% <span style="color:var(--text-3)">/ ${target}% target</span></span>
+          </div>
+          <div class="goal-bar-wrap"><div class="goal-bar" style="width:${actual}%;background:${c}"></div></div>
+        </div>
+      `;
+    });
+  }
+  pillarCard.innerHTML = pillarH;
+  grid.appendChild(pillarCard);
+
+  // --- Weekly cadence ---
+  const cadTargets = goals.weekly_cadence_targets || {};
+  const cadCard = document.createElement('div');
+  cadCard.className = 'card';
+  let cadH = '<div class="card-title">Weekly posting cadence</div>';
+
+  const wsDate = new Date();
+  wsDate.setDate(wsDate.getDate() - wsDate.getDay());
+  const wsISO = isoDate(wsDate);
+  const weDate = new Date(wsDate); weDate.setDate(weDate.getDate()+6);
+  const weISO = isoDate(weDate);
+
+  const hasTargets = Object.keys(cadTargets).length;
+  if (!hasTargets) {
+    cadH += '<div style="color:var(--text-3);font-size:12px">Set <code>goals.weekly_cadence_targets</code> in data.json.</div>';
+  } else {
+    NETWORKS.forEach(net => {
+      const target = cadTargets[net] || 0;
+      if (!target) return;
+      const actual = pipeline.filter(p => {
+        const d = p.publication_date||'';
+        return d >= wsISO && d <= weISO && (p.platforms||[]).map(x=>x.toLowerCase()).includes(net);
+      }).length;
+      const pct = Math.min(actual/target*100,100);
+      const c = actual>=target?'#10B981':actual>=target*0.5?'#F59E0B':'#EF4444';
+      cadH += `
+        <div style="margin-bottom:10px">
+          <div class="goal-lbl">
+            <span style="color:${NET_COLOR[net]}">${NET_LABEL[net]}</span>
+            <span style="color:${c}">${actual}/${target} this week</span>
+          </div>
+          <div class="goal-bar-wrap"><div class="goal-bar" style="width:${pct}%;background:${c}"></div></div>
+        </div>
+      `;
+    });
+  }
+  cadCard.innerHTML = cadH;
+  grid.appendChild(cadCard);
+}
+
+// ================================================================
+// CREATORS
+// ================================================================
+function renderCreators() {
+  const collabs = (D.pipeline||[]).filter(p => p.collaboration);
+  const el = document.getElementById('creators-content');
+  if (!collabs.length) {
+    el.innerHTML = `<div class="pending"><div class="pending-icon">&#129309;</div><div class="pending-title">No collaboration posts tracked</div><div class="pending-txt">Mark a ClickUp task with the Collaboration Post checkbox to track creator partnerships here. The "Post: Rita TikTok + Instagram" post will appear once synced.</div></div>`;
+    return;
+  }
+  let h = '<div style="display:flex;flex-direction:column;gap:10px">';
+  collabs.forEach(p => {
+    const statusKey = STATUS_KEY[(p.status||'').toLowerCase().includes('awaiting feedback')?'awaiting feedback':(p.status||'')];
+    h += `<div class="card" style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px">
+      <div style="flex:1">
+        <div style="font-weight:600;font-size:14px">${p.name}</div>
+        <div style="margin-top:6px">${platformTags(p.platforms)}${pillarTags(p.content_pillar)}</div>
+        ${p.assignees&&p.assignees.length?`<div style="margin-top:6px;font-size:11px;color:var(--text-3)">Assigned: ${p.assignees.join(', ')}</div>`:''}
+      </div>
+      <div style="text-align:right;flex-shrink:0">
+        ${p.publication_date?`<div style="font-size:12px;font-weight:600">${fmtDate(p.publication_date)}</div>`:''}
+        <div style="margin-top:4px"><span class="badge badge-${statusKey||'writing'}">${STATUS_LABEL[p.status]||p.status}</span></div>
+        ${p.url?`<div style="margin-top:6px"><a href="${p.url}" target="_blank" style="font-size:11px;color:var(--blue);text-decoration:none">Open in ClickUp &#8599;</a></div>`:''}
+      </div>
+    </div>`;
+  });
+  h += '</div>';
+  el.innerHTML = h;
+}
+
+// ================================================================
+// BOOST BUDGET
+// ================================================================
+function renderBoost() {
+  const boost = D.boost || {};
+  const goals = D.goals || {};
+  const budget = goals.monthly_boost_budget_usd || 1100;
+  const spent = boost.spent_usd || 0;
+  const committed = boost.committed_usd || 0;
+  const remaining = budget - spent - committed;
+  const pipeline = D.pipeline || [];
+  const boostPosts = pipeline.filter(p => p.boost_budget && p.boost_budget > 0);
+
+  const el = document.getElementById('boost-content');
+  el.innerHTML = `
+    <div class="boost-stats">
+      <div class="boost-stat"><div class="boost-stat-v">$${budget.toLocaleString()}</div><div class="boost-stat-l">Monthly budget</div></div>
+      <div class="boost-stat"><div class="boost-stat-v" style="color:#10B981">$${spent.toLocaleString()}</div><div class="boost-stat-l">Spent</div></div>
+      <div class="boost-stat"><div class="boost-stat-v" style="color:#F59E0B">$${committed.toLocaleString()}</div><div class="boost-stat-l">Committed</div></div>
+      <div class="boost-stat"><div class="boost-stat-v" style="color:${remaining<200?'#EF4444':'var(--blue)'}">$${remaining.toLocaleString()}</div><div class="boost-stat-l">Remaining</div></div>
+    </div>
+    <div class="card" style="margin-bottom:14px">
+      <div class="card-title">Pacing</div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:6px">
+        <span>Spent + committed</span>
+        <span>$${(spent+committed).toLocaleString()} / $${budget.toLocaleString()}</span>
+      </div>
+      <div class="goal-bar-wrap" style="height:12px">
+        <div class="goal-bar ${(spent+committed)/budget>=.9?'danger':(spent+committed)/budget>=.7?'warn':'success'}" style="width:${Math.min((spent+committed)/budget*100,100)}%"></div>
+      </div>
+      <div style="font-size:11px;color:var(--text-3);margin-top:6px">${daysLeft()} days left in month</div>
+    </div>
+    ${boostPosts.length ? `
+      <div class="card">
+        <div class="card-title">Posts with boost allocation</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          ${boostPosts.map(p=>`
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px;border:1px solid var(--border);border-radius:8px">
+              <div>
+                <div style="font-size:13px;font-weight:600">${p.name}</div>
+                <div style="margin-top:3px">${platformTags(p.platforms)}</div>
+                ${p.boost_goal?`<div style="font-size:11px;color:var(--text-3);margin-top:2px">Goal: ${p.boost_goal}</div>`:''}
+              </div>
+              <div style="text-align:right">
+                <div style="font-size:17px;font-weight:800">$${p.boost_budget.toLocaleString()}</div>
+                ${p.publication_date?`<div style="font-size:11px;color:var(--text-3)">${fmtDate(p.publication_date)}</div>`:''}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    ` : `
+      <div class="card">
+        <div style="color:var(--text-3);font-size:12.5px">No posts have a Boost budget set yet. When you fill in the Boost budget field on a ClickUp task, it appears here once n8n syncs.</div>
+      </div>
+    `}
+  `;
+}
+
+// ================================================================
+// MONTH DEBRIEF
+// ================================================================
+function renderDebrief() {
+  const d = D.month_debrief || {};
+  const el = document.getElementById('debrief-content');
+  if (!d.content) {
+    el.innerHTML = `<div class="pending">
+      <div class="pending-icon">&#128203;</div>
+      <div class="pending-title">No debrief yet for this month</div>
+      <div class="pending-txt">The n8n workflow runs on the last day of each month, generates a debrief via the Anthropic API, and posts it to #ivisa-socialmedia in Slack. The summary will also appear here.</div>
+    </div>`;
+    return;
+  }
+  el.innerHTML = `<div class="card">
+    <div class="card-title">${d.month||''}</div>
+    <div style="white-space:pre-wrap;font-size:14px;line-height:1.75;color:var(--text)">${d.content}</div>
+    ${d.slack_posted?`<div style="margin-top:14px;font-size:11px;color:#10B981">&#10003; Posted to #ivisa-socialmedia</div>`:''}
+  </div>`;
+}
+
+// ================================================================
+// BRAND REP
+// ================================================================
+function renderBrandRep() {
+  const rep = D.brand_reputation || {};
+  if (rep.embed_url) {
+    document.getElementById('brand-rep-content').innerHTML =
+      `<iframe src="${rep.embed_url}" style="width:100%;height:700px;border:1px solid var(--border);border-radius:12px" frameborder="0" allowfullscreen></iframe>`;
+  }
+}
+
+// ================================================================
+// UTILITIES
+// ================================================================
+function fmtN(n) {
+  if (!n) return '—';
+  if (n>=1e6) return (n/1e6).toFixed(1)+'M';
+  if (n>=1e3) return (n/1e3).toFixed(1)+'K';
+  return n.toLocaleString();
+}
+function fmtChg(v, period) {
+  if (!v) return `${period}: —`;
+  return `${v>0?'+':''}${typeof v==='number'&&v%1?v.toFixed(2):v} ${period}`;
+}
+function chgClass(v) { return !v?'chg-na':v>0?'chg-up':'chg-down'; }
+function fmtDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso+'T00:00:00');
+  return d.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+}
+function isoDate(d) { return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+function pad(n) { return String(n).padStart(2,'0'); }
+function daysLeft() {
+  const n = new Date();
+  return new Date(n.getFullYear(),n.getMonth()+1,0).getDate()-n.getDate();
+}
+function platformTags(platforms) {
+  if (!platforms||!platforms.length) return '';
+  return platforms.map(p=>`<span class="ptag ptag-${p.toLowerCase()}">${p}</span>`).join('');
+}
+function pillarTags(pillars) {
+  if (!pillars||!pillars.length) return '';
+  return pillars.map(p=>`<span class="piltag piltag-${PILLAR_KEY[p]||'edu'}">${PILLAR_SHORT[p]||p}</span>`).join('');
+}
+function typeTag(type) {
+  if (!type) return '';
+  return `<span style="font-size:10px;color:var(--text-3);margin-left:3px">${type}</span>`;
+}
+
+// ================================================================
+// NAVIGATION
+// ================================================================
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById(t.dataset.s).classList.add('active');
+  });
+});
+
+// ================================================================
+// INIT
+// ================================================================
+load();
+setInterval(load, POLL_MS);
+</script>
+</body>
 </html>
