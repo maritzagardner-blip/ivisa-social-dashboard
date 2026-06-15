@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-15T23:30:48.145Z",
+    "last_updated": "2026-06-15T23:33:23.098Z",
     "month": "June 2026",
-    "generated_by": "n8n"
+    "generated_by": "n8n + claude-ai"
   },
   "pipeline": [
     {
@@ -4020,13 +4020,154 @@
   },
   "brand_reputation": {
     "embed_url": "https://paulavotobernales-94.github.io/-ivisa-csov/index.html",
-    "next_steps": [],
-    "content_ideas": []
+    "csov_score": 57.21,
+    "prev_csov_score": 56.97,
+    "components": {
+      "serp": 63.99,
+      "ai_overview": 47.03,
+      "llm": 47.76,
+      "earned_media": 74.07
+    },
+    "next_steps": [
+      "Audit and map all 'is iVisa legit/scam' search queries to competitor landing pages; create dedicated FAQ hub with schema markup addressing legitimacy, accreditations, and government partnerships to compete in SERP top 3",
+      "Launch a 30-day earned media push: pitch travel journalists, visa bloggers, and Reddit moderators in r/ImmigrationCanada, r/expats with customer success stories and expert positioning to build positive third-party mentions",
+      "Develop and publish a plain-language Security & Privacy page (with technical schema markup) explicitly covering data encryption, GDPR/compliance, government partnerships, and disaster recovery — optimize for AI Overview citations",
+      "Create a 'Value vs. Cost' content series across TikTok, Instagram Reels, and LinkedIn addressing fee justification: expert review time-savings, error prevention costs, 24/7 support ROI vs. DIY government processing",
+      "Build internal link strategy to surface positive testimonials, case studies, and press mentions on homepage and primary service pages so Google's AI Overview prioritizes trust signals over fee/legitimacy concerns"
+    ],
+    "content_ideas": [
+      {
+        "icon": "🛡️",
+        "title": "Security Certification & Compliance Explainer",
+        "detail": "Create a 60-second animated explainer video on Instagram Reels and TikTok showing iVisa's data encryption, GDPR compliance, and government partnerships. Use clear visuals (lock icons, certification badges) to counter AI Overview's data concern flagging. Post across Instagram, TikTok, and LinkedIn with captions linking to full security page.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Instagram",
+          "TikTok",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "💰",
+        "title": "'Why iVisa Isn't Expensive' Cost Breakdown",
+        "detail": "Carousel post (Instagram/LinkedIn) breaking down hidden costs of DIY processing: time spent researching (valued at hourly rate), rejection risk costs, follow-up fees, and stress. Position iVisa fees as insurance + expertise. Use real customer savings examples. Repurpose as short-form video for TikTok.",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "LinkedIn",
+          "TikTok"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "✅",
+        "title": "Customer Testimonial Video Series: 'We're Not The Government, We're Better'",
+        "detail": "Film 4-5 short testimonials (30-45 sec each) with customers explaining how iVisa complemented (not replaced) official processes, handled rejections, or saved time. Explicitly address 'not an official agency' concern by reframing as advantage. Post on YouTube Shorts, Instagram Reels, TikTok, and LinkedIn. Use hashtags: #VisaHacks #ImmigrationTips.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "YouTube",
+          "TikTok",
+          "Instagram",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "❓",
+        "title": "Reddit AMA + FAQ Pinned Series",
+        "detail": "Host a Reddit AMA in r/ImmigrationCanada, r/expats, and r/legaladvice addressing 'is iVisa a scam?' directly. Simultaneously publish an FAQ blog post with schema markup covering legitimacy, fees, security, and government partnerships. Seed the Reddit posts with organic discussions and pin FAQ link in community guides. Builds earned media + SERP authority.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Reddit",
+          "Blog"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🎯",
+        "title": "Humorous 'DIY Visa Application' vs 'iVisa' Comparison Reel",
+        "detail": "Create a comedic 15-30 second side-by-side comparison reel (TikTok/Instagram) showing the chaos of DIY visa applications (wrong forms, rejected applications, late nights) vs. smooth iVisa process. Use trending audio, relatable pain points, and light humor to drive engagement. Link to case studies in bio. Target visa applicants aged 25-40.",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "last_updated": "2026-06-15T23:33:22.831Z"
   },
   "month_debrief": {
     "status": "pending",
     "month": null,
     "content": null,
     "slack_posted": false
+  },
+  "content_ideas": {
+    "status": "active",
+    "source": "csov + claude-ai",
+    "last_updated": "2026-06-15T23:33:22.831Z",
+    "ideas": [
+      {
+        "icon": "🛡️",
+        "title": "Security Certification & Compliance Explainer",
+        "detail": "Create a 60-second animated explainer video on Instagram Reels and TikTok showing iVisa's data encryption, GDPR compliance, and government partnerships. Use clear visuals (lock icons, certification badges) to counter AI Overview's data concern flagging. Post across Instagram, TikTok, and LinkedIn with captions linking to full security page.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Instagram",
+          "TikTok",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "💰",
+        "title": "'Why iVisa Isn't Expensive' Cost Breakdown",
+        "detail": "Carousel post (Instagram/LinkedIn) breaking down hidden costs of DIY processing: time spent researching (valued at hourly rate), rejection risk costs, follow-up fees, and stress. Position iVisa fees as insurance + expertise. Use real customer savings examples. Repurpose as short-form video for TikTok.",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "LinkedIn",
+          "TikTok"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "✅",
+        "title": "Customer Testimonial Video Series: 'We're Not The Government, We're Better'",
+        "detail": "Film 4-5 short testimonials (30-45 sec each) with customers explaining how iVisa complemented (not replaced) official processes, handled rejections, or saved time. Explicitly address 'not an official agency' concern by reframing as advantage. Post on YouTube Shorts, Instagram Reels, TikTok, and LinkedIn. Use hashtags: #VisaHacks #ImmigrationTips.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "YouTube",
+          "TikTok",
+          "Instagram",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "❓",
+        "title": "Reddit AMA + FAQ Pinned Series",
+        "detail": "Host a Reddit AMA in r/ImmigrationCanada, r/expats, and r/legaladvice addressing 'is iVisa a scam?' directly. Simultaneously publish an FAQ blog post with schema markup covering legitimacy, fees, security, and government partnerships. Seed the Reddit posts with organic discussions and pin FAQ link in community guides. Builds earned media + SERP authority.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Reddit",
+          "Blog"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🎯",
+        "title": "Humorous 'DIY Visa Application' vs 'iVisa' Comparison Reel",
+        "detail": "Create a comedic 15-30 second side-by-side comparison reel (TikTok/Instagram) showing the chaos of DIY visa applications (wrong forms, rejected applications, late nights) vs. smooth iVisa process. Use trending audio, relatable pain points, and light humor to drive engagement. Link to case studies in bio. Target visa applicants aged 25-40.",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "priority": "medium"
+      }
+    ]
   }
 }
