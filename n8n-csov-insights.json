@@ -51,7 +51,21 @@
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "\nconst html = $input.first().json.data || $input.first().json;\nconst htmlStr = typeof html === 'string' ? html : JSON.stringify(html);\n\n// Extract the embedded REPORT_DATA JSON from the script tag\nconst match = htmlStr.match(/const REPORT_DATA = (\\{[\\s\\S]+?\\});[\\s\\n]*\\/\\//);\nif (!match) {\n  // Try alternate pattern\n  const match2 = htmlStr.match(/const REPORT_DATA = (\\{[\\s\\S]+?\\})\\s*\\n\\s*\\/\\//);\n  if (!match2) throw new Error('REPORT_DATA not found in CSOV page');\n}\n\nlet reportData;\ntry {\n  reportData = JSON.parse(match ? match[1] : match2[1]);\n} catch(e) {\n  throw new Error('Failed to parse REPORT_DATA: ' + e.message);\n}\n\n// Extract key metrics\nconst csov = reportData.csov_score || 0;\nconst prev = reportData.previous_csov_score || 0;\nconst components = reportData.components || {};\nconst actionItems = reportData.action_items || reportData.serp_action_items || [];\nconst countryBreakdown = reportData.countries || {};\nconst weekLabel = reportData.week_label || reportData.date_label || '';\n\n// Build a compact summary for Claude\nconst summary = {\n  csov_score: csov,\n  prev_csov_score: prev,\n  delta: +(csov - prev).toFixed(2),\n  week: weekLabel,\n  components: {\n    serp: components.serp?.score || 0,\n    ai_overview: components.ai_overview?.score || 0,\n    llm: components.llm?.score || 0,\n    earned_media: components.earned_media?.score || 0,\n  },\n  serp_negative_count: components.serp?.negative || 0,\n  serp_positive_count: components.serp?.positive || 0,\n  weakest_countries: Object.entries(countryBreakdown || {})\n    .sort((a,b) => (a[1].total||0) - (b[1].total||0))\n    .slice(0,3)\n    .map(([k,v]) => ({country: k, score: v.total || 0})),\n  action_items: actionItems.slice(0,10),\n};\n\nreturn [{ json: { summary, raw: reportData } }];\n"
+        "jsCode": "\nconst html = $input.first().json.data || $input.first().json;\nconst htmlStr = typeof html === 'string' ? html : JSON.stringify(html);\nconst match = htmlStr.match(/const REPORT_DATA = (\\{[\\s\\S]+?\\});[\\s\\n]*\\/\\//) || htmlStr.match(/const REPORT_DATA = (\\{[\\s\\S]+?\\})\\s*\\n/);\nif (!match) throw new Error('REPORT_DATA not found');\nlet reportData;\ntry { reportData = JSON.parse(match[1]); } catch(e) { throw new Error('Parse failed: ' + e.message); }\nconst components = reportData.components || {};\nconst summary = {\n  csov_score: reportData.csov_score || 0,\n  prev_csov_score: reportData.previous_csov_score || 0,\n  week: reportData.week_label || reportData.date_label || '',\n  components: {\n    serp: components.serp?.score || 0,\n    ai_overview: components.ai_overview?.score || 0,\n    llm: components.llm?.score || 0,\n    earned_media: components.earned_media?.score || 0,\n  },\n  serp_negative: components.serp?.negative || 0,\n  serp_positive: components.serp?.positive || 0,\n  action_items: (reportData.action_items || reportData.serp_action_items || []).slice(0, 8),\n  weakest_countries: Object.entries(reportData.countries || {})\n    .sort((a,b) => (a[1].total||0) - (b[1].total||0)).slice(0,3)\n    .map(([k,v]) => k + ' (' + (v.total||0) + ')'),\n};\nreturn [{ json: { summary } }];\n"
+      }
+    },
+    {
+      "id": "csov-1111-1111-1111-111111111109",
+      "name": "Build Claude Request",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        400
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "\nconst summary = $input.first().json.summary;\nconst prompt = `You are a social media strategist for iVisa, a visa facilitation service. Based on the weekly CSOV (Credibility Share of Voice) data below, generate specific, actionable social media recommendations.\n\nCSOV DATA:\n${JSON.stringify(summary, null, 2)}\n\nReturn ONLY valid JSON (no markdown, no code fences) in this exact format:\n{\n  \"next_steps\": [\"step1\", \"step2\", \"step3\", \"step4\", \"step5\"],\n  \"content_ideas\": [\n    {\"icon\": \"\ud83d\udee1\ufe0f\", \"title\": \"idea title\", \"detail\": \"why, which platform, what format\", \"pillar\": \"Social Proof\", \"platforms\": [\"Instagram\", \"TikTok\"], \"priority\": \"high\"}\n  ]\n}\n\nRules:\n- next_steps: 5 items directly tied to improving CSOV or addressing flagged issues\n- content_ideas: 5 items, each mapped to: Social Proof, Educational, or Humor/Relatability/Entertainment\n- Focus on: countering negative Reddit/BBB results, fees-as-value framing, government-independence messaging, security/trust\n- Be specific to iVisa`;\n\nconst body = {\n  model: \"claude-haiku-4-5-20251001\",\n  max_tokens: 1200,\n  messages: [{ role: \"user\", content: prompt }]\n};\n\nreturn [{ json: { body: JSON.stringify(body), summary } }];\n"
       }
     },
     {
@@ -60,7 +74,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        880,
+        1100,
         400
       ],
       "parameters": {
@@ -82,24 +96,9 @@
           ]
         },
         "sendBody": true,
-        "contentType": "json",
-        "specifyBody": "keypair",
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "model",
-              "value": "claude-haiku-4-5-20251001"
-            },
-            {
-              "name": "max_tokens",
-              "value": "1200"
-            },
-            {
-              "name": "messages",
-              "value": "=[{\"role\":\"user\",\"content\":\"You are a social media strategist for iVisa, a visa facilitation service. Based on the weekly CSOV (Credibility Share of Voice) data below, generate specific, actionable social media recommendations.\\n\\nCSOV DATA:\\n{{JSON.stringify($json.summary, null, 2)}}\\n\\nReturn ONLY valid JSON (no markdown, no explanation) in this exact format:\\n{\\n  \\\"next_steps\\\": [\\n    \\\"Step 1 text (specific, actionable, 1-2 sentences)\\\",\\n    \\\"Step 2 text\\\",\\n    \\\"Step 3 text\\\",\\n    \\\"Step 4 text\\\",\\n    \\\"Step 5 text\\\"\\n  ],\\n  \\\"content_ideas\\\": [\\n    {\\n      \\\"icon\\\": \\\"\ud83d\udee1\ufe0f\\\",\\n      \\\"title\\\": \\\"Content idea title\\\",\\n      \\\"detail\\\": \\\"Why this idea, which platform, what format\\\",\\n      \\\"pillar\\\": \\\"Social Proof\\\",\\n      \\\"platforms\\\": [\\\"Instagram\\\", \\\"TikTok\\\"],\\n      \\\"priority\\\": \\\"high\\\"\\n    }\\n  ]\\n}\\n\\nRules:\\n- next_steps: 5 items, each directly tied to improving the CSOV score or addressing flagged issues\\n- content_ideas: 5 items, each mapped to a content pillar (Social Proof, Educational, or Humor/Relatability/Entertainment)\\n- Focus on: countering negative Reddit/BBB results, clarifying fees as value, government-independence messaging, security/trust\\n- Be specific to iVisa \u2014 not generic advice\"}]"
-            }
-          ]
-        }
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ $json.body }}"
       },
       "credentials": {
         "httpHeaderAuth": {
@@ -114,12 +113,12 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1100,
+        1320,
         400
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "\nconst response = $input.first().json;\nconst text = response.content?.[0]?.text || '';\n\nlet recommendations;\ntry {\n  // Strip any accidental markdown code fences\n  const cleaned = text.replace(/```json\\n?/g,'').replace(/```\\n?/g,'').trim();\n  recommendations = JSON.parse(cleaned);\n} catch(e) {\n  // Fallback if Claude didn't return clean JSON\n  recommendations = {\n    next_steps: [\n      \"Review and respond to the Reddit thread 'Was using ivisa a mistake' \u2014 it's ranking #1 for multiple reputation keywords.\",\n      \"Publish a Social Proof carousel featuring verified Trustpilot reviews on Instagram and TikTok.\",\n      \"Create an Educational post explaining how iVisa's service fee saves time and prevents costly errors.\",\n      \"Publish a Security & Privacy explainer post addressing data handling concerns surfaced in AI Overviews.\",\n      \"Pitch a travel blogger or YouTuber to publish an honest iVisa review \u2014 earned media score needs third-party lift.\"\n    ],\n    content_ideas: [\n      {\"icon\":\"\ud83d\udee1\ufe0f\",\"title\":\"'Why we charge a fee' \u2014 transparent breakdown\",\"detail\":\"Short-form video explaining the value behind the fee. Address AI Overview criticism directly.\",\"pillar\":\"Educational\",\"platforms\":[\"TikTok\",\"Instagram\",\"YouTube\"],\"priority\":\"high\"},\n      {\"icon\":\"\u2b50\",\"title\":\"Customer wins compilation\",\"detail\":\"Carousel of real Trustpilot reviews with visa approval photos. Counter negative Reddit sentiment.\",\"pillar\":\"Social Proof\",\"platforms\":[\"Instagram\",\"Facebook\",\"LinkedIn\"],\"priority\":\"high\"},\n      {\"icon\":\"\ud83c\udfdb\ufe0f\",\"title\":\"iVisa vs government portals \u2014 side by side\",\"detail\":\"Infographic showing how iVisa complements (not replaces) government visa processes.\",\"pillar\":\"Educational\",\"platforms\":[\"Instagram\",\"LinkedIn\"],\"priority\":\"high\"},\n      {\"icon\":\"\ud83d\udd12\",\"title\":\"Your data is safe \u2014 here's exactly how\",\"detail\":\"Story or reel walking through iVisa's security certifications. Counter AI Overview data concerns.\",\"pillar\":\"Educational\",\"platforms\":[\"Instagram\",\"TikTok\"],\"priority\":\"medium\"},\n      {\"icon\":\"\ud83d\ude05\",\"title\":\"Visa stress vs iVisa ease \u2014 relatable humor\",\"detail\":\"Trending audio reel: chaotic government portal vs smooth iVisa flow. Humor/relatability pillar.\",\"pillar\":\"Humor/Relatability/Entertainment\",\"platforms\":[\"TikTok\",\"Instagram\"],\"priority\":\"medium\"}\n    ]\n  };\n}\n\nconst summary = $('Extract REPORT_DATA').first().json.summary;\n\nreturn [{ json: {\n  next_steps: recommendations.next_steps || [],\n  content_ideas: recommendations.content_ideas || [],\n  csov_score: summary.csov_score,\n  prev_csov_score: summary.prev_csov_score,\n  components: summary.components,\n  generated_at: new Date().toISOString(),\n}}];\n"
+        "jsCode": "\nconst response = $input.first().json;\nconst text = response.content?.[0]?.text || '';\nconst summary = $('Build Claude Request').first().json.summary;\n\nlet recs;\ntry {\n  const cleaned = text.replace(/```json\\n?/g,'').replace(/```\\n?/g,'').trim();\n  recs = JSON.parse(cleaned);\n} catch(e) {\n  recs = {\n    next_steps: [\n      \"Respond to the Reddit thread 'Was using ivisa a mistake' \u2014 it's ranking #1 for multiple reputation keywords this week.\",\n      \"Publish a Social Proof carousel with verified Trustpilot reviews on Instagram and TikTok to counter negative SERP results.\",\n      \"Create an Educational post explaining the iVisa service fee as a value-add: expert review, 24/7 support, error prevention.\",\n      \"Publish a Security & Privacy explainer addressing data concerns flagged in Google AI Overviews.\",\n      \"Pitch a travel blogger or YouTuber for an honest iVisa review \u2014 earned media needs third-party coverage boost.\"\n    ],\n    content_ideas: [\n      {\"icon\":\"\ud83d\udee1\ufe0f\",\"title\":\"'Why we charge a fee' \u2014 transparent breakdown\",\"detail\":\"Short-form video explaining the value behind the fee. Directly addresses AI Overview criticism.\",\"pillar\":\"Educational\",\"platforms\":[\"TikTok\",\"Instagram\",\"YouTube\"],\"priority\":\"high\"},\n      {\"icon\":\"\u2b50\",\"title\":\"Customer wins compilation\",\"detail\":\"Carousel of real Trustpilot reviews with visa approval photos. Counter negative Reddit sentiment.\",\"pillar\":\"Social Proof\",\"platforms\":[\"Instagram\",\"Facebook\",\"LinkedIn\"],\"priority\":\"high\"},\n      {\"icon\":\"\ud83c\udfdb\ufe0f\",\"title\":\"iVisa vs government portals \u2014 side by side\",\"detail\":\"Infographic showing how iVisa complements official processes. Addresses 'not government' concern.\",\"pillar\":\"Educational\",\"platforms\":[\"Instagram\",\"LinkedIn\"],\"priority\":\"high\"},\n      {\"icon\":\"\ud83d\udd12\",\"title\":\"Your data is safe \u2014 here's exactly how\",\"detail\":\"Reel walking through iVisa's security certifications. Counters AI Overview data concerns.\",\"pillar\":\"Educational\",\"platforms\":[\"Instagram\",\"TikTok\"],\"priority\":\"medium\"},\n      {\"icon\":\"\ud83d\ude05\",\"title\":\"Visa chaos vs iVisa ease\",\"detail\":\"Trending audio reel: chaotic government portal vs smooth iVisa. Humor/relatability angle.\",\"pillar\":\"Humor/Relatability/Entertainment\",\"platforms\":[\"TikTok\",\"Instagram\"],\"priority\":\"medium\"}\n    ]\n  };\n}\n\nreturn [{ json: {\n  next_steps: recs.next_steps || [],\n  content_ideas: recs.content_ideas || [],\n  csov_score: summary.csov_score,\n  prev_csov_score: summary.prev_csov_score,\n  components: summary.components,\n  generated_at: new Date().toISOString(),\n}}];\n"
       }
     },
     {
@@ -128,7 +127,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1320,
+        1540,
         400
       ],
       "parameters": {
@@ -163,12 +162,12 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1540,
+        1760,
         400
       ],
       "parameters": {
         "mode": "runOnceForAllItems",
-        "jsCode": "\nconst ghFile = $('GitHub GET data.json').first().json;\nconst sha = ghFile.sha;\nconst currentContent = Buffer.from(ghFile.content.replace(/\\n/g,''), 'base64').toString('utf8');\nlet current = {};\ntry { current = JSON.parse(currentContent); } catch(e) { current = {}; }\n\nconst recs = $('Parse Recommendations').first().json;\n\n// Update brand_reputation section with CSOV data + AI recommendations\nconst newData = {\n  ...current,\n  brand_reputation: {\n    embed_url: (current.brand_reputation || {}).embed_url || 'https://paulavotobernales-94.github.io/-ivisa-csov/index.html',\n    csov_score: recs.csov_score,\n    prev_csov_score: recs.prev_csov_score,\n    components: recs.components,\n    next_steps: recs.next_steps,\n    content_ideas: recs.content_ideas,\n    last_updated: recs.generated_at,\n  },\n  // Also inject top content ideas into the content_ideas section\n  content_ideas: {\n    status: 'active',\n    source: 'csov + manual',\n    last_updated: recs.generated_at,\n    ideas: recs.content_ideas,\n  },\n};\nnewData.meta = {\n  ...current.meta,\n  last_updated: new Date().toISOString(),\n  generated_by: 'n8n + claude-ai',\n};\n\nconst encoded = Buffer.from(JSON.stringify(newData, null, 2), 'utf8').toString('base64');\nreturn [{ json: { content: encoded, sha } }];\n"
+        "jsCode": "\nconst ghFile = $('GitHub GET data.json').first().json;\nconst sha = ghFile.sha;\nconst currentContent = Buffer.from(ghFile.content.replace(/\\n/g,''), 'base64').toString('utf8');\nlet current = {};\ntry { current = JSON.parse(currentContent); } catch(e) { current = {}; }\nconst recs = $('Parse Recommendations').first().json;\nconst newData = {\n  ...current,\n  meta: { ...current.meta, last_updated: new Date().toISOString(), generated_by: 'n8n + claude-ai' },\n  brand_reputation: {\n    embed_url: (current.brand_reputation || {}).embed_url || 'https://paulavotobernales-94.github.io/-ivisa-csov/index.html',\n    csov_score: recs.csov_score,\n    prev_csov_score: recs.prev_csov_score,\n    components: recs.components,\n    next_steps: recs.next_steps,\n    content_ideas: recs.content_ideas,\n    last_updated: recs.generated_at,\n  },\n  content_ideas: {\n    status: 'active',\n    source: 'csov + claude-ai',\n    last_updated: recs.generated_at,\n    ideas: recs.content_ideas,\n  },\n};\nconst encoded = Buffer.from(JSON.stringify(newData, null, 2), 'utf8').toString('base64');\nreturn [{ json: { content: encoded, sha } }];\n"
       }
     },
     {
@@ -177,7 +176,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1760,
+        1980,
         400
       ],
       "parameters": {
@@ -254,6 +253,17 @@
       ]
     },
     "Extract REPORT_DATA": {
+      "main": [
+        [
+          {
+            "node": "Build Claude Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Claude Request": {
       "main": [
         [
           {
