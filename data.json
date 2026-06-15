@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-15T23:00:48.684Z",
+    "last_updated": "2026-06-15T23:20:32.237Z",
     "month": "June 2026",
-    "generated_by": "n8n"
+    "generated_by": "n8n + claude-ai"
   },
   "pipeline": [
     {
@@ -3984,13 +3984,162 @@
   },
   "brand_reputation": {
     "embed_url": "https://paulavotobernales-94.github.io/-ivisa-csov/index.html",
-    "next_steps": [],
-    "content_ideas": []
+    "csov_score": 57.21,
+    "prev_csov_score": 56.97,
+    "components": {
+      "serp": 63.99,
+      "ai_overview": 47.03,
+      "llm": 47.76,
+      "earned_media": 74.07
+    },
+    "next_steps": [
+      "Audit and tag all existing trust, security, and accreditation content with Schema.org markup (FAQ, Organization, LocalBusiness) to increase likelihood of positive citations in Google AI Overviews",
+      "Launch a 'Why iVisa Costs More (And Why That's Worth It)' content series across LinkedIn, blog, and YouTube—directly counter AI Overview's fee objection with ROI messaging (time saved, error prevention, 24/7 support)",
+      "Recruit 3–5 third-party endorsements from travel bloggers, immigration lawyers, or expat communities within 30 days; syndicate across earned media channels to boost LLM training signals and SERP positive sentiment",
+      "Create and publish a comprehensive, plain-language Security & Privacy hub page with embedded video, FAQ schema markup, and trust badges—designed to be AI-friendly and rank for 'iVisa data security' and 'iVisa privacy'",
+      "Monitor Reddit, BBB, and Trustpilot weekly; develop a rapid-response template for addressing 'is iVisa a scam' accusations with empathy, facts, and government partnership links to suppress negative SERP clustering"
+    ],
+    "content_ideas": [
+      {
+        "icon": "⏱️",
+        "title": "The True Cost of a Visa Application (Time vs. Money)",
+        "detail": "Carousel post + long-form blog comparing hours spent navigating government sites, translating documents, and fixing errors vs. iVisa's flat fee. Include case study testimonial. Post on Instagram, LinkedIn, and TikTok (short version). Counters 'expensive' framing by quantifying hidden costs of DIY.",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "LinkedIn",
+          "TikTok",
+          "Blog"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Your Visa Data is Locked Down: Here's How (Security Behind-the-Scenes)",
+        "detail": "Short explainer video (90 sec) walking through encryption, compliance certs (ISO 27001, GDPR), and staff vetting. Post on YouTube Shorts, TikTok, Instagram Reels. Use calm, transparent tone to address AI Overview's security concern flag.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "YouTube",
+          "TikTok",
+          "Instagram Reels"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "✅",
+        "title": "We're Not the Government (And That's the Point)",
+        "detail": "Educational infographic + thread clarifying iVisa's role as a licensed agent/facilitator, not a government agency—and why that's an advantage (faster turnaround, expert guidance, accountability). Post on Twitter/X, LinkedIn, and Pinterest. Directly addresses AI Overview messaging.",
+        "pillar": "Educational",
+        "platforms": [
+          "Twitter/X",
+          "LinkedIn",
+          "Pinterest"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "⭐",
+        "title": "Real Visa Stories: Customer Wins (Testimonial Campaign)",
+        "detail": "Weekly short-form video (TikTok, Reels, YouTube Shorts) featuring 1–2 customer testimonials per week—focus on pain points solved (rejected application avoided, processed 3x faster). Overlay text: 'No scam, just results.' Amplify on Instagram Stories and LinkedIn. Builds social proof to counter 'is iVisa legit' searches.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "TikTok",
+          "Instagram Reels",
+          "YouTube Shorts",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🤔",
+        "title": "Visa Myth-Busting FAQ Series (Humor + Education)",
+        "detail": "Carousel or quick-cut video format debunking common myths: 'Can iVisa guarantee approval?' 'Do we work with the government?' 'Is it a scam?' Use light humor and clear answers. Post on TikTok, Instagram Reels, and LinkedIn. Schema-mark all FAQs on blog to improve AI Overview citation likelihood.",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram Reels",
+          "LinkedIn",
+          "Blog"
+        ],
+        "priority": "medium"
+      }
+    ],
+    "last_updated": "2026-06-15T23:20:31.980Z"
   },
   "month_debrief": {
     "status": "pending",
     "month": null,
     "content": null,
     "slack_posted": false
+  },
+  "content_ideas": {
+    "status": "active",
+    "source": "csov + claude-ai",
+    "last_updated": "2026-06-15T23:20:31.980Z",
+    "ideas": [
+      {
+        "icon": "⏱️",
+        "title": "The True Cost of a Visa Application (Time vs. Money)",
+        "detail": "Carousel post + long-form blog comparing hours spent navigating government sites, translating documents, and fixing errors vs. iVisa's flat fee. Include case study testimonial. Post on Instagram, LinkedIn, and TikTok (short version). Counters 'expensive' framing by quantifying hidden costs of DIY.",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "LinkedIn",
+          "TikTok",
+          "Blog"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Your Visa Data is Locked Down: Here's How (Security Behind-the-Scenes)",
+        "detail": "Short explainer video (90 sec) walking through encryption, compliance certs (ISO 27001, GDPR), and staff vetting. Post on YouTube Shorts, TikTok, Instagram Reels. Use calm, transparent tone to address AI Overview's security concern flag.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "YouTube",
+          "TikTok",
+          "Instagram Reels"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "✅",
+        "title": "We're Not the Government (And That's the Point)",
+        "detail": "Educational infographic + thread clarifying iVisa's role as a licensed agent/facilitator, not a government agency—and why that's an advantage (faster turnaround, expert guidance, accountability). Post on Twitter/X, LinkedIn, and Pinterest. Directly addresses AI Overview messaging.",
+        "pillar": "Educational",
+        "platforms": [
+          "Twitter/X",
+          "LinkedIn",
+          "Pinterest"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "⭐",
+        "title": "Real Visa Stories: Customer Wins (Testimonial Campaign)",
+        "detail": "Weekly short-form video (TikTok, Reels, YouTube Shorts) featuring 1–2 customer testimonials per week—focus on pain points solved (rejected application avoided, processed 3x faster). Overlay text: 'No scam, just results.' Amplify on Instagram Stories and LinkedIn. Builds social proof to counter 'is iVisa legit' searches.",
+        "pillar": "Social Proof",
+        "platforms": [
+          "TikTok",
+          "Instagram Reels",
+          "YouTube Shorts",
+          "LinkedIn"
+        ],
+        "priority": "high"
+      },
+      {
+        "icon": "🤔",
+        "title": "Visa Myth-Busting FAQ Series (Humor + Education)",
+        "detail": "Carousel or quick-cut video format debunking common myths: 'Can iVisa guarantee approval?' 'Do we work with the government?' 'Is it a scam?' Use light humor and clear answers. Post on TikTok, Instagram Reels, and LinkedIn. Schema-mark all FAQs on blog to improve AI Overview citation likelihood.",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram Reels",
+          "LinkedIn",
+          "Blog"
+        ],
+        "priority": "medium"
+      }
+    ]
   }
 }
