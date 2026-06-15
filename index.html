@@ -349,13 +349,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <section id="content-ideas" class="section">
     <div class="sh"><div class="sh-left">
       <div class="sh-title">Content ideas</div>
-      <div class="sh-sub">Suggested posts based on keyword demand and content gaps</div>
+      <div class="sh-sub" id="ideas-sub">AI-generated from CSOV · updated weekly · Semrush keyword ideas coming soon</div>
     </div></div>
-    <div class="pending">
-      <div class="pending-icon">&#128269;</div>
-      <div class="pending-title">Search demand not yet connected</div>
-      <div class="pending-txt">Semrush API units need to be allocated by your account owner. Once connected via n8n, this section will surface keyword opportunities matched to your content pillars.</div>
-    </div>
+    <div id="content-ideas-grid"></div>
   </section>
 
   <!-- SEARCH DEMAND -->
@@ -484,6 +480,7 @@ function render() {
   renderCreators();
   renderBoost();
   renderDebrief();
+  renderContentIdeas();
   renderCompetitorWatch();
   renderBrandRep();
 }
@@ -1148,6 +1145,64 @@ function renderDebrief() {
     <div class="card-title">${d.month||''}</div>
     <div style="white-space:pre-wrap;font-size:14px;line-height:1.75;color:var(--text)">${d.content}</div>
     ${d.slack_posted?`<div style="margin-top:14px;font-size:11px;color:#10B981">&#10003; Posted to #ivisa-socialmedia</div>`:''}
+  </div>`;
+}
+
+// ================================================================
+// CONTENT IDEAS
+// ================================================================
+function renderContentIdeas() {
+  const ci = D.content_ideas || {};
+  const ideas = ci.ideas || (D.brand_reputation || {}).content_ideas || [];
+  const el = document.getElementById('content-ideas-grid');
+  if (!el) return;
+
+  const PILLAR_COLOR = {
+    'Social Proof': '#10b981',
+    'Educational': '#3b82f6',
+    'Humor/Relatability/Entertainment': '#f59e0b',
+  };
+  const PRIORITY_BADGE = {
+    high: {label:'High priority', color:'#ef4444'},
+    medium: {label:'Medium', color:'#f59e0b'},
+    low: {label:'Low', color:'#6b7280'},
+  };
+
+  if (!ideas.length) {
+    el.innerHTML = `<div class="pending">
+      <div class="pending-icon">🔄</div>
+      <div class="pending-title">CSOV insights not yet synced</div>
+      <div class="pending-txt">Import the n8n-csov-insights.json workflow and run it once — ideas will appear here automatically every Monday after that.</div>
+    </div>`;
+    return;
+  }
+
+  const updated = ci.last_updated || (D.brand_reputation || {}).last_updated || '';
+  if (updated) document.getElementById('ideas-sub').textContent =
+    `AI-generated from CSOV · ${updated.split('T')[0]} · Semrush keyword ideas coming soon`;
+
+  el.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:4px">
+    ${ideas.map(idea => {
+      const pillarColor = PILLAR_COLOR[idea.pillar] || '#6b7280';
+      const priority = PRIORITY_BADGE[idea.priority] || PRIORITY_BADGE.medium;
+      const platforms = (idea.platforms || []).map(p =>
+        `<span style="padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600;background:${NET_COLOR[p.toLowerCase()]||'#6b7280'}22;color:${NET_COLOR[p.toLowerCase()]||'#6b7280'}">${p}</span>`
+      ).join('');
+      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <div style="font-size:24px;line-height:1">${idea.icon||'💡'}</div>
+            <div style="font-weight:700;font-size:13px;color:var(--text);line-height:1.3">${idea.title}</div>
+          </div>
+          <span style="white-space:nowrap;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;background:${priority.color}22;color:${priority.color}">${priority.label}</span>
+        </div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.5">${idea.detail||''}</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px">
+          <span style="padding:3px 10px;border-radius:10px;font-size:11px;font-weight:600;background:${pillarColor}22;color:${pillarColor}">${idea.pillar||''}</span>
+          <div style="display:flex;gap:4px;flex-wrap:wrap">${platforms}</div>
+        </div>
+      </div>`;
+    }).join('')}
   </div>`;
 }
 
