@@ -373,8 +373,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <section id="competitor-watch" class="section">
     <div class="sh"><div class="sh-left">
       <div class="sh-title">Competitor watch</div>
-      <div class="sh-sub">Tracked brands — click any platform to open their profile</div>
+      <div class="sh-sub" id="comp-sub">Tracked brands · strategic overview · iVisa opportunities</div>
     </div></div>
+    <div id="competitor-recommendations"></div>
     <div id="competitor-grid"></div>
   </section>
 
@@ -1222,8 +1223,26 @@ const PLATFORM_COLORS = {
 function renderCompetitorWatch() {
   const cw = D.competitor_watch || {};
   const competitors = cw.competitors || [];
+  const recommendations = cw.recommendations || [];
+  const recEl = document.getElementById('competitor-recommendations');
   const el = document.getElementById('competitor-grid');
   if (!el) return;
+
+  if (cw.last_updated) {
+    document.getElementById('comp-sub').textContent =
+      `Tracked brands · strategic overview · updated ${cw.last_updated}`;
+  }
+
+  // Recommendations panel
+  if (recEl && recommendations.length) {
+    recEl.innerHTML = `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:16px">
+      <div style="font-weight:700;font-size:14px;margin-bottom:14px">🎯 Strategic recommendations for iVisa</div>
+      ${recommendations.map((r,i) => `<div style="display:flex;gap:10px;margin-bottom:10px;align-items:flex-start">
+        <div style="min-width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0">${i+1}</div>
+        <div style="font-size:13px;color:var(--text);line-height:1.5">${r}</div>
+      </div>`).join('')}
+    </div>`;
+  }
 
   if (!competitors.length) {
     el.innerHTML = `<div class="pending"><div class="pending-icon">👀</div>
@@ -1232,23 +1251,45 @@ function renderCompetitorWatch() {
     return;
   }
 
-  el.innerHTML = `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:4px">
+  const THREAT_BADGE = {
+    high: {label:'High threat', color:'#ef4444'},
+    medium: {label:'Medium threat', color:'#f59e0b'},
+    low: {label:'Low threat', color:'#10b981'},
+  };
+
+  el.innerHTML = `<div style="display:flex;flex-direction:column;gap:14px">
     ${competitors.map(c => {
       const channels = c.channels || {};
+      const threat = THREAT_BADGE[c.threat_level] || THREAT_BADGE.low;
       const links = Object.entries(channels).map(([platform, url]) => {
         const icon = PLATFORM_ICONS[platform] || '🔗';
         const color = PLATFORM_COLORS[platform] || '#555';
         return `<a href="${url}" target="_blank" rel="noopener"
           style="display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;
           border:1px solid ${color}33;color:${color};font-size:11px;font-weight:600;text-decoration:none;
-          background:${color}11;transition:background .15s"
-          onmouseover="this.style.background='${color}22'" onmouseout="this.style.background='${color}11'">
-          ${icon} ${platform.charAt(0).toUpperCase()+platform.slice(1)}
-        </a>`;
+          background:${color}11">${icon} ${platform.charAt(0).toUpperCase()+platform.slice(1)}</a>`;
       }).join('');
-      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px">
-        <div style="font-weight:700;font-size:15px;color:var(--text);margin-bottom:12px">🏁 ${c.name}</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">${links}</div>
+
+      const hasSummary = c.summary || c.what_theyre_doing || c.opportunity_for_ivisa;
+
+      return `<div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+          <div style="font-weight:700;font-size:15px;color:var(--text)">🏁 ${c.name}</div>
+          <span style="padding:3px 10px;border-radius:10px;font-size:11px;font-weight:700;background:${threat.color}22;color:${threat.color}">${threat.label}</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:${hasSummary?'14px':'0'}">${links}</div>
+        ${c.summary ? `<div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:10px">${c.summary}</div>` : ''}
+        ${c.what_theyre_doing || c.opportunity_for_ivisa ? `
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px">
+          ${c.what_theyre_doing ? `<div style="background:var(--bg);border-radius:10px;padding:12px">
+            <div style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">What they're doing</div>
+            <div style="font-size:12px;color:var(--text);line-height:1.5">${c.what_theyre_doing}</div>
+          </div>` : ''}
+          ${c.opportunity_for_ivisa ? `<div style="background:#10b98111;border-radius:10px;padding:12px;border:1px solid #10b98133">
+            <div style="font-size:11px;font-weight:700;color:#10b981;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">iVisa opportunity</div>
+            <div style="font-size:12px;color:var(--text);line-height:1.5">${c.opportunity_for_ivisa}</div>
+          </div>` : ''}
+        </div>` : ''}
       </div>`;
     }).join('')}
   </div>`;
