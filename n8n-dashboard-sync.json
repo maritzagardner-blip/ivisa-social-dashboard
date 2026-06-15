@@ -1,0 +1,313 @@
+{
+  "name": "iVisa Social Dashboard Sync",
+  "nodes": [
+    {
+      "id": "11111111-1111-1111-1111-111111111101",
+      "name": "Schedule: Every 30 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        200,
+        400
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111102",
+      "name": "ClickUp Tasks P0",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        400
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.clickup.com/api/v2/list/901413689528/task",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "include_closed",
+              "value": "true"
+            },
+            {
+              "name": "subtasks",
+              "value": "false"
+            },
+            {
+              "name": "page",
+              "value": "0"
+            },
+            {
+              "name": "order_by",
+              "value": "due_date"
+            },
+            {
+              "name": "reverse",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "ClickUpAPIToken",
+          "name": "ClickUp API Token"
+        }
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111103",
+      "name": "ClickUp Tasks P1",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        400
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.clickup.com/api/v2/list/901413689528/task",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "include_closed",
+              "value": "true"
+            },
+            {
+              "name": "subtasks",
+              "value": "false"
+            },
+            {
+              "name": "page",
+              "value": "1"
+            },
+            {
+              "name": "order_by",
+              "value": "due_date"
+            },
+            {
+              "name": "reverse",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "ClickUpAPIToken",
+          "name": "ClickUp API Token"
+        }
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111104",
+      "name": "Map Tasks",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        400
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "\n// ================================================================\n// FIELD & OPTION ID MAPS  (do not edit unless ClickUp fields change)\n// ================================================================\nconst FIELD = {\n  PLATFORM:     'e65ea02e-ac16-4099-aba0-480dd0797703',\n  PILLAR:       '36625633-e36e-4a74-8561-eb8d6f81ee8f',\n  TYPE:         '218188b6-eedf-49da-aeeb-43aea15ebce9',\n  PUB_DATE:     '474ecc61-98e2-4584-bc75-d1dbfef27f48',\n  PUB_TIME:     'f58b6b68-42e0-4933-824e-7fcfeac28847',\n  COLLAB:       '321cc3c8-1f37-4227-b520-68ff60f78f00',\n  BOOST_BUDGET: '5d48fcb0-a77b-4e1a-9873-3672b1b3f290',\n  BOOST_GOAL:   '5ad0b430-c2e3-4f3c-8ad3-b42da2d22cec',\n  KEYWORD:      '5811d48f-6b47-447c-9194-a701a8647b6e',\n  CHANNEL:      'dc7aef29-5593-4566-89fe-bf35567fcfcf',\n};\n\nconst PLATFORM_MAP = {\n  '9821c3c8-f28b-4df6-b301-8d68bfb3b6f9': 'Instagram',\n  '45b74f85-e76b-419d-825e-d3813762692b': 'Facebook',\n  '64c4b5c5-288c-446c-a492-a697babd21ff': 'TikTok',\n  'e43cb995-8ba2-47f2-95d9-2345aaf6961b': 'X',\n  '45d7a2cd-308d-40bb-901a-6728306ade3a': 'Pinterest',\n  'd8e57eaa-009d-44bb-b06e-95b487276b64': 'YouTube',\n  'f792a626-7925-4756-967b-a89ac8f2d0e5': 'LinkedIn',\n  '5da8e059-ffa5-4996-a772-46b7d50ab414': 'Reddit',\n};\n\nconst PILLAR_MAP = {\n  '6f56cf9c-a3ae-425d-b967-0b3aae9bc3f5': 'Humor/Relatability/Entertainment',\n  '5c4e9824-22e5-4f72-9fd7-018c5a80edc8': 'Educational',\n  '9f10a2a4-9c4e-4bcf-a682-6a0d236d0a8a': 'Social Proof',\n};\n\nconst TYPE_MAP        = { 0:'Infographic', 1:'Post', 2:'Carrousel', 3:'Story', 4:'Video', 5:'Image' };\nconst BOOST_GOAL_MAP  = { 0:'Awareness', 1:'Engagement', 2:'Followers', 3:'Website clicks' };\n\n// ================================================================\n// HELPERS\n// ================================================================\nfunction getFieldVal(task, fieldId) {\n  const f = (task.custom_fields || []).find(f => f.id === fieldId);\n  return f ? f.value : undefined;\n}\n\nfunction isSocialPost(task) {\n  const name = task.name || '';\n  if (name.startsWith('Post:') || name.startsWith('IG Story -')) return true;\n  // Also accept tasks explicitly set to SOCIAL MEDIA channel (index 1)\n  return getFieldVal(task, FIELD.CHANNEL) === 1;\n}\n\nfunction tsToISO(ts) {\n  if (!ts) return null;\n  return new Date(parseInt(ts)).toISOString().split('T')[0];\n}\n\n// ================================================================\n// COMBINE PAGES AND MAP\n// ================================================================\nconst page0 = $('ClickUp Tasks P0').first().json.tasks || [];\nconst page1 = $input.first().json.tasks || [];\nconst allTasks = [...page0, ...page1];\n\nconst pipeline = allTasks\n  .filter(t => t.parent === null || t.parent === undefined) // parent tasks only\n  .filter(isSocialPost)\n  .map(task => {\n    const platforms = (getFieldVal(task, FIELD.PLATFORM) || [])\n      .map(id => PLATFORM_MAP[id]).filter(Boolean);\n\n    const pillar = (getFieldVal(task, FIELD.PILLAR) || [])\n      .map(id => PILLAR_MAP[id]).filter(Boolean);\n\n    const typeIdx = getFieldVal(task, FIELD.TYPE);\n    const type = (typeIdx !== null && typeIdx !== undefined) ? (TYPE_MAP[typeIdx] || null) : null;\n\n    const pubDateTs = getFieldVal(task, FIELD.PUB_DATE);\n    const pubDate = pubDateTs ? tsToISO(pubDateTs) : tsToISO(task.due_date);\n\n    const collab   = !!(getFieldVal(task, FIELD.COLLAB));\n    const boostBudget = parseFloat(getFieldVal(task, FIELD.BOOST_BUDGET) || 0) || 0;\n    const boostGoalIdx = getFieldVal(task, FIELD.BOOST_GOAL);\n    const boostGoal = (boostGoalIdx !== null && boostGoalIdx !== undefined)\n      ? (BOOST_GOAL_MAP[boostGoalIdx] || null) : null;\n    const keyword  = getFieldVal(task, FIELD.KEYWORD) || null;\n    const status   = (task.status && task.status.status ? task.status.status : '').toLowerCase();\n\n    // Auto-infer for IG Story tasks that may not have fields set\n    const finalPlatforms = platforms.length ? platforms\n      : task.name.startsWith('IG Story -') ? ['Instagram'] : [];\n    const finalType = type || (task.name.startsWith('IG Story -') ? 'Story' : null);\n\n    return {\n      id: task.id,\n      name: task.name,\n      status,\n      platforms: finalPlatforms,\n      content_pillar: pillar,\n      type: finalType,\n      publication_date: pubDate,\n      publish_time: getFieldVal(task, FIELD.PUB_TIME) || null,\n      collaboration: collab,\n      boost_budget: boostBudget,\n      boost_goal: boostGoal,\n      keyword_tag: keyword,\n      assignees: (task.assignees || []).map(a => a.username),\n      url: task.url,\n    };\n  });\n\n// Boost totals: spent = published posts with budget, committed = upcoming with budget\nconst boostSpent = pipeline\n  .filter(p => p.status === 'done')\n  .reduce((sum, p) => sum + (p.boost_budget || 0), 0);\nconst boostCommitted = pipeline\n  .filter(p => p.status !== 'done' && (p.boost_budget || 0) > 0)\n  .reduce((sum, p) => sum + p.boost_budget, 0);\n\nreturn [{ json: { pipeline, boostSpent, boostCommitted } }];\n"
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111105",
+      "name": "GitHub GET file",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        400
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/maritzagardner-blip/ivisa-social-dashboard/contents/data.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "GitHubToken",
+          "name": "GitHub Token"
+        }
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111106",
+      "name": "Build data.json",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1320,
+        400
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "\n// Get current file from GitHub (needed for SHA and to preserve manual sections)\nconst ghFile = $('GitHub GET file').first().json;\nconst currentSha = ghFile.sha;\n\n// Decode current data.json (GitHub returns base64 with line breaks)\nconst currentContent = Buffer.from(ghFile.content.replace(/\\n/g, ''), 'base64').toString('utf8');\nlet current = {};\ntry { current = JSON.parse(currentContent); } catch(e) { current = {}; }\n\n// New pipeline data from Map Tasks node\nconst mapped = $('Map Tasks').first().json;\nconst pipeline  = mapped.pipeline || [];\nconst boostSpent     = mapped.boostSpent || 0;\nconst boostCommitted = mapped.boostCommitted || 0;\n\n// Build merged data.json \u2014 pipeline is overwritten, everything else is preserved\nconst newData = {\n  meta: {\n    last_updated: new Date().toISOString(),\n    month: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),\n    generated_by: 'n8n'\n  },\n  pipeline,\n  performance: current.performance || {\n    instagram: {}, tiktok: {}, facebook: {}, x: {}, linkedin: {}, youtube: {}\n  },\n  goals: current.goals || {},\n  boost: {\n    monthly_budget_usd: (current.goals || {}).monthly_boost_budget_usd || 1100,\n    spent_usd: boostSpent,\n    committed_usd: boostCommitted,\n    posts: pipeline.filter(p => p.boost_budget > 0).map(p => ({\n      id: p.id,\n      name: p.name,\n      platforms: p.platforms,\n      boost_budget: p.boost_budget,\n      boost_goal: p.boost_goal,\n      publication_date: p.publication_date,\n      status: p.status,\n    })),\n  },\n  search_demand: current.search_demand || { status: 'pending', keywords: [] },\n  competitor_watch: current.competitor_watch || { status: 'pending', competitors: [] },\n  brand_reputation: current.brand_reputation || { embed_url: null },\n  month_debrief: current.month_debrief || { status: 'pending', content: null, slack_posted: false },\n};\n\n// Base64-encode for GitHub API\nconst newJson    = JSON.stringify(newData, null, 2);\nconst newContent = Buffer.from(newJson, 'utf8').toString('base64');\n\nreturn [{ json: { content: newContent, sha: currentSha } }];\n"
+      }
+    },
+    {
+      "id": "11111111-1111-1111-1111-111111111107",
+      "name": "GitHub Commit",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1540,
+        400
+      ],
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/maritzagardner-blip/ivisa-social-dashboard/contents/data.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "keypair",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "=Sync: data.json {{ new Date().toISOString() }}"
+            },
+            {
+              "name": "content",
+              "value": "={{ $json.content }}"
+            },
+            {
+              "name": "sha",
+              "value": "={{ $json.sha }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "GitHubToken",
+          "name": "GitHub Token"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule: Every 30 min": {
+      "main": [
+        [
+          {
+            "node": "ClickUp Tasks P0",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp Tasks P0": {
+      "main": [
+        [
+          {
+            "node": "ClickUp Tasks P1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ClickUp Tasks P1": {
+      "main": [
+        [
+          {
+            "node": "Map Tasks",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map Tasks": {
+      "main": [
+        [
+          {
+            "node": "GitHub GET file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub GET file": {
+      "main": [
+        [
+          {
+            "node": "Build data.json",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build data.json": {
+      "main": [
+        [
+          {
+            "node": "GitHub Commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "1"
+}
