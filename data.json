@@ -3935,9 +3935,266 @@
     ]
   },
   "search_demand": {
-    "status": "pending",
-    "note": "Waiting for Semrush API unit allocation.",
-    "keywords": []
+    "status": "active",
+    "source": "Semrush + Claude AI",
+    "last_updated": "2026-06-16T15:54:07.502Z",
+    "weekly_insight": "Passport requirements searches are surging (368k/mo, rising), indicating travelers are planning summer trips and need clarity on documentation before booking. Simultaneously, e-visa adoption keywords (evisa, e visa app) are growing, revealing a shift toward digital visa solutions. iVisa should capitalize on this planning-phase demand with urgent, educational content that positions the brand as the go-to resource for fast-tracked visa solutions.",
+    "top_keywords": [
+      {
+        "keyword": "passport requirements",
+        "volume": 368000,
+        "trend": "rising",
+        "cluster": "travel",
+        "cpc": 0.44
+      },
+      {
+        "keyword": "visa",
+        "volume": 301000,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 6.48
+      },
+      {
+        "keyword": "visa",
+        "volume": 301000,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 6.48
+      },
+      {
+        "keyword": "vietnam",
+        "volume": 246000,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 0.97
+      },
+      {
+        "keyword": "armenia",
+        "volume": 135000,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 0
+      },
+      {
+        "keyword": "esta",
+        "volume": 60500,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 2.07
+      },
+      {
+        "keyword": "us immigration",
+        "volume": 40500,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 2.27
+      },
+      {
+        "keyword": "vfs global",
+        "volume": 40500,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 2.73
+      },
+      {
+        "keyword": "us immigration",
+        "volume": 40500,
+        "trend": "stable",
+        "cluster": "travel",
+        "cpc": 2.27
+      },
+      {
+        "keyword": "travel visa",
+        "volume": 33100,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 2.43
+      },
+      {
+        "keyword": "us embassy",
+        "volume": 33100,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 0.61
+      },
+      {
+        "keyword": "travel visa",
+        "volume": 33100,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 2.43
+      },
+      {
+        "keyword": "us embassy",
+        "volume": 33100,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 0.61
+      },
+      {
+        "keyword": "_e_n_",
+        "volume": 18100,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 0
+      },
+      {
+        "keyword": "us travel docs",
+        "volume": 18100,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 1.62
+      }
+    ],
+    "rising_keywords": [
+      {
+        "keyword": "passport requirements",
+        "volume": 368000,
+        "cluster": "travel"
+      },
+      {
+        "keyword": "evisa",
+        "volume": 14800,
+        "cluster": "visa"
+      },
+      {
+        "keyword": "ivisia",
+        "volume": 390,
+        "cluster": "brand"
+      },
+      {
+        "keyword": "e visa app",
+        "volume": 210,
+        "cluster": "brand"
+      }
+    ],
+    "content_recommendations": [
+      {
+        "id": 1,
+        "keyword_insight": "Passport requirements is the fastest-growing travel keyword (368,000/mo, rising), with travelers actively researching what they need before trips.",
+        "content_angle": "Country-by-country passport requirement checklist: What you actually need for 10 popular summer destinations (Vietnam, Armenia, US, etc.)",
+        "hook": "❌ You're about to book your trip but your passport isn't ready. Here's exactly what 10 countries actually require (spoiler: it's not what you think)",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "TikTok"
+        ],
+        "format": "Reel",
+        "priority": "high",
+        "why_shareable": "Solves immediate travel planning anxiety and saves users from booking mistakes—gets saved for pre-trip reference.",
+        "cta": "Save this. Check your passport validity. Start your visa with iVisa if needed.",
+        "trend": "rising"
+      },
+      {
+        "id": 2,
+        "keyword_insight": "Vietnam visa searches remain high (246,000/mo, declining but still massive), with summer travelers planning Southeast Asia trips.",
+        "content_angle": "Vietnam visa myths vs. reality: 5 things travelers get wrong (visa-free entry, processing times, extensions, etc.)",
+        "hook": "POV: You think you don't need a visa to enter Vietnam. Think again. 🇻🇳",
+        "pillar": "Educational",
+        "platforms": [
+          "TikTok"
+        ],
+        "format": "TikTok",
+        "priority": "high",
+        "why_shareable": "Corrects common misconceptions and prevents costly travel mistakes—highly saved by Vietnam-bound travelers.",
+        "cta": "Not sure about your visa? Check Vietnam's latest requirements on iVisa.",
+        "trend": "declining"
+      },
+      {
+        "id": 3,
+        "keyword_insight": "E-visa keywords (evisa, e visa app) are rising, reflecting growing demand for digital visa solutions and paperless travel.",
+        "content_angle": "The future of travel: E-visas explained | Why digital visas are faster, cheaper, and easier than traditional applications",
+        "hook": "Your next visa could be approved in 24 hours. Here's how e-visas are changing travel. 📱",
+        "pillar": "Educational",
+        "platforms": [
+          "Instagram",
+          "LinkedIn"
+        ],
+        "format": "Carousel",
+        "priority": "high",
+        "why_shareable": "Educates users on an emerging trend and positions iVisa as forward-thinking—appeals to tech-savvy and efficiency-focused travelers.",
+        "cta": "Explore which destinations offer e-visas with iVisa.",
+        "trend": "rising"
+      },
+      {
+        "id": 4,
+        "keyword_insight": "US immigration and US travel docs searches remain stable (40,500/mo and 18,100/mo), with consistent demand from international travelers heading to America.",
+        "content_angle": "International travelers' honest reality check: What US immigration actually requires (ESTA, I-94, TSA PreCheck confusion, etc.)",
+        "hook": "Americans think US entry is simple. International travelers know the truth. 🛂",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "format": "Reel",
+        "priority": "medium",
+        "why_shareable": "Relatable humor that validates traveler frustrations and gets shared within friend groups planning US trips.",
+        "cta": "Get your US travel docs sorted with iVisa—no confusion, no stress.",
+        "trend": "stable"
+      },
+      {
+        "id": 5,
+        "keyword_insight": "Armenia visa searches are stable (135,000/mo) with no seasonal decline, suggesting consistent tourism demand and a niche opportunity for expert positioning.",
+        "content_angle": "Why Armenia is the underrated travel gem your feed needs + complete visa guide for first-time visitors",
+        "hook": "Your friends are going to Armenia next month and you have no idea what to pack or how to enter. Here's the full guide. 🏔️",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Instagram"
+        ],
+        "format": "Carousel",
+        "priority": "medium",
+        "why_shareable": "Combines wanderlust inspiration with practical visa info—appeals to adventurous travelers and gets saved for trip planning.",
+        "cta": "Ready to visit Armenia? Start your visa application with iVisa.",
+        "trend": "stable"
+      },
+      {
+        "id": 6,
+        "keyword_insight": "Brand keyword 'is ivisa legit' remains stable (590/mo), indicating ongoing trust concerns and opportunities to build social proof through customer stories.",
+        "content_angle": "Real iVisa customers share their visa stories: From 'skeptical' to 'visa approved in 48 hours'",
+        "hook": "We asked iVisa users one question: 'Were you scared to trust an online visa service?' Here's what they said. 💚",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Instagram",
+          "TikTok"
+        ],
+        "format": "Reel",
+        "priority": "high",
+        "why_shareable": "Directly addresses trust concerns and builds credibility through authentic customer validation.",
+        "cta": "See why thousands of travelers trust iVisa. Read real reviews or start your visa today.",
+        "trend": "stable"
+      },
+      {
+        "id": 7,
+        "keyword_insight": "VFS Global and US Embassy searches (40,500/mo each, stable) reveal confusion around official government processes—opportunity to simplify and offer faster alternatives.",
+        "content_angle": "VFS vs. iVisa: Why smart travelers are skipping the long embassy lines for online visa services",
+        "hook": "You've been waiting in line at the embassy for 2 hours. Your friend got their visa approved online in 2 days. 📲",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "format": "Reel",
+        "priority": "medium",
+        "why_shareable": "Highlights pain point (embassy lines) and offers relatable solution—gets shared by frustrated travelers and visa-seekers.",
+        "cta": "Skip the line. Apply for your visa on iVisa instead.",
+        "trend": "stable"
+      },
+      {
+        "id": 8,
+        "keyword_insight": "ESTA searches are declining (60,500/mo) but still represent a massive audience; declining interest may indicate need to refresh educational content and capture intent before booking.",
+        "content_angle": "ESTA vs. US Visa: Do you actually need one? Ultimate decision tree for international travelers",
+        "hook": "If you're planning a US trip and don't know if you need ESTA, this 60-second video is for you. 🇺🇸",
+        "pillar": "Educational",
+        "platforms": [
+          "TikTok"
+        ],
+        "format": "TikTok",
+        "priority": "medium",
+        "why_shareable": "Quick, actionable guidance that saves travelers money and stress—high intent audience looking for clarity.",
+        "cta": "Not sure about ESTA? iVisa handles all US travel document applications.",
+        "trend": "declining"
+      }
+    ]
   },
   "competitor_watch": {
     "status": "active",
