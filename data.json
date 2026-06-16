@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16T23:00:47.375Z",
+    "last_updated": "2026-06-16T23:30:46.947Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -856,8 +856,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Nicole Grimm Bertello",
         "Maritza Gardner",
+        "Nicole Grimm Bertello",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8mzkgg"
@@ -1424,9 +1424,9 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
+        "Nicole Grimm Bertello",
         "Maritza Gardner",
-        "Nicole Grimm Bertello"
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xqrg7"
     },
@@ -2605,8 +2605,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9xgrdg"
     },
@@ -2857,8 +2857,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9xgw4t"
     },
@@ -2972,8 +2972,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9y6nja"
     },
@@ -3187,8 +3187,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6pj5"
     },
@@ -3404,8 +3404,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6yw5"
     },
@@ -3761,6 +3761,28 @@
       "url": "https://app.clickup.com/t/86b9z375w"
     },
     {
+      "id": "86baft9kz",
+      "name": "Reddit - iVisa AMA",
+      "status": "writing",
+      "platforms": [
+        "Reddit"
+      ],
+      "content_pillar": [
+        "Educational"
+      ],
+      "type": null,
+      "publication_date": "2026-06-22",
+      "publish_time": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [
+        "Annkatrin Siegl"
+      ],
+      "url": "https://app.clickup.com/t/86baft9kz"
+    },
+    {
       "id": "86ba2ckr1",
       "name": "Post: Umrah Visa",
       "status": "writing",
@@ -3783,26 +3805,6 @@
         "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86ba2ckr1"
-    },
-    {
-      "id": "86b9y70n2",
-      "name": "IG Story - Can a visa be cancelled after it's been approved?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y70n2"
     }
   ],
   "performance": {
