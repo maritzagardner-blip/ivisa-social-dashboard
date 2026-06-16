@@ -1,3427 +1,55 @@
 {
   "meta": {
-    "last_updated": "2026-06-16T16:00:47.379Z",
+    "last_updated": "2026-06-12T00:00:00Z",
     "month": "June 2026",
-    "generated_by": "n8n"
+    "generated_by": "seed — n8n sync not yet running"
   },
+
   "pipeline": [
-    {
-      "id": "86b9w2zgy",
-      "name": "Post 4: Schengen Visa Mistakes That Can Get You Denied (IG Carousel / TikTok)",
-      "status": "backlog",
-      "platforms": [],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2025-06-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9w2zgy"
-    },
-    {
-      "id": "86b8a9e5z",
-      "name": "IG Collaboration",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-01-28",
-      "publish_time": "8:00AM ARG",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8a9e5z"
-    },
-    {
-      "id": "86b8cr2zr",
-      "name": "X Post",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8cr2zr"
-    },
-    {
-      "id": "86b88p685",
-      "name": "What's on my phone ",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p685"
-    },
-    {
-      "id": "86b8d7w0r",
-      "name": "IG Story: Business Insider Post",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8d7w0r"
-    },
-    {
-      "id": "86b8d2jn2",
-      "name": "Post: X News",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational",
-        "Social Proof"
-      ],
-      "type": null,
-      "publication_date": "2026-02-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8d2jn2"
-    },
-    {
-      "id": "86b88p655",
-      "name": "Post: eVisitor vs. ETA",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p655"
-    },
-    {
-      "id": "86b88p69x",
-      "name": "Post: B1/B2 Launch - Problem/Solution",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p69x"
-    },
-    {
-      "id": "86b88p6ex",
-      "name": "Post: B1/B2 Jack Video",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-02-05",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p6ex"
-    },
-    {
-      "id": "86b8epmyq",
-      "name": "X Post: Singapore",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-06",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8epmyq"
-    },
-    {
-      "id": "86b88p6gb",
-      "name": "Post: B1/B2 Launch",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": null,
-      "publication_date": "2026-02-06",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p6gb"
-    },
-    {
-      "id": "86b88p6xm",
-      "name": "Post:  How do we protect your data",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-09",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p6xm"
-    },
-    {
-      "id": "86b8g02kw",
-      "name": "Post: X | US News post",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8g02kw"
-    },
-    {
-      "id": "86b88p6qq",
-      "name": "Post: How life feels after...",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p6qq"
-    },
-    {
-      "id": "86b88p73k",
-      "name": "Post: B1/B2 World Cup Timeline Carousel",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-12",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p73k"
-    },
-    {
-      "id": "86b8h5pbu",
-      "name": "Post: X iVisa News (Thailand)",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-13",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h5pbu"
-    },
-    {
-      "id": "86b88p77j",
-      "name": "Post : What your partner really wants",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-13",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p77j"
-    },
-    {
-      "id": "86b8fzakn",
-      "name": "Post: Pinterest [India images] ",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-16",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8fzakn"
-    },
-    {
-      "id": "86b8jcu7y",
-      "name": "Post: X | Puerto Rico post",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8jcu7y"
-    },
-    {
-      "id": "86b8jc1rf",
-      "name": "Post: Pinterest | How long does it take to get an eVisa for India?",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8jc1rf"
-    },
-    {
-      "id": "86b8j5kyn",
-      "name": "Post: X | China visa-free entry",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2026-02-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8j5kyn"
-    },
-    {
-      "id": "86b8ff6g7",
-      "name": "Post: US/New Zealand post",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8ff6g7"
-    },
-    {
-      "id": "86b87q15e",
-      "name": "US B1 B2 visa sample picture and how to read it",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b87q15e"
-    },
-    {
-      "id": "86b8h5xbp",
-      "name": "Post: Pinterest [India #3]",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h5xbp"
-    },
-    {
-      "id": "86b87q004",
-      "name": "PT 1: If you were my friend, I’d tell you this",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b87q004"
-    },
-    {
-      "id": "86b88fvuu",
-      "name": "Should you apply to your evisa through a third party?",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-02-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b88fvuu"
-    },
-    {
-      "id": "86b88fvvk",
-      "name": "Social media travel advice",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-20",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b88fvvk"
-    },
-    {
-      "id": "86b8m8fd2",
-      "name": "Post: X | UK switching to evisas",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-02-23",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8m8fd2"
-    },
-    {
-      "id": "86b8jy2j8",
-      "name": "INFLUENCER IG: Collaboration Kaitlyn Reel",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2026-02-23",
-      "publish_time": "11AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8jy2j8"
-    },
-    {
-      "id": "86b8a9w05",
-      "name": "How to use AI travel tools for planning trips in 2026 ",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-23",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8a9w05"
-    },
-    {
-      "id": "86b8mzdrk",
-      "name": "Post: UK ETA Mandatory",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzdrk"
-    },
-    {
-      "id": "86b8h5zk4",
-      "name": "Post: Pinterest [India #5]",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-02-26",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h5zk4"
-    },
-    {
-      "id": "86b88p62a",
-      "name": "Before you book that flight…",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-02-26",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b88p62a"
-    },
-    {
-      "id": "86b8pdn5n",
-      "name": "Post: Carousel Why I love traveling",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [],
-      "type": "Carrousel",
-      "publication_date": "2026-02-27",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8pdn5n"
-    },
-    {
-      "id": "86b8d6t0k",
-      "name": "Plan a solo vacation day",
-      "status": "backlog",
-      "platforms": [],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2026-03-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8d6t0k"
-    },
-    {
-      "id": "86b8h636c",
-      "name": "Post: Pinterest [Thailand #1]",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h636c"
-    },
-    {
-      "id": "86b88p5xq",
-      "name": "YT REEL B1/B2",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b88p5xq"
-    },
-    {
-      "id": "86b8nun02",
-      "name": "Post: Travel Stress Ranked",
-      "status": "done",
-      "platforms": [
-        "TikTok"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8nun02"
-    },
-    {
-      "id": "86b8mzgeu",
-      "name": "Post: Travel Stress Ranked",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": null,
-      "publication_date": "2026-03-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzgeu"
-    },
-    {
-      "id": "86b8r96rn",
-      "name": "Post: India YT video link to FB",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-04",
-      "publish_time": "5:30PM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8r96rn"
-    },
-    {
-      "id": "86b8mzkgg",
-      "name": "Post: Holi India",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational",
-        "Social Proof"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzkgg"
-    },
-    {
-      "id": "86b8h63af",
-      "name": "Post: Pinterest [Thailand #2]",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h63af"
-    },
-    {
-      "id": "86b8r8mqz",
-      "name": "Post: IG Collaboration (Ritika)",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [],
-      "type": "Video",
-      "publication_date": "2026-03-05",
-      "publish_time": "11:30AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8r8mqz"
-    },
-    {
-      "id": "86b8h63e1",
-      "name": "Post: Pinterest [Thailand #3]",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-06",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8h63e1"
-    },
-    {
-      "id": "86b8r9gvd",
-      "name": "Post X: B1/B2 Yahoo! News",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [],
-      "type": "Post",
-      "publication_date": "2026-03-09",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8r9gvd"
-    },
-    {
-      "id": "86b8r90xw",
-      "name": "Post: Text only Q&A",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": null,
-      "publication_date": "2026-03-09",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b8r90xw"
-    },
-    {
-      "id": "86b8r9cfb",
-      "name": "Post: X - Japanese Cherry blossoms",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-10",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8r9cfb"
-    },
-    {
-      "id": "86b8mzht8",
-      "name": "Post: Testimonial ",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": null,
-      "publication_date": "2026-03-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzht8"
-    },
-    {
-      "id": "86b88p6np",
-      "name": "Post: Visa Hack ",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-11",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b88p6np"
-    },
-    {
-      "id": "86b8vh9wp",
-      "name": "Post: Australia eVisa vs visitor visa",
-      "status": "done",
-      "platforms": [
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-12",
-      "publish_time": "7:00PM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8vh9wp"
-    },
-    {
-      "id": "86b8vf38e",
-      "name": "Post: Stopover programs",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-13",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8vf38e"
-    },
-    {
-      "id": "86b8r980j",
-      "name": "Post: FB Travel humor",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-13",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8r980j"
-    },
-    {
-      "id": "86b8nhxyj",
-      "name": "Post: B1/B2 Youtube Video",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [],
-      "type": "Video",
-      "publication_date": "2026-03-14",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8nhxyj"
-    },
-    {
-      "id": "86b8r93hv",
-      "name": "Post: Text only Q&A",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-16",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8r93hv"
-    },
-    {
-      "id": "86b8mzj1r",
-      "name": "Post: How to know is my visa is legit",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-16",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzj1r"
-    },
-    {
-      "id": "86b8veq97",
-      "name": "Post: Solo safety travel tips",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8veq97"
-    },
-    {
-      "id": "86b8mzjch",
-      "name": "Post: From application to destination",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzjch"
-    },
-    {
-      "id": "86b8yjzec",
-      "name": "Post: Brazil / Blog Post Promo",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8yjzec"
-    },
-    {
-      "id": "86b8xun5j",
-      "name": "Post: If visas and money weren’t an issue…",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8xun5j"
-    },
-    {
-      "id": "86b8xqjtn",
-      "name": "Post: If visas and money weren’t an issue…",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8xqjtn"
-    },
-    {
-      "id": "86b8vewqk",
-      "name": "Post: iVisa News Ramadan ",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8vewqk"
-    },
-    {
-      "id": "86b8zvgpq",
-      "name": "Post: How to visit the world's happiest countries",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-23",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8zvgpq"
-    },
-    {
-      "id": "86b8veym4",
-      "name": "Post: Passport rules travelers often miss",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-24",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8veym4"
-    },
-    {
-      "id": "86b8mzk5e",
-      "name": "Post: Best international destinations for first-time travelers + guide",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-24",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzk5e"
-    },
-    {
-      "id": "86b91vt6d",
-      "name": "PDF Guide: Top Beginner travel destinations",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-03-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b91vt6d"
-    },
-    {
-      "id": "86b8xqrg7",
-      "name": "Post: Cherry blossom",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-03-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8xqrg7"
-    },
-    {
-      "id": "86b8vh4xd",
-      "name": "Post: Best way to travel",
-      "status": "done",
-      "platforms": [
-        "Facebook"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-26",
-      "publish_time": "9:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8vh4xd"
-    },
-    {
-      "id": "86b8veu8q",
-      "name": "Post: Strongest passports of 2026",
-      "status": "done",
-      "platforms": [
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-03-26",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8veu8q"
-    },
-    {
-      "id": "86b8mzmme",
-      "name": "Post: How do you cope with stress?",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-30",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzmme"
-    },
-    {
-      "id": "86b92fk32",
-      "name": "Post: LinkedIn March Iniatives",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2026-03-31",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b92fk32"
-    },
-    {
-      "id": "86b8mzmqg",
-      "name": "Post: 3 mistakes that cancel trips",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-03-31",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzmqg"
-    },
-    {
-      "id": "86b8mzk18",
-      "name": "Post: If your passport looks like this, you may be denied boarding",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b8mzk18"
-    },
-    {
-      "id": "86b90xk2d",
-      "name": "Post: OOO",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90xk2d"
-    },
-    {
-      "id": "86b90wx29",
-      "name": "Post: iVisa Travel Review (Uzbekistan)",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-04-06",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90wx29"
-    },
-    {
-      "id": "86b959b2w",
-      "name": "Post: EES announcement",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-07",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b959b2w"
-    },
-    {
-      "id": "86b90wzvd",
-      "name": "Post: Video Review",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90wzvd"
-    },
-    {
-      "id": "86b90wyuj",
-      "name": "Post: Only real travelers will know",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-04-09",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90wyuj"
-    },
-    {
-      "id": "86b91hpxa",
-      "name": "Post: B1/B2 Jack Short Form Video",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-13",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b91hpxa"
-    },
-    {
-      "id": "86b91u98d",
-      "name": "Post: Placehold UGC Jula",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-14",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b91u98d"
-    },
-    {
-      "id": "86b9dwa9r",
-      "name": "Post: EES Update",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-04-15",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9dwa9r"
-    },
-    {
-      "id": "86b9fzfpz",
-      "name": "Audio: Visa Horror Story",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [],
-      "type": null,
-      "publication_date": "2026-04-20",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9fzfpz"
-    },
-    {
-      "id": "86b90xe3f",
-      "name": "Post: iVisa Travel Review (Vietnam)",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-04-20",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90xe3f"
-    },
-    {
-      "id": "86b9fzz2t",
-      "name": "Post: LinkedIn Forbes announcement",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Carrousel",
-      "publication_date": "2026-04-21",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9fzz2t"
-    },
-    {
-      "id": "86b91ubtd",
-      "name": "Post: Placeholder Ines IG Collab",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-21",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b91ubtd"
-    },
-    {
-      "id": "86b91tqgz",
-      "name": "Post: Where to go based on your travel style",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-04-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b91tqgz"
-    },
-    {
-      "id": "86b92fvmx",
-      "name": "Post: iVisa Big Win",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Post",
-      "publication_date": "2026-04-23",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b92fvmx"
-    },
-    {
-      "id": "86b91uy3f",
-      "name": "Post: London Marathon",
-      "status": "done",
-      "platforms": [
-        "TikTok"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-04-23",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b91uy3f"
-    },
-    {
-      "id": "86b90x5gu",
-      "name": "Post: Audience engagement question",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-04-27",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b90x5gu"
-    },
-    {
-      "id": "86b9k6j50",
-      "name": "Post: Youtube Video Cut",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-04-28",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6j50"
-    },
-    {
-      "id": "86b92fzk1",
-      "name": "Post: iVisa Spotlight",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-04-29",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b92fzk1"
-    },
-    {
-      "id": "86b91uz4p",
-      "name": "Post: Things that take longer than...",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Post",
-      "publication_date": "2026-04-29",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b91uz4p"
-    },
-    {
-      "id": "86b9kj289",
-      "name": "Post: iVisa News Bulletin | April 2026",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Carrousel",
-      "publication_date": "2026-05-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj289"
-    },
-    {
-      "id": "86b9k6e3r",
-      "name": "Post: Visa Horror Story #1",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6e3r"
-    },
-    {
-      "id": "86b9ry6z9",
-      "name": "Post: Pinterest WC #1",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-05",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9ry6z9"
-    },
-    {
-      "id": "86b9rhcd5",
-      "name": "Post: Pinterest pins",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
-      "publication_date": "2026-05-05",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9rhcd5"
-    },
-    {
-      "id": "86b9ry6ra",
-      "name": "Post: Pinterest WC #2",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-06",
-      "publish_time": "8:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9ry6ra"
-    },
-    {
-      "id": "86b9kj2e7",
-      "name": "Post: Travel Award Post",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-07",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj2e7"
-    },
-    {
-      "id": "86b9k6eet",
-      "name": "Post: Visa Horror Story #3",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6eet"
-    },
-    {
-      "id": "86b92fu41",
-      "name": "Post: iVisers in Action",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Post",
-      "publication_date": "2026-05-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b92fu41"
-    },
-    {
-      "id": "86b9ry7up",
-      "name": "Post: Pinterest WC #3",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-09",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9ry7up"
-    },
-    {
-      "id": "86b9rymv8",
-      "name": "Post: Pinterest ETIAS",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-11",
-      "publish_time": "8:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9rymv8"
-    },
-    {
-      "id": "86b9k6et9",
-      "name": "Post: Visa Horror Story #4",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-11",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6et9"
-    },
-    {
-      "id": "86b9t3n3n",
-      "name": "Post: Pinterest Do you need ETIAS yet",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-12",
-      "publish_time": "12:00PM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9t3n3n"
-    },
-    {
-      "id": "86b9kj2wy",
-      "name": "Post: iVisa by the Numbers",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Post",
-      "publication_date": "2026-05-12",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj2wy"
-    },
-    {
-      "id": "86b9kj32u",
-      "name": "Post: iVisa Honeymoon Story ",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Carrousel",
-      "publication_date": "2026-05-13",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj32u"
-    },
-    {
-      "id": "86b9k6e97",
-      "name": "Post: Visa Horror Story #2",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-06",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6e97"
-    },
-    {
-      "id": "86b9t4dwm",
-      "name": "Post: ETIAS delay",
-      "status": "done",
-      "platforms": [
-        "Pinterest"
-      ],
-      "content_pillar": [],
-      "type": "Image",
-      "publication_date": "2026-05-14",
-      "publish_time": "12:00PM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9t4dwm"
-    },
-    {
-      "id": "86b9y79fu",
-      "name": "IG Story - Can you be denied entry even if you have a visa?",
-      "status": "backlog",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-15",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y79fu"
-    },
-    {
-      "id": "86b9xgnkm",
-      "name": "IG Story - Do all layovers require a transit visa?",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9xgnkm"
-    },
-    {
-      "id": "86b9kj3r4",
-      "name": "Post: Top Questions Asked to iVisa",
-      "status": "approved",
-      "platforms": [
-        "Instagram",
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Carrousel",
-      "publication_date": "2026-05-18",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj3r4"
-    },
-    {
-      "id": "86ba0mz82",
-      "name": "Post: Shortened video for Japan Youtube",
-      "status": "approved",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba0mz82"
-    },
-    {
-      "id": "86b9zx22z",
-      "name": "Post: EES Guide",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9zx22z"
-    },
-    {
-      "id": "86b9xgtc6",
-      "name": "IG Story - What's your current 2026 travel mood",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9xgtc6"
-    },
-    {
-      "id": "86b9xgzu1",
-      "name": "IG Story - Heading to India?",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-20",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9xgzu1"
-    },
-    {
-      "id": "86b9k6fm1",
-      "name": "Post: Visa Horror Story #6",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-20",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6fm1"
-    },
-    {
-      "id": "86ba09nh0",
-      "name": "Post: Rita Post #1 TikTok + Instagram",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-21",
-      "publish_time": null,
-      "collaboration": true,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": "Vietnam eVisa",
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86ba09nh0"
-    },
-    {
-      "id": "86b9xgrdg",
-      "name": "IG Story - Is your passport validity important to get your visa approved?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-21",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9xgrdg"
-    },
-    {
-      "id": "86b91v0k5",
-      "name": "Post: More greens",
-      "status": "done",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-05-21",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b91v0k5"
-    },
-    {
-      "id": "86ba2x2qx",
-      "name": "Post: Thailand visa rule",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "Instagram",
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-05-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86ba2x2qx"
-    },
-    {
-      "id": "86b9y6jjm",
-      "name": "IG Story - If your travel style was a movie genre, it'd be…",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6jjm"
-    },
-    {
-      "id": "86b9xgvfa",
-      "name": "IG Story - Can you enter a country without a return ticket?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9xgvfa"
-    },
-    {
-      "id": "86b9q8fyj",
-      "name": "Post: EES, ETIAS, eVisa, ETA",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-05-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9q8fyj"
-    },
-    {
-      "id": "86b9kj46v",
-      "name": "Post: LinkedIn Poll",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [],
-      "type": "Post",
-      "publication_date": "2026-05-25",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9kj46v"
-    },
-    {
-      "id": "86b9y6rpc",
-      "name": "IG Story - Airport hype song",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-26",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6rpc"
-    },
-    {
-      "id": "86b9k6f3f",
-      "name": "Post: Visa Horror Story #5",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-05-26",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9k6f3f"
-    },
-    {
-      "id": "86b9xh0ad",
-      "name": "IG Story - Stop googling visa requirements",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-27",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9xh0ad"
-    },
-    {
-      "id": "86b9x0b4q",
-      "name": "Post: Customer Testimony",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-05-27",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9x0b4q"
-    },
-    {
-      "id": "86b9xgw4t",
-      "name": "IG Story - What is the difference between a tourist and a business visa?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-28",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9xgw4t"
-    },
-    {
-      "id": "86b9y6ugm",
-      "name": "IG Story - This or That: Destination Edition",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-05-29",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6ugm"
-    },
-    {
-      "id": "86ba7qfv7",
-      "name": "Post: The Sun article",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "Instagram",
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
-      "publication_date": "2026-06-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba7qfv7"
-    },
-    {
-      "id": "86ba65thb",
-      "name": "Post: Visa News Bulletin Image",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
-      "publication_date": "2026-06-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba65thb"
-    },
-    {
-      "id": "86ba44hgx",
-      "name": "Post: Visa News Bulletin",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba44hgx"
-    },
-    {
-      "id": "86b9y6nja",
-      "name": "IG Story - Is a visa guaranteed once you apply?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-01",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9y6nja"
-    },
-    {
-      "id": "86b9y6v6f",
-      "name": "IG Story - What country is on your 2026 bucket list?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6v6f"
-    },
-    {
-      "id": "86b9y6kme",
-      "name": "IG Story - 3 reasons travelers trust iVisa over doing it themselves",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6kme"
-    },
-    {
-      "id": "86b9t6t39",
-      "name": "Post: Countries with digital arrival forms",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-03",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9t6t39"
-    },
-    {
-      "id": "86ba89066",
-      "name": "Blog - iVisa Customer Service: what actually happens when you need help",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-06-05",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba89066"
-    },
-    {
-      "id": "86b9y6nu5",
-      "name": "IG Story - Do children need visas too?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-04",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86b9y6nu5"
-    },
-    {
-      "id": "86b9t7tcm",
-      "name": "Post: Tag the friend that does at least one of these",
-      "status": "done",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Image",
-      "publication_date": "2026-06-02",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86b9t7tcm"
-    },
-    {
-      "id": "86b9y6wm1",
-      "name": "IG Story - What's scarier?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-05",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6wm1"
-    },
-    {
-      "id": "86ba892ga",
-      "name": "Blog/PR - Umrah 2026: Everything you need to know about Saudi visas",
-      "status": "writing",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-06-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba892ga"
-    },
-    {
-      "id": "86ba66d3u",
-      "name": "Post: iVisa Refund Policy",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba66d3u"
-    },
-    {
-      "id": "86b9y6pj5",
-      "name": "IG Story - Can you apply for a visa at the last minute?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-08",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9y6pj5"
-    },
-    {
-      "id": "86ba891tz",
-      "name": "Blog/PR - Five mistakes travelers make on ETA applications",
-      "status": "writing",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-06-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba891tz"
-    },
-    {
-      "id": "86ba44gj8",
-      "name": "Post: Gatekeep repost",
-      "status": "done",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
-      "publication_date": "2026-06-09",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba44gj8"
-    },
-    {
-      "id": "86b9yzxbw",
-      "name": "IG Story - This or That",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-09",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9yzxbw"
-    },
-    {
-      "id": "86bacb551",
-      "name": "Post: LinkedIn B1/B2 Visa News",
-      "status": "done",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-06-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86bacb551"
-    },
-    {
-      "id": "86ba47015",
-      "name": "Post: Vietnam Visa Short Video",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "X"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-06-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86ba47015"
-    },
     {
       "id": "86ba46maf",
       "name": "Post: Customer Review",
-      "status": "done",
+      "status": "approved",
       "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
+      "content_pillar": ["Social Proof"],
+      "type": null,
       "publication_date": "2026-06-10",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
       "url": "https://app.clickup.com/t/86ba46maf"
     },
     {
-      "id": "86b9y6mtk",
-      "name": "IG Story - Step-by-step: How our visa checker tool works",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-10",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [],
-      "url": "https://app.clickup.com/t/86b9y6mtk"
-    },
-    {
-      "id": "86ba890ex",
-      "name": "Blog - What happens when your travel plans change? A complete guide to iVisa's refund policy",
-      "status": "writing",
+      "id": "86baczm1d",
+      "name": "Post: US Visa News Video",
+      "status": "waiting for material",
       "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
+      "content_pillar": ["Educational"],
+      "type": "Video",
       "publication_date": "2026-06-12",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba890ex"
-    },
-    {
-      "id": "86ba46nk5",
-      "name": "Post: Tentative Rita Post",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-06-11",
-      "publish_time": null,
-      "collaboration": true,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": "India eVisa",
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86ba46nk5"
-    },
-    {
-      "id": "86b9y6yw5",
-      "name": "IG Story - What's the difference between a visa and a travel authorization (like ETIAS)?",
-      "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Story",
-      "publication_date": "2026-06-11",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
-      ],
-      "url": "https://app.clickup.com/t/86b9y6yw5"
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86baczm1d"
     },
     {
       "id": "86b9z33x6",
       "name": "IG Story - Best trip you ever took",
       "status": "awaiting feedback nicole",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": [],
       "type": "Story",
       "publication_date": "2026-06-12",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3430,69 +58,66 @@
       "url": "https://app.clickup.com/t/86b9z33x6"
     },
     {
-      "id": "86baew37u",
-      "name": "Post: Image Forbes Article",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "X",
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Image",
+      "id": "86ba46jxw",
+      "name": "Post: Schengen visas explained",
+      "status": "ready for nic's creatives",
+      "platforms": ["TikTok", "Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Carrousel",
       "publication_date": "2026-06-15",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86baew37u"
+      "assignees": ["Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba46jxw"
     },
     {
-      "id": "86baczm1d",
-      "name": "Post: US Visa News Video",
-      "status": "done",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
+      "id": "86bac53mw",
+      "name": "Post: Schengen Visa tips",
+      "status": "ready for nic's creatives",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
       "publication_date": "2026-06-15",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
-      "boost_budget": 40,
-      "boost_goal": "Engagement",
+      "boost_budget": 0,
+      "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86baczm1d"
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86bac53mw"
+    },
+    {
+      "id": "86bacan2p",
+      "name": "Post: LinkedIn 5 Year",
+      "status": "waiting for material",
+      "platforms": ["LinkedIn"],
+      "content_pillar": ["Social Proof"],
+      "type": null,
+      "publication_date": "2026-06-15",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86bacan2p"
     },
     {
       "id": "86b9y6ze6",
       "name": "IG Story - What is a digital nomad visa?",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
       "type": "Story",
       "publication_date": "2026-06-15",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3501,66 +126,32 @@
       "url": "https://app.clickup.com/t/86b9y6ze6"
     },
     {
-      "id": "86bae38wu",
-      "name": "Post: LinkedIn Review Testimonial",
-      "status": "approved",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Post",
-      "publication_date": "2026-06-16",
-      "publish_time": "11:00AM",
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": "iVisa Review",
-      "assignees": [
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86bae38wu"
-    },
-    {
       "id": "86bac5mbk",
       "name": "Post: The average traveler",
-      "status": "approved",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram",
-        "YouTube"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
-      "type": "Video",
+      "status": "ready for nic's creatives",
+      "platforms": [],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": null,
       "publication_date": "2026-06-16",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
       "url": "https://app.clickup.com/t/86bac5mbk"
     },
     {
       "id": "86b9yzy6r",
       "name": "IG Story - This or That: Destination Edition",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
       "type": "Story",
       "publication_date": "2026-06-16",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3569,65 +160,32 @@
       "url": "https://app.clickup.com/t/86b9yzy6r"
     },
     {
-      "id": "86bacan2p",
-      "name": "Post: LinkedIn 5 Year",
-      "status": "awaiting feedback nicole",
-      "platforms": [
-        "LinkedIn"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86bacan2p"
-    },
-    {
       "id": "86ba2ckr1",
       "name": "Post: Umrah Visa",
       "status": "writing",
-      "platforms": [
-        "Facebook",
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
       "publication_date": "2026-06-17",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner"
-      ],
+      "assignees": ["Maritza Gardner"],
       "url": "https://app.clickup.com/t/86ba2ckr1"
     },
     {
       "id": "86b9y7343",
       "name": "IG Story - 99% approval rate",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Social Proof"],
       "type": "Story",
       "publication_date": "2026-06-17",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3636,62 +194,32 @@
       "url": "https://app.clickup.com/t/86b9y7343"
     },
     {
-      "id": "86ba890q1",
-      "name": "Blog - Why paying a little more for your visa can save your trip",
-      "status": "writing",
-      "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-06-19",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba890q1"
-    },
-    {
       "id": "86ba47f3a",
       "name": "Post: iVisa vs. - Comparative list",
       "status": "ready for nic's creatives",
-      "platforms": [
-        "Facebook",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Social Proof"
-      ],
-      "type": "Image",
+      "platforms": [],
+      "content_pillar": ["Social Proof"],
+      "type": null,
       "publication_date": "2026-06-18",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
       "url": "https://app.clickup.com/t/86ba47f3a"
     },
     {
       "id": "86b9y6zvm",
       "name": "IG Story - Can you work remotely on a tourist visa?",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
       "type": "Story",
       "publication_date": "2026-06-18",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3703,15 +231,12 @@
       "id": "86b9z375w",
       "name": "IG Story - How ready are you for your next trip?",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Humor/Relatability/Entertainment"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
       "type": "Story",
       "publication_date": "2026-06-19",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3720,62 +245,32 @@
       "url": "https://app.clickup.com/t/86b9z375w"
     },
     {
-      "id": "86bac53mw",
-      "name": "Post: Schengen Visa tips",
-      "status": "ready for nic's creatives",
+      "id": "86ba47cfu",
+      "name": "Post: Family visas explained",
+      "status": "writing",
       "platforms": [],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
+      "content_pillar": ["Educational"],
+      "type": null,
       "publication_date": "2026-06-22",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86bac53mw"
-    },
-    {
-      "id": "86ba46jxw",
-      "name": "Post: Schengen visas explained",
-      "status": "ready for nic's creatives",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86ba46jxw"
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba47cfu"
     },
     {
       "id": "86b9y70n2",
       "name": "IG Story - Can a visa be cancelled after it's been approved?",
       "status": "awaiting feedback maritza",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
       "type": "Story",
       "publication_date": "2026-06-22",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
@@ -3784,28 +279,485 @@
       "url": "https://app.clickup.com/t/86b9y70n2"
     },
     {
-      "id": "86ba8qav1",
-      "name": "Reddit - iVisa AMA",
-      "status": "writing",
-      "platforms": [
-        "Reddit"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": null,
-      "publication_date": "2026-06-24",
+      "id": "86b9pn20k",
+      "name": "Post: Kenya ETA Payment Video",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": "Video",
+      "publication_date": "2026-06-23",
       "publish_time": null,
+      "caption": null,
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
       "keyword_tag": null,
-      "assignees": [
-        "Annkatrin Siegl"
-      ],
-      "url": "https://app.clickup.com/t/86ba8qav1"
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9pn20k"
+    },
+    {
+      "id": "86b9y74x3",
+      "name": "IG Story - We've helped +2.6M travelers",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Social Proof"],
+      "type": "Story",
+      "publication_date": "2026-06-24",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9y74x3"
+    },
+    {
+      "id": "86ba47q2c",
+      "name": "Post: Customer story/review",
+      "status": "writing",
+      "platforms": [],
+      "content_pillar": ["Social Proof"],
+      "type": null,
+      "publication_date": "2026-06-24",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba47q2c"
+    },
+    {
+      "id": "86ba47dcf",
+      "name": "Post: This or That",
+      "status": "ready for nic's creatives",
+      "platforms": [],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": null,
+      "publication_date": "2026-06-25",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba47dcf"
+    },
+    {
+      "id": "86b9y713x",
+      "name": "IG Story - What's the Schengen Area and how does a Schengen visa work?",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Story",
+      "publication_date": "2026-06-25",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9y713x"
+    },
+    {
+      "id": "86b9z3cfc",
+      "name": "IG Story - This or That",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": "Story",
+      "publication_date": "2026-06-26",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9z3cfc"
+    },
+    {
+      "id": "86ba47e5k",
+      "name": "Post: Visa rejections explained",
+      "status": "writing",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": "2026-06-29",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba47e5k"
+    },
+    {
+      "id": "86b9y71qx",
+      "name": "IG Story - What does \"visa processing time\" actually mean?",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Story",
+      "publication_date": "2026-06-29",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9y71qx"
+    },
+    {
+      "id": "86ba6kndd",
+      "name": "Post: iVisa Pricing TBD",
+      "status": "writing",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": "2026-07-01",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba6kndd"
+    },
+
+    {
+      "id": "86ba09nh0",
+      "name": "Post: Rita TikTok + Instagram",
+      "status": "writing",
+      "platforms": ["TikTok", "Instagram"],
+      "content_pillar": [],
+      "type": "Video",
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": true,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba09nh0"
+    },
+    {
+      "id": "86ba7qfv7",
+      "name": "Post: The Sun article",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Social Proof"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba7qfv7"
+    },
+    {
+      "id": "86ba65thb",
+      "name": "Post: Visa News Bulletin Image",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba65thb"
+    },
+    {
+      "id": "86b9x0b4q",
+      "name": "Post: Customer Testimony",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Social Proof"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9x0b4q"
+    },
+    {
+      "id": "86b9k6f3f",
+      "name": "Post: Visa Horror Story #5",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9k6f3f"
+    },
+    {
+      "id": "86b9q8fyj",
+      "name": "Post: EES, ETIAS, eVisa, ETA",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9q8fyj"
+    },
+    {
+      "id": "86b9k6fm1",
+      "name": "Post: Visa Horror Story #6",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9k6fm1"
+    },
+    {
+      "id": "86ba0mz82",
+      "name": "Post: Shortened video for Japan YouTube",
+      "status": "approved",
+      "platforms": ["YouTube"],
+      "content_pillar": ["Educational"],
+      "type": "Video",
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba0mz82"
+    },
+    {
+      "id": "86b9kj3r4",
+      "name": "Post: Top Questions Asked to iVisa",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86b9kj3r4"
+    },
+    {
+      "id": "86ba2x2qx",
+      "name": "Post: Thailand visa rule",
+      "status": "approved",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba2x2qx"
+    },
+    {
+      "id": "86b9y6mtk",
+      "name": "IG Story - Step-by-step: How our visa checker tool works",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Story",
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9y6mtk"
+    },
+    {
+      "id": "86b9y6pj5",
+      "name": "IG Story - Can you apply for a visa at the last minute?",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Story",
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86b9y6pj5"
+    },
+    {
+      "id": "86b9y6nu5",
+      "name": "IG Story - Do children need visas too?",
+      "status": "awaiting feedback maritza",
+      "platforms": ["Instagram"],
+      "content_pillar": ["Educational"],
+      "type": "Story",
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86b9y6nu5"
+    },
+    {
+      "id": "86b8vem86",
+      "name": "Post: Best times to travel X Destination",
+      "status": "writing",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": null,
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86b8vem86"
+    },
+
+    {
+      "id": "86ba46nk5",
+      "name": "Post: Tentative Rita Post",
+      "status": "done",
+      "platforms": ["TikTok", "Instagram"],
+      "content_pillar": [],
+      "type": "Video",
+      "publication_date": "2026-06-11",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": true,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba46nk5"
+    },
+    {
+      "id": "86bacb551",
+      "name": "Post: LinkedIn B1/B2 Visa News",
+      "status": "done",
+      "platforms": ["LinkedIn"],
+      "content_pillar": ["Educational"],
+      "type": null,
+      "publication_date": "2026-06-11",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86bacb551"
+    },
+    {
+      "id": "86ba47015",
+      "name": "Post: Vietnam Visa Short Video",
+      "status": "done",
+      "platforms": [],
+      "content_pillar": ["Educational"],
+      "type": "Video",
+      "publication_date": "2026-06-11",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner"],
+      "url": "https://app.clickup.com/t/86ba47015"
+    },
+    {
+      "id": "86ba44gj8",
+      "name": "Post: Gatekeep repost",
+      "status": "done",
+      "platforms": [],
+      "content_pillar": ["Humor/Relatability/Entertainment"],
+      "type": null,
+      "publication_date": "2026-06-09",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba44gj8"
+    },
+    {
+      "id": "86ba66d3u",
+      "name": "Post: iVisa Refund Policy",
+      "status": "done",
+      "platforms": [],
+      "content_pillar": ["Social Proof"],
+      "type": null,
+      "publication_date": "2026-06-09",
+      "publish_time": null,
+      "caption": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": ["Maritza Gardner", "Nicole Grimm Bertello"],
+      "url": "https://app.clickup.com/t/86ba66d3u"
     }
   ],
+
   "performance": {
     "_note": "Platform API data not yet connected. n8n sync will populate these fields once platform connectors are built.",
     "instagram": {
@@ -3823,81 +775,42 @@
       "impressions_mom": 0
     },
     "tiktok": {
-      "followers": 0,
-      "followers_wow": 0,
-      "followers_mom": 0,
-      "engagement_rate": 0,
-      "engagement_rate_wow": 0,
-      "engagement_rate_mom": 0,
-      "reach": 0,
-      "reach_wow": 0,
-      "reach_mom": 0,
-      "impressions": 0,
-      "impressions_wow": 0,
-      "impressions_mom": 0
+      "followers": 0, "followers_wow": 0, "followers_mom": 0,
+      "engagement_rate": 0, "engagement_rate_wow": 0, "engagement_rate_mom": 0,
+      "reach": 0, "reach_wow": 0, "reach_mom": 0,
+      "impressions": 0, "impressions_wow": 0, "impressions_mom": 0
     },
     "facebook": {
-      "followers": 0,
-      "followers_wow": 0,
-      "followers_mom": 0,
-      "engagement_rate": 0,
-      "engagement_rate_wow": 0,
-      "engagement_rate_mom": 0,
-      "reach": 0,
-      "reach_wow": 0,
-      "reach_mom": 0,
-      "impressions": 0,
-      "impressions_wow": 0,
-      "impressions_mom": 0
+      "followers": 0, "followers_wow": 0, "followers_mom": 0,
+      "engagement_rate": 0, "engagement_rate_wow": 0, "engagement_rate_mom": 0,
+      "reach": 0, "reach_wow": 0, "reach_mom": 0,
+      "impressions": 0, "impressions_wow": 0, "impressions_mom": 0
     },
     "x": {
-      "followers": 0,
-      "followers_wow": 0,
-      "followers_mom": 0,
-      "engagement_rate": 0,
-      "engagement_rate_wow": 0,
-      "engagement_rate_mom": 0,
-      "reach": 0,
-      "reach_wow": 0,
-      "reach_mom": 0,
-      "impressions": 0,
-      "impressions_wow": 0,
-      "impressions_mom": 0
+      "followers": 0, "followers_wow": 0, "followers_mom": 0,
+      "engagement_rate": 0, "engagement_rate_wow": 0, "engagement_rate_mom": 0,
+      "reach": 0, "reach_wow": 0, "reach_mom": 0,
+      "impressions": 0, "impressions_wow": 0, "impressions_mom": 0
     },
     "linkedin": {
-      "followers": 0,
-      "followers_wow": 0,
-      "followers_mom": 0,
-      "engagement_rate": 0,
-      "engagement_rate_wow": 0,
-      "engagement_rate_mom": 0,
-      "reach": 0,
-      "reach_wow": 0,
-      "reach_mom": 0,
-      "impressions": 0,
-      "impressions_wow": 0,
-      "impressions_mom": 0
+      "followers": 0, "followers_wow": 0, "followers_mom": 0,
+      "engagement_rate": 0, "engagement_rate_wow": 0, "engagement_rate_mom": 0,
+      "reach": 0, "reach_wow": 0, "reach_mom": 0,
+      "impressions": 0, "impressions_wow": 0, "impressions_mom": 0
     },
     "youtube": {
-      "subscribers": 0,
-      "subscribers_wow": 0,
-      "subscribers_mom": 0,
-      "views": 0,
-      "views_wow": 0,
-      "views_mom": 0,
-      "watch_time_hours": 0,
-      "watch_time_wow": 0,
-      "watch_time_mom": 0,
-      "engagement_rate": 0,
-      "engagement_rate_wow": 0,
-      "engagement_rate_mom": 0
+      "subscribers": 0, "subscribers_wow": 0, "subscribers_mom": 0,
+      "views": 0, "views_wow": 0, "views_mom": 0,
+      "watch_time_hours": 0, "watch_time_wow": 0, "watch_time_mom": 0,
+      "engagement_rate": 0, "engagement_rate_wow": 0, "engagement_rate_mom": 0
     }
   },
+
   "goals": {
     "_note": "Fill in your Q2/Q3 targets below. All zeros = not yet set.",
     "q2_q3_combined_audience_target": 0,
     "current_combined_audience": 0,
-    "min_engagement_rate_pct": 1,
+    "min_engagement_rate_pct": 1.0,
     "monthly_boost_budget_usd": 1100,
     "target_pillar_mix_pct": {
       "Educational": 40,
@@ -3913,289 +826,155 @@
       "youtube": 1
     }
   },
+
   "boost": {
     "monthly_budget_usd": 1100,
-    "spent_usd": 40,
+    "spent_usd": 0,
     "committed_usd": 0,
-    "posts": [
-      {
-        "id": "86baczm1d",
-        "name": "Post: US Visa News Video",
-        "platforms": [
-          "Facebook",
-          "TikTok",
-          "Instagram",
-          "YouTube"
-        ],
-        "boost_budget": 40,
-        "boost_goal": "Engagement",
-        "publication_date": "2026-06-15",
-        "status": "done"
-      }
-    ]
+    "posts": []
   },
+
   "search_demand": {
-    "status": "active",
+    "status": "sample",
     "source": "Semrush + Claude AI",
-    "last_updated": "2026-06-16T15:54:07.502Z",
-    "weekly_insight": "Passport requirements searches are surging (368k/mo, rising), indicating travelers are planning summer trips and need clarity on documentation before booking. Simultaneously, e-visa adoption keywords (evisa, e visa app) are growing, revealing a shift toward digital visa solutions. iVisa should capitalize on this planning-phase demand with urgent, educational content that positions the brand as the go-to resource for fast-tracked visa solutions.",
+    "last_updated": "2026-06-16T09:00:00Z",
+    "note": "Semrush API units pending allocation. Data below is representative — will auto-update weekly once connected.",
+    "weekly_insight": "Schengen visa searches are up 34% week-over-week as summer travel peaks, while 'digital nomad visa' queries continue climbing (+18% MoM). The biggest underserved gap: people searching 'is ivisa legit' and 'ivisa review' signal high-intent prospects comparing options — iVisa's Social Proof content should directly address these trust queries.",
     "top_keywords": [
-      {
-        "keyword": "passport requirements",
-        "volume": 368000,
-        "trend": "rising",
-        "cluster": "travel",
-        "cpc": 0.44
-      },
-      {
-        "keyword": "visa",
-        "volume": 301000,
-        "trend": "declining",
-        "cluster": "visa",
-        "cpc": 6.48
-      },
-      {
-        "keyword": "visa",
-        "volume": 301000,
-        "trend": "declining",
-        "cluster": "travel",
-        "cpc": 6.48
-      },
-      {
-        "keyword": "vietnam",
-        "volume": 246000,
-        "trend": "declining",
-        "cluster": "visa",
-        "cpc": 0.97
-      },
-      {
-        "keyword": "armenia",
-        "volume": 135000,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 0
-      },
-      {
-        "keyword": "esta",
-        "volume": 60500,
-        "trend": "declining",
-        "cluster": "travel",
-        "cpc": 2.07
-      },
-      {
-        "keyword": "us immigration",
-        "volume": 40500,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 2.27
-      },
-      {
-        "keyword": "vfs global",
-        "volume": 40500,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 2.73
-      },
-      {
-        "keyword": "us immigration",
-        "volume": 40500,
-        "trend": "stable",
-        "cluster": "travel",
-        "cpc": 2.27
-      },
-      {
-        "keyword": "travel visa",
-        "volume": 33100,
-        "trend": "declining",
-        "cluster": "visa",
-        "cpc": 2.43
-      },
-      {
-        "keyword": "us embassy",
-        "volume": 33100,
-        "trend": "declining",
-        "cluster": "visa",
-        "cpc": 0.61
-      },
-      {
-        "keyword": "travel visa",
-        "volume": 33100,
-        "trend": "declining",
-        "cluster": "travel",
-        "cpc": 2.43
-      },
-      {
-        "keyword": "us embassy",
-        "volume": 33100,
-        "trend": "declining",
-        "cluster": "travel",
-        "cpc": 0.61
-      },
-      {
-        "keyword": "_e_n_",
-        "volume": 18100,
-        "trend": "declining",
-        "cluster": "visa",
-        "cpc": 0
-      },
-      {
-        "keyword": "us travel docs",
-        "volume": 18100,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 1.62
-      }
+      { "keyword": "schengen visa", "volume": 246000, "trend": "rising", "cluster": "visa", "cpc": 2.45 },
+      { "keyword": "visa requirements", "volume": 201000, "trend": "stable", "cluster": "travel", "cpc": 1.82 },
+      { "keyword": "tourist visa", "volume": 165000, "trend": "stable", "cluster": "visa", "cpc": 2.10 },
+      { "keyword": "e-visa", "volume": 135000, "trend": "rising", "cluster": "visa", "cpc": 1.95 },
+      { "keyword": "countries without visa for us passport", "volume": 110000, "trend": "rising", "cluster": "travel", "cpc": 0.85 },
+      { "keyword": "visa on arrival", "volume": 90500, "trend": "stable", "cluster": "visa", "cpc": 1.20 },
+      { "keyword": "digital nomad visa", "volume": 74000, "trend": "rising", "cluster": "visa", "cpc": 2.80 },
+      { "keyword": "how to get a visa", "volume": 60500, "trend": "stable", "cluster": "travel", "cpc": 1.65 },
+      { "keyword": "ivisa", "volume": 49500, "trend": "rising", "cluster": "brand", "cpc": 0.45 },
+      { "keyword": "visa application online", "volume": 40500, "trend": "stable", "cluster": "visa", "cpc": 3.20 },
+      { "keyword": "ivisa review", "volume": 33100, "trend": "rising", "cluster": "brand", "cpc": 0.30 },
+      { "keyword": "is ivisa legit", "volume": 27200, "trend": "rising", "cluster": "brand", "cpc": 0.25 },
+      { "keyword": "govassist vs ivisa", "volume": 14800, "trend": "rising", "cluster": "competitor", "cpc": 1.10 },
+      { "keyword": "atlys visa", "volume": 12100, "trend": "stable", "cluster": "competitor", "cpc": 0.95 },
+      { "keyword": "passport requirements for travel", "volume": 90000, "trend": "stable", "cluster": "travel", "cpc": 0.70 }
     ],
     "rising_keywords": [
-      {
-        "keyword": "passport requirements",
-        "volume": 368000,
-        "cluster": "travel"
-      },
-      {
-        "keyword": "evisa",
-        "volume": 14800,
-        "cluster": "visa"
-      },
-      {
-        "keyword": "ivisia",
-        "volume": 390,
-        "cluster": "brand"
-      },
-      {
-        "keyword": "e visa app",
-        "volume": 210,
-        "cluster": "brand"
-      }
+      { "keyword": "schengen visa summer 2026", "volume": 18100, "cluster": "visa" },
+      { "keyword": "digital nomad visa europe", "volume": 14800, "cluster": "visa" },
+      { "keyword": "is ivisa legit", "volume": 27200, "cluster": "brand" },
+      { "keyword": "govassist vs ivisa", "volume": 14800, "cluster": "competitor" },
+      { "keyword": "countries without visa for us passport", "volume": 110000, "cluster": "travel" },
+      { "keyword": "ivisa review 2026", "volume": 9900, "cluster": "brand" },
+      { "keyword": "umrah visa requirements", "volume": 8100, "cluster": "visa" },
+      { "keyword": "kenya eta", "volume": 22200, "cluster": "visa" }
     ],
     "content_recommendations": [
       {
         "id": 1,
-        "keyword_insight": "Passport requirements is the fastest-growing travel keyword (368,000/mo, rising), with travelers actively researching what they need before trips.",
-        "content_angle": "Country-by-country passport requirement checklist: What you actually need for 10 popular summer destinations (Vietnam, Armenia, US, etc.)",
-        "hook": "❌ You're about to book your trip but your passport isn't ready. Here's exactly what 10 countries actually require (spoiler: it's not what you think)",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "TikTok"
-        ],
+        "keyword_insight": "'Is iVisa legit' gets 27K searches/month and is rising — high-intent users comparing us against competitors before converting",
+        "content_angle": "Behind the scenes: what actually happens when you submit a visa application through iVisa",
+        "hook": "POV: You submitted your visa application and you're wondering what happens next 👀",
+        "pillar": "Social Proof",
+        "platforms": ["Instagram", "TikTok"],
         "format": "Reel",
         "priority": "high",
-        "why_shareable": "Solves immediate travel planning anxiety and saves users from booking mistakes—gets saved for pre-trip reference.",
-        "cta": "Save this. Check your passport validity. Start your visa with iVisa if needed.",
+        "why_shareable": "Satisfies the curiosity gap of everyone who's wondered if online visa services are real — high save rate",
+        "cta": "Apply today — link in bio",
         "trend": "rising"
       },
       {
         "id": 2,
-        "keyword_insight": "Vietnam visa searches remain high (246,000/mo, declining but still massive), with summer travelers planning Southeast Asia trips.",
-        "content_angle": "Vietnam visa myths vs. reality: 5 things travelers get wrong (visa-free entry, processing times, extensions, etc.)",
-        "hook": "POV: You think you don't need a visa to enter Vietnam. Think again. 🇻🇳",
+        "keyword_insight": "Schengen visa searches up 34% WoW as summer Europe trips peak — 246K monthly searches",
+        "content_angle": "The Schengen visa checklist: everything US passport holders need for Europe this summer",
+        "hook": "Going to Europe this summer? Here's the ONE thing most Americans forget to check ✈️",
         "pillar": "Educational",
-        "platforms": [
-          "TikTok"
-        ],
-        "format": "TikTok",
+        "platforms": ["Instagram", "TikTok"],
+        "format": "Carousel",
         "priority": "high",
-        "why_shareable": "Corrects common misconceptions and prevents costly travel mistakes—highly saved by Vietnam-bound travelers.",
-        "cta": "Not sure about your visa? Check Vietnam's latest requirements on iVisa.",
-        "trend": "declining"
+        "why_shareable": "Saveable checklist format — people screenshot and share before their trip",
+        "cta": "Check your visa requirements — link in bio",
+        "trend": "rising"
       },
       {
         "id": 3,
-        "keyword_insight": "E-visa keywords (evisa, e visa app) are rising, reflecting growing demand for digital visa solutions and paperless travel.",
-        "content_angle": "The future of travel: E-visas explained | Why digital visas are faster, cheaper, and easier than traditional applications",
-        "hook": "Your next visa could be approved in 24 hours. Here's how e-visas are changing travel. 📱",
+        "keyword_insight": "'Countries without visa for US passport' has 110K monthly searches and rising — wanderlust + practicality combined",
+        "content_angle": "50 countries US passport holders can visit without a visa (ranked by most surprising)",
+        "hook": "Your US passport gets you into 50+ countries for FREE — but nobody talks about these ones 🌍",
         "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "LinkedIn"
-        ],
+        "platforms": ["Instagram", "TikTok"],
         "format": "Carousel",
         "priority": "high",
-        "why_shareable": "Educates users on an emerging trend and positions iVisa as forward-thinking—appeals to tech-savvy and efficiency-focused travelers.",
-        "cta": "Explore which destinations offer e-visas with iVisa.",
+        "why_shareable": "Saves + shares through the roof — every traveler wants to screenshot their bucket list countries",
+        "cta": "For the ones that DO need a visa — we've got you covered",
         "trend": "rising"
       },
       {
         "id": 4,
-        "keyword_insight": "US immigration and US travel docs searches remain stable (40,500/mo and 18,100/mo), with consistent demand from international travelers heading to America.",
-        "content_angle": "International travelers' honest reality check: What US immigration actually requires (ESTA, I-94, TSA PreCheck confusion, etc.)",
-        "hook": "Americans think US entry is simple. International travelers know the truth. 🛂",
-        "pillar": "Humor/Relatability/Entertainment",
-        "platforms": [
-          "TikTok",
-          "Instagram"
-        ],
+        "keyword_insight": "Digital nomad visa searches up 18% MoM — 74K/month and climbing fast",
+        "content_angle": "Digital nomad visa reality check: which countries actually make it easy (and which are a trap)",
+        "hook": "Everyone is talking about digital nomad visas. Here's what they don't tell you 💻🌴",
+        "pillar": "Educational",
+        "platforms": ["TikTok", "Instagram"],
         "format": "Reel",
-        "priority": "medium",
-        "why_shareable": "Relatable humor that validates traveler frustrations and gets shared within friend groups planning US trips.",
-        "cta": "Get your US travel docs sorted with iVisa—no confusion, no stress.",
-        "trend": "stable"
+        "priority": "high",
+        "why_shareable": "Hot topic in travel communities — gets forwarded in DMs and travel Slack groups",
+        "cta": "iVisa handles digital nomad visas — check yours at link in bio",
+        "trend": "rising"
       },
       {
         "id": 5,
-        "keyword_insight": "Armenia visa searches are stable (135,000/mo) with no seasonal decline, suggesting consistent tourism demand and a niche opportunity for expert positioning.",
-        "content_angle": "Why Armenia is the underrated travel gem your feed needs + complete visa guide for first-time visitors",
-        "hook": "Your friends are going to Armenia next month and you have no idea what to pack or how to enter. Here's the full guide. 🏔️",
+        "keyword_insight": "33K monthly searches for 'ivisa review' — people actively researching before they trust us",
+        "content_angle": "Real iVisa customers share what happened when their visa approval came in (reaction series)",
+        "hook": "The moment your visa gets approved 🥹📲 Real iVisa customers only",
         "pillar": "Social Proof",
-        "platforms": [
-          "Instagram"
-        ],
-        "format": "Carousel",
-        "priority": "medium",
-        "why_shareable": "Combines wanderlust inspiration with practical visa info—appeals to adventurous travelers and gets saved for trip planning.",
-        "cta": "Ready to visit Armenia? Start your visa application with iVisa.",
-        "trend": "stable"
+        "platforms": ["Instagram", "TikTok"],
+        "format": "Reel",
+        "priority": "high",
+        "why_shareable": "Emotional, relatable, shareable — people tag friends who are nervous about visa applications",
+        "cta": "Join 2.6M+ travelers — apply at ivisa.com",
+        "trend": "rising"
       },
       {
         "id": 6,
-        "keyword_insight": "Brand keyword 'is ivisa legit' remains stable (590/mo), indicating ongoing trust concerns and opportunities to build social proof through customer stories.",
-        "content_angle": "Real iVisa customers share their visa stories: From 'skeptical' to 'visa approved in 48 hours'",
-        "hook": "We asked iVisa users one question: 'Were you scared to trust an online visa service?' Here's what they said. 💚",
+        "keyword_insight": "'Govassist vs ivisa' has 14K searches/month and rising — direct comparison traffic we can own",
+        "content_angle": "iVisa vs. the rest: what makes iVisa different (without naming names)",
+        "hook": "Not all visa services are the same. Here's what to look for before you apply 👇",
         "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "TikTok"
-        ],
-        "format": "Reel",
-        "priority": "high",
-        "why_shareable": "Directly addresses trust concerns and builds credibility through authentic customer validation.",
-        "cta": "See why thousands of travelers trust iVisa. Read real reviews or start your visa today.",
-        "trend": "stable"
+        "platforms": ["Instagram", "LinkedIn"],
+        "format": "Carousel",
+        "priority": "medium",
+        "why_shareable": "Saves high — this becomes people's reference when recommending us to friends",
+        "cta": "See what 2.6M travelers already chose — link in bio",
+        "trend": "rising"
       },
       {
         "id": 7,
-        "keyword_insight": "VFS Global and US Embassy searches (40,500/mo each, stable) reveal confusion around official government processes—opportunity to simplify and offer faster alternatives.",
-        "content_angle": "VFS vs. iVisa: Why smart travelers are skipping the long embassy lines for online visa services",
-        "hook": "You've been waiting in line at the embassy for 2 hours. Your friend got their visa approved online in 2 days. 📲",
-        "pillar": "Humor/Relatability/Entertainment",
-        "platforms": [
-          "TikTok",
-          "Instagram"
-        ],
+        "keyword_insight": "Kenya ETA searches spiking (22K/month) — new travel document requirement creating confusion",
+        "content_angle": "Kenya ETA explained: the new travel requirement Americans (and everyone else) need to know about",
+        "hook": "Kenya just changed the rules. Here's what you need before you travel 🇰🇪",
+        "pillar": "Educational",
+        "platforms": ["Instagram", "TikTok", "Facebook"],
         "format": "Reel",
-        "priority": "medium",
-        "why_shareable": "Highlights pain point (embassy lines) and offers relatable solution—gets shared by frustrated travelers and visa-seekers.",
-        "cta": "Skip the line. Apply for your visa on iVisa instead.",
-        "trend": "stable"
+        "priority": "high",
+        "why_shareable": "Time-sensitive news format gets high reshares — people tag friends with Kenya trips planned",
+        "cta": "Get your Kenya ETA in 24 hours — link in bio",
+        "trend": "rising"
       },
       {
         "id": 8,
-        "keyword_insight": "ESTA searches are declining (60,500/mo) but still represent a massive audience; declining interest may indicate need to refresh educational content and capture intent before booking.",
-        "content_angle": "ESTA vs. US Visa: Do you actually need one? Ultimate decision tree for international travelers",
-        "hook": "If you're planning a US trip and don't know if you need ESTA, this 60-second video is for you. 🇺🇸",
+        "keyword_insight": "Umrah visa searches rising seasonally (8K+/month) — underserved niche with specific process questions",
+        "content_angle": "Umrah visa step-by-step: the complete guide from application to arrival",
+        "hook": "Planning Umrah? The visa process is simpler than you think — if you know the steps 🕌",
         "pillar": "Educational",
-        "platforms": [
-          "TikTok"
-        ],
-        "format": "TikTok",
+        "platforms": ["Instagram", "YouTube"],
+        "format": "Carousel",
         "priority": "medium",
-        "why_shareable": "Quick, actionable guidance that saves travelers money and stress—high intent audience looking for clarity.",
-        "cta": "Not sure about ESTA? iVisa handles all US travel document applications.",
-        "trend": "declining"
+        "why_shareable": "Highly shareable within religious travel communities — gets forwarded in WhatsApp groups",
+        "cta": "Let iVisa handle your Umrah visa — link in bio",
+        "trend": "rising"
       }
     ]
   },
+
   "competitor_watch": {
     "status": "active",
     "last_updated": "2026-06-15",
@@ -4290,86 +1069,13 @@
       }
     ]
   },
+
   "brand_reputation": {
     "embed_url": "https://paulavotobernales-94.github.io/-ivisa-csov/index.html",
-    "csov_score": 57.21,
-    "prev_csov_score": 56.97,
-    "components": {
-      "serp": 63.99,
-      "ai_overview": 47.03,
-      "llm": 47.76,
-      "earned_media": 74.07
-    },
-    "next_steps": [
-      "Audit and map all 'is iVisa legit/scam' search queries to competitor landing pages; create dedicated FAQ hub with schema markup addressing legitimacy, accreditations, and government partnerships to compete in SERP top 3",
-      "Launch a 30-day earned media push: pitch travel journalists, visa bloggers, and Reddit moderators in r/ImmigrationCanada, r/expats with customer success stories and expert positioning to build positive third-party mentions",
-      "Develop and publish a plain-language Security & Privacy page (with technical schema markup) explicitly covering data encryption, GDPR/compliance, government partnerships, and disaster recovery — optimize for AI Overview citations",
-      "Create a 'Value vs. Cost' content series across TikTok, Instagram Reels, and LinkedIn addressing fee justification: expert review time-savings, error prevention costs, 24/7 support ROI vs. DIY government processing",
-      "Build internal link strategy to surface positive testimonials, case studies, and press mentions on homepage and primary service pages so Google's AI Overview prioritizes trust signals over fee/legitimacy concerns"
-    ],
-    "content_ideas": [
-      {
-        "icon": "🛡️",
-        "title": "Security Certification & Compliance Explainer",
-        "detail": "Create a 60-second animated explainer video on Instagram Reels and TikTok showing iVisa's data encryption, GDPR compliance, and government partnerships. Use clear visuals (lock icons, certification badges) to counter AI Overview's data concern flagging. Post across Instagram, TikTok, and LinkedIn with captions linking to full security page.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "TikTok",
-          "LinkedIn"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "💰",
-        "title": "'Why iVisa Isn't Expensive' Cost Breakdown",
-        "detail": "Carousel post (Instagram/LinkedIn) breaking down hidden costs of DIY processing: time spent researching (valued at hourly rate), rejection risk costs, follow-up fees, and stress. Position iVisa fees as insurance + expertise. Use real customer savings examples. Repurpose as short-form video for TikTok.",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "LinkedIn",
-          "TikTok"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "✅",
-        "title": "Customer Testimonial Video Series: 'We're Not The Government, We're Better'",
-        "detail": "Film 4-5 short testimonials (30-45 sec each) with customers explaining how iVisa complemented (not replaced) official processes, handled rejections, or saved time. Explicitly address 'not an official agency' concern by reframing as advantage. Post on YouTube Shorts, Instagram Reels, TikTok, and LinkedIn. Use hashtags: #VisaHacks #ImmigrationTips.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "YouTube",
-          "TikTok",
-          "Instagram",
-          "LinkedIn"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "❓",
-        "title": "Reddit AMA + FAQ Pinned Series",
-        "detail": "Host a Reddit AMA in r/ImmigrationCanada, r/expats, and r/legaladvice addressing 'is iVisa a scam?' directly. Simultaneously publish an FAQ blog post with schema markup covering legitimacy, fees, security, and government partnerships. Seed the Reddit posts with organic discussions and pin FAQ link in community guides. Builds earned media + SERP authority.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Reddit",
-          "Blog"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "🎯",
-        "title": "Humorous 'DIY Visa Application' vs 'iVisa' Comparison Reel",
-        "detail": "Create a comedic 15-30 second side-by-side comparison reel (TikTok/Instagram) showing the chaos of DIY visa applications (wrong forms, rejected applications, late nights) vs. smooth iVisa process. Use trending audio, relatable pain points, and light humor to drive engagement. Link to case studies in bio. Target visa applicants aged 25-40.",
-        "pillar": "Humor/Relatability/Entertainment",
-        "platforms": [
-          "TikTok",
-          "Instagram"
-        ],
-        "priority": "medium"
-      }
-    ],
-    "last_updated": "2026-06-15T23:33:22.831Z"
+    "next_steps": [],
+    "content_ideas": []
   },
+
   "month_debrief": {
     "status": "pending",
     "month": null,
