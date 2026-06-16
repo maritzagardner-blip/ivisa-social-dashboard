@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16T20:30:47.797Z",
+    "last_updated": "2026-06-16T21:00:46.863Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -2913,7 +2913,7 @@
       "status": "approved",
       "platforms": [
         "Facebook",
-        "X"
+        "LinkedIn"
       ],
       "content_pillar": [
         "Educational"
