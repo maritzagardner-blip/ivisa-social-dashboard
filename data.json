@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-16T22:30:47.473Z",
+    "last_updated": "2026-06-16T23:00:47.375Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -856,8 +856,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
         "Nicole Grimm Bertello",
+        "Maritza Gardner",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8mzkgg"
@@ -1099,8 +1099,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b8r980j"
     },
@@ -1261,8 +1261,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
         "Nicole Grimm Bertello",
+        "Maritza Gardner",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xun5j"
@@ -1285,9 +1285,9 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
+        "Nicole Grimm Bertello",
         "Maritza Gardner",
-        "Nicole Grimm Bertello"
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xqjtn"
     },
@@ -1425,8 +1425,8 @@
       "keyword_tag": null,
       "assignees": [
         "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Nicole Grimm Bertello"
       ],
       "url": "https://app.clickup.com/t/86b8xqrg7"
     },
@@ -1783,8 +1783,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9fzfpz"
     },
@@ -2427,8 +2427,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgnkm"
     },
@@ -2605,8 +2605,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgrdg"
     },
@@ -2698,8 +2698,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9xgvfa"
     },
@@ -2857,8 +2857,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgw4t"
     },
@@ -3080,8 +3080,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9y6nu5"
     },
@@ -3187,8 +3187,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9y6pj5"
     },
@@ -3404,8 +3404,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9y6yw5"
     },
@@ -3518,8 +3518,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
+        "Nicole Grimm Bertello",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86baffqmv"
     },
@@ -3591,7 +3591,7 @@
     {
       "id": "86bacan2p",
       "name": "Post: LinkedIn 5 Year",
-      "status": "awaiting feedback nicole",
+      "status": "scheduled",
       "platforms": [
         "LinkedIn"
       ],
@@ -3600,7 +3600,7 @@
       ],
       "type": "Carrousel",
       "publication_date": "2026-06-17",
-      "publish_time": null,
+      "publish_time": "8:00AM",
       "collaboration": false,
       "boost_budget": 0,
       "boost_goal": null,
