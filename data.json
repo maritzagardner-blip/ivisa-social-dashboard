@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-15T23:33:23.098Z",
+    "last_updated": "2026-06-16T00:00:47.059Z",
     "month": "June 2026",
-    "generated_by": "n8n + claude-ai"
+    "generated_by": "n8n"
   },
   "pipeline": [
     {
@@ -856,8 +856,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Nicole Grimm Bertello",
         "Maritza Gardner",
+        "Nicole Grimm Bertello",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8mzkgg"
@@ -1262,8 +1262,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b8xun5j"
     },
@@ -1285,8 +1285,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Nicole Grimm Bertello",
         "Maritza Gardner",
+        "Nicole Grimm Bertello",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xqjtn"
@@ -1424,8 +1424,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Nicole Grimm Bertello",
         "Selin Small",
+        "Nicole Grimm Bertello",
         "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b8xqrg7"
@@ -2605,8 +2605,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgrdg"
     },
@@ -3404,8 +3404,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6yw5"
     },
@@ -3457,7 +3457,7 @@
     {
       "id": "86baczm1d",
       "name": "Post: US Visa News Video",
-      "status": "approved",
+      "status": "done",
       "platforms": [
         "Facebook",
         "TikTok",
@@ -3471,8 +3471,8 @@
       "publication_date": "2026-06-15",
       "publish_time": null,
       "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
+      "boost_budget": 40,
+      "boost_goal": "Engagement",
       "keyword_tag": null,
       "assignees": [
         "Maritza Gardner",
@@ -3915,9 +3915,24 @@
   },
   "boost": {
     "monthly_budget_usd": 1100,
-    "spent_usd": 0,
+    "spent_usd": 40,
     "committed_usd": 0,
-    "posts": []
+    "posts": [
+      {
+        "id": "86baczm1d",
+        "name": "Post: US Visa News Video",
+        "platforms": [
+          "Facebook",
+          "TikTok",
+          "Instagram",
+          "YouTube"
+        ],
+        "boost_budget": 40,
+        "boost_goal": "Engagement",
+        "publication_date": "2026-06-15",
+        "status": "done"
+      }
+    ]
   },
   "search_demand": {
     "status": "pending",
@@ -4103,71 +4118,5 @@
     "month": null,
     "content": null,
     "slack_posted": false
-  },
-  "content_ideas": {
-    "status": "active",
-    "source": "csov + claude-ai",
-    "last_updated": "2026-06-15T23:33:22.831Z",
-    "ideas": [
-      {
-        "icon": "🛡️",
-        "title": "Security Certification & Compliance Explainer",
-        "detail": "Create a 60-second animated explainer video on Instagram Reels and TikTok showing iVisa's data encryption, GDPR compliance, and government partnerships. Use clear visuals (lock icons, certification badges) to counter AI Overview's data concern flagging. Post across Instagram, TikTok, and LinkedIn with captions linking to full security page.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "TikTok",
-          "LinkedIn"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "💰",
-        "title": "'Why iVisa Isn't Expensive' Cost Breakdown",
-        "detail": "Carousel post (Instagram/LinkedIn) breaking down hidden costs of DIY processing: time spent researching (valued at hourly rate), rejection risk costs, follow-up fees, and stress. Position iVisa fees as insurance + expertise. Use real customer savings examples. Repurpose as short-form video for TikTok.",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "LinkedIn",
-          "TikTok"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "✅",
-        "title": "Customer Testimonial Video Series: 'We're Not The Government, We're Better'",
-        "detail": "Film 4-5 short testimonials (30-45 sec each) with customers explaining how iVisa complemented (not replaced) official processes, handled rejections, or saved time. Explicitly address 'not an official agency' concern by reframing as advantage. Post on YouTube Shorts, Instagram Reels, TikTok, and LinkedIn. Use hashtags: #VisaHacks #ImmigrationTips.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "YouTube",
-          "TikTok",
-          "Instagram",
-          "LinkedIn"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "❓",
-        "title": "Reddit AMA + FAQ Pinned Series",
-        "detail": "Host a Reddit AMA in r/ImmigrationCanada, r/expats, and r/legaladvice addressing 'is iVisa a scam?' directly. Simultaneously publish an FAQ blog post with schema markup covering legitimacy, fees, security, and government partnerships. Seed the Reddit posts with organic discussions and pin FAQ link in community guides. Builds earned media + SERP authority.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Reddit",
-          "Blog"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "🎯",
-        "title": "Humorous 'DIY Visa Application' vs 'iVisa' Comparison Reel",
-        "detail": "Create a comedic 15-30 second side-by-side comparison reel (TikTok/Instagram) showing the chaos of DIY visa applications (wrong forms, rejected applications, late nights) vs. smooth iVisa process. Use trending audio, relatable pain points, and light humor to drive engagement. Link to case studies in bio. Target visa applicants aged 25-40.",
-        "pillar": "Humor/Relatability/Entertainment",
-        "platforms": [
-          "TikTok",
-          "Instagram"
-        ],
-        "priority": "medium"
-      }
-    ]
   }
 }
