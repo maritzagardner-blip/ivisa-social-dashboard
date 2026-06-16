@@ -365,17 +365,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 
   <!-- SEARCH DEMAND -->
   <section id="search-demand" class="section">
-    <div class="sh"><div class="sh-left">
-      <div class="sh-title">Search demand</div>
-      <div class="sh-sub">Semrush keyword data — Visa Content Studio pull</div>
-    </div></div>
-    <div id="search-content">
-      <div class="pending">
-        <div class="pending-icon">&#128202;</div>
-        <div class="pending-title">Semrush not yet connected</div>
-        <div class="pending-txt">Keyword volume, difficulty, and content gap data will appear here once the n8n sync is running and API units are allocated.</div>
+    <div class="sh">
+      <div class="sh-left">
+        <div class="sh-title">Search demand</div>
+        <div class="sh-sub" id="sd-sub">Semrush keyword intelligence → AI content recommendations</div>
       </div>
+      <div id="sd-status-badge"></div>
     </div>
+    <div id="sd-insight-banner"></div>
+    <div id="sd-body"></div>
   </section>
 
   <!-- COMPETITOR WATCH -->
@@ -490,6 +488,7 @@ function render() {
   renderCreators();
   renderBoost();
   renderDebrief();
+  renderSearchDemand();
   renderContentIdeas();
   renderCompetitorWatch();
   renderBrandRep();
@@ -1156,6 +1155,183 @@ function renderDebrief() {
     <div style="white-space:pre-wrap;font-size:14px;line-height:1.75;color:var(--text)">${d.content}</div>
     ${d.slack_posted?`<div style="margin-top:14px;font-size:11px;color:#10B981">&#10003; Posted to #ivisa-socialmedia</div>`:''}
   </div>`;
+}
+
+// ================================================================
+// SEARCH DEMAND (Semrush + Claude AI)
+// ================================================================
+function renderSearchDemand() {
+  const sd = D.search_demand || {};
+  const status = sd.status || 'pending';
+
+  // Status badge
+  const badgeEl = document.getElementById('sd-status-badge');
+  if (badgeEl) {
+    if (status === 'active') {
+      badgeEl.innerHTML = '<span style="background:#D1FAE5;color:#065F46;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;">● LIVE — Semrush Connected</span>';
+    } else if (status === 'sample') {
+      badgeEl.innerHTML = '<span style="background:#FEF3C7;color:#92400E;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;">⚡ Sample Data — Connect Semrush to go live</span>';
+    } else {
+      badgeEl.innerHTML = '<span style="background:#F3F4F6;color:#6B7280;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;">○ Pending API units</span>';
+    }
+  }
+
+  // Sub-line with last updated
+  const subEl = document.getElementById('sd-sub');
+  if (subEl && sd.last_updated) {
+    const d = new Date(sd.last_updated);
+    subEl.textContent = `Semrush keyword intelligence → AI content recommendations · Updated ${d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}`;
+  }
+
+  const body = document.getElementById('sd-body');
+  if (!body) return;
+
+  // Weekly insight banner
+  const insightEl = document.getElementById('sd-insight-banner');
+  if (insightEl && sd.weekly_insight) {
+    insightEl.innerHTML = `
+      <div style="background:linear-gradient(135deg,#EFF6FF,#F0FDF4);border:1px solid #BFDBFE;border-radius:12px;padding:16px 20px;margin-bottom:20px;display:flex;gap:14px;align-items:flex-start">
+        <span style="font-size:22px;flex-shrink:0">🧠</span>
+        <div>
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#1D4ED8;margin-bottom:6px">Weekly AI Insight</div>
+          <div style="font-size:13.5px;color:#1e3a5f;line-height:1.6">${sd.weekly_insight}</div>
+        </div>
+      </div>`;
+  }
+
+  // Keyword tables + recs
+  const topKws = sd.top_keywords || [];
+  const rising = sd.rising_keywords || [];
+  const recs = sd.content_recommendations || [];
+
+  const CLUSTER_COLOR = {
+    visa: '#DBEAFE:#1D4ED8',
+    travel: '#D1FAE5:#065F46',
+    brand: '#EDE9FE:#5B21B6',
+    competitor: '#FFEDD5:#9A3412'
+  };
+
+  const PILLAR_COLOR = {
+    'Educational': '#DBEAFE:#1D4ED8',
+    'Social Proof': '#D1FAE5:#065F46',
+    'Humor/Relatability/Entertainment': '#FEF3C7:#92400E'
+  };
+
+  const clusterBadge = (cluster) => {
+    const [bg, text] = (CLUSTER_COLOR[cluster] || '#F3F4F6:#374151').split(':');
+    return `<span style="background:${bg};color:${text};padding:2px 7px;border-radius:10px;font-size:10px;font-weight:700;white-space:nowrap">${cluster}</span>`;
+  };
+
+  const trendIcon = (t) => t === 'rising' ? '↑' : t === 'declining' ? '↓' : '→';
+  const trendColor = (t) => t === 'rising' ? '#10B981' : t === 'declining' ? '#EF4444' : '#9CA3AF';
+
+  const volFmt = (v) => v >= 1000 ? (v/1000).toFixed(0)+'K' : v;
+
+  const priorityDot = (p) => p === 'high'
+    ? '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#EF4444;margin-right:5px"></span>'
+    : '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#F59E0B;margin-right:5px"></span>';
+
+  let html = '';
+
+  if (status === 'pending') {
+    html = `<div class="pending">
+      <div class="pending-icon">📊</div>
+      <div class="pending-title">Semrush API units pending</div>
+      <div class="pending-txt">Import the n8n-semrush-insights workflow and connect your Semrush API key. Data will auto-update every Monday.</div>
+    </div>`;
+    body.innerHTML = html;
+    return;
+  }
+
+  // ── Top Keywords table ──
+  html += `<div style="margin-bottom:24px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div style="font-size:13px;font-weight:700;color:var(--text)">Top Keywords by Volume</div>
+      <div style="font-size:11px;color:var(--text-3)">${topKws.length} keywords tracked</div>
+    </div>
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden">
+      <table style="width:100%;border-collapse:collapse;font-size:12.5px">
+        <thead>
+          <tr style="background:var(--surface-2);border-bottom:1px solid var(--border)">
+            <th style="padding:10px 16px;text-align:left;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)">Keyword</th>
+            <th style="padding:10px 12px;text-align:right;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)">Vol/mo</th>
+            <th style="padding:10px 12px;text-align:center;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)">Trend</th>
+            <th style="padding:10px 12px;text-align:left;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)">Cluster</th>
+            <th style="padding:10px 12px;text-align:right;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-3)">CPC</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${topKws.map((k, i) => `
+          <tr style="border-bottom:1px solid var(--border);${i % 2 === 1 ? 'background:var(--surface-2)' : ''}">
+            <td style="padding:10px 16px;font-weight:500;color:var(--text)">${k.keyword}</td>
+            <td style="padding:10px 12px;text-align:right;font-weight:700;color:var(--text)">${volFmt(k.volume)}</td>
+            <td style="padding:10px 12px;text-align:center;font-weight:700;color:${trendColor(k.trend)}">${trendIcon(k.trend)} ${k.trend}</td>
+            <td style="padding:10px 12px">${clusterBadge(k.cluster)}</td>
+            <td style="padding:10px 12px;text-align:right;color:var(--text-2)">$${k.cpc ? k.cpc.toFixed(2) : '—'}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>
+  </div>`;
+
+  // ── Rising Keywords strip ──
+  if (rising.length) {
+    html += `<div style="margin-bottom:24px">
+      <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:10px">🚀 Rising Right Now</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        ${rising.map(k => `
+          <div style="background:#F0FDF4;border:1px solid #86EFAC;border-radius:20px;padding:6px 14px;display:flex;align-items:center;gap:8px">
+            <span style="color:#10B981;font-weight:700;font-size:11px">↑</span>
+            <span style="font-size:12.5px;font-weight:600;color:#065F46">${k.keyword}</span>
+            <span style="font-size:11px;color:#16A34A">${volFmt(k.volume)}/mo</span>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  // ── AI Content Recommendations ──
+  if (recs.length) {
+    html += `<div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--text)">AI Content Recommendations</div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:2px">Keyword intent → scroll-stopping content, generated weekly</div>
+        </div>
+        <div style="font-size:11px;color:var(--text-3)">${recs.filter(r=>r.priority==='high').length} high priority</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        ${recs.map(r => {
+          const [pillarBg, pillarText] = (PILLAR_COLOR[r.pillar] || '#F3F4F6:#374151').split(':');
+          return `
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+              <div style="font-size:13px;font-weight:700;color:var(--text);line-height:1.4;flex:1">${r.content_angle}</div>
+              <div style="display:flex;align-items:center;gap:4px;flex-shrink:0">${priorityDot(r.priority)}<span style="font-size:10.5px;color:var(--text-3);font-weight:600">${r.priority}</span></div>
+            </div>
+            <div style="background:#F8F9FC;border-left:3px solid #00C37A;padding:10px 12px;border-radius:0 8px 8px 0">
+              <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#059669;margin-bottom:4px">Hook</div>
+              <div style="font-size:12.5px;font-style:italic;color:var(--text);line-height:1.5">"${r.hook}"</div>
+            </div>
+            <div style="font-size:11.5px;color:var(--text-2);line-height:1.5">
+              <span style="font-weight:600;color:var(--text-3)">Why it works:</span> ${r.why_shareable}
+            </div>
+            <div style="font-size:11px;color:var(--text-2);background:var(--surface-2);border-radius:6px;padding:8px 10px;line-height:1.5">
+              <span style="font-weight:600">📊 Search signal:</span> ${r.keyword_insight}
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center">
+              <span style="background:${pillarBg};color:${pillarText};padding:2px 8px;border-radius:10px;font-size:10.5px;font-weight:700">${r.pillar}</span>
+              <span style="background:#F3F4F6;color:#374151;padding:2px 8px;border-radius:10px;font-size:10.5px;font-weight:600">${r.format}</span>
+              ${(r.platforms||[]).map(p => `<span style="background:var(--surface-2);border:1px solid var(--border);color:var(--text-2);padding:2px 8px;border-radius:10px;font-size:10.5px">${p}</span>`).join('')}
+              <span style="margin-left:auto;font-size:10.5px;color:${trendColor(r.trend)};font-weight:700">${trendIcon(r.trend)} ${r.trend}</span>
+            </div>
+            <div style="font-size:11.5px;color:#0060C7;font-weight:600">CTA: ${r.cta}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  body.innerHTML = html;
 }
 
 // ================================================================
