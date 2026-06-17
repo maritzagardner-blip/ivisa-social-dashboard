@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-17T10:30:47.686Z",
+    "last_updated": "2026-06-17T11:00:48.911Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -1099,8 +1099,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8r980j"
     },
@@ -1262,8 +1262,8 @@
       "keyword_tag": null,
       "assignees": [
         "Selin Small",
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Nicole Grimm Bertello"
       ],
       "url": "https://app.clickup.com/t/86b8xun5j"
     },
@@ -1286,8 +1286,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xqjtn"
     },
@@ -1424,8 +1424,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
         "Nicole Grimm Bertello",
+        "Maritza Gardner",
         "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b8xqrg7"
@@ -1783,8 +1783,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9fzfpz"
     },
@@ -2605,8 +2605,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgrdg"
     },
@@ -2698,8 +2698,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgvfa"
     },
@@ -2857,8 +2857,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgw4t"
     },
@@ -2972,8 +2972,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6nja"
     },
@@ -3080,8 +3080,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6nu5"
     },
@@ -3195,7 +3195,7 @@
     {
       "id": "86ba891tz",
       "name": "Blog/PR - Five mistakes travelers make on ETA applications",
-      "status": "writing",
+      "status": "done",
       "platforms": [],
       "content_pillar": [
         "Educational"
@@ -3345,7 +3345,7 @@
     {
       "id": "86ba890ex",
       "name": "Blog - What happens when your travel plans change? A complete guide to iVisa's refund policy",
-      "status": "writing",
+      "status": "done",
       "platforms": [],
       "content_pillar": [
         "Educational"
