@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-17T21:30:51.088Z",
+    "last_updated": "2026-06-17T22:00:47.679Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -1783,8 +1783,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9fzfpz"
     },
@@ -2427,8 +2427,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgnkm"
     },
@@ -2857,8 +2857,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgw4t"
     },
@@ -3187,8 +3187,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9y6pj5"
     },
@@ -3404,8 +3404,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6yw5"
     },
@@ -3637,7 +3637,7 @@
     {
       "id": "86ba46jxw",
       "name": "Post: Schengen visas explained",
-      "status": "awaiting feedback nicole",
+      "status": "approved",
       "platforms": [
         "Instagram"
       ],
@@ -3652,7 +3652,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Nicole Grimm Bertello"
+        "Nicole Grimm Bertello",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86ba46jxw"
     },
