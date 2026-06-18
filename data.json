@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-18T15:30:47.960Z",
+    "last_updated": "2026-06-18T16:00:50.100Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -2605,8 +2605,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9xgrdg"
     },
@@ -3080,8 +3080,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6nu5"
     },
@@ -3612,52 +3612,6 @@
       "url": "https://app.clickup.com/t/86bacan2p"
     },
     {
-      "id": "86bac53mw",
-      "name": "Post: Schengen Visa tips",
-      "status": "approved",
-      "platforms": [
-        "TikTok"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Video",
-      "publication_date": "2026-06-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86bac53mw"
-    },
-    {
-      "id": "86ba46jxw",
-      "name": "Post: Schengen visas explained",
-      "status": "approved",
-      "platforms": [
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-17",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Nicole Grimm Bertello",
-        "Maritza Gardner"
-      ],
-      "url": "https://app.clickup.com/t/86ba46jxw"
-    },
-    {
       "id": "86b9y7343",
       "name": "IG Story - 99% approval rate",
       "status": "awaiting feedback maritza",
@@ -3676,6 +3630,29 @@
       "keyword_tag": null,
       "assignees": [],
       "url": "https://app.clickup.com/t/86b9y7343"
+    },
+    {
+      "id": "86bac53mw",
+      "name": "Post: Schengen Visa tips",
+      "status": "approved",
+      "platforms": [
+        "TikTok"
+      ],
+      "content_pillar": [
+        "Educational"
+      ],
+      "type": "Video",
+      "publication_date": "2026-06-18",
+      "publish_time": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [
+        "Maritza Gardner",
+        "Nicole Grimm Bertello"
+      ],
+      "url": "https://app.clickup.com/t/86bac53mw"
     },
     {
       "id": "86ba890q1",
@@ -3698,17 +3675,16 @@
       "url": "https://app.clickup.com/t/86ba890q1"
     },
     {
-      "id": "86ba47f3a",
-      "name": "Post: iVisa vs. - Comparative list",
-      "status": "ready for nic's creatives",
+      "id": "86ba46jxw",
+      "name": "Post: Schengen visas explained",
+      "status": "approved",
       "platforms": [
-        "Facebook",
         "Instagram"
       ],
       "content_pillar": [
-        "Social Proof"
+        "Educational"
       ],
-      "type": "Image",
+      "type": "Carrousel",
       "publication_date": "2026-06-18",
       "publish_time": null,
       "collaboration": false,
@@ -3716,10 +3692,10 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
+        "Nicole Grimm Bertello",
+        "Maritza Gardner"
       ],
-      "url": "https://app.clickup.com/t/86ba47f3a"
+      "url": "https://app.clickup.com/t/86ba46jxw"
     },
     {
       "id": "86b9y6zvm",
@@ -3806,6 +3782,26 @@
         "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86ba2ckr1"
+    },
+    {
+      "id": "86b9y70n2",
+      "name": "IG Story - Can a visa be cancelled after it's been approved?",
+      "status": "awaiting feedback maritza",
+      "platforms": [
+        "Instagram"
+      ],
+      "content_pillar": [
+        "Educational"
+      ],
+      "type": "Story",
+      "publication_date": "2026-06-22",
+      "publish_time": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [],
+      "url": "https://app.clickup.com/t/86b9y70n2"
     }
   ],
   "performance": {
