@@ -3933,214 +3933,191 @@
     ]
   },
   "search_demand": {
-    "status": "sample",
+    "status": "active",
     "source": "Semrush + Claude AI",
-    "last_updated": "2026-06-16T09:00:00Z",
-    "note": "Semrush API units pending allocation. Data below is representative — will auto-update weekly once connected.",
-    "weekly_insight": "Schengen visa searches are up 34% week-over-week as summer travel peaks, while 'digital nomad visa' queries continue climbing (+18% MoM). The biggest underserved gap: people searching 'is ivisa legit' and 'ivisa review' signal high-intent prospects comparing options — iVisa's Social Proof content should directly address these trust queries.",
+    "last_updated": "2026-06-22T09:00:34.999Z",
+    "weekly_insight": "Visa requirements and US travel documentation searches are rising sharply, signaling increased travel planning intent post-summer. Educational content about entry requirements, ETA/ESTA processes, and visa status tracking will drive the highest engagement and conversions this week. iVisa should prioritize clarifying confusion around US entry documents while building trust through step-by-step guides and customer success stories.",
     "top_keywords": [
       {
-        "keyword": "schengen visa",
-        "volume": 246000,
-        "trend": "rising",
+        "keyword": "passport requirements",
+        "volume": 550000,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 0.46
+      },
+      {
+        "keyword": "visa",
+        "volume": 301000,
+        "trend": "declining",
         "cluster": "visa",
-        "cpc": 2.45
+        "cpc": 4.23
+      },
+      {
+        "keyword": "visa",
+        "volume": 301000,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 4.23
+      },
+      {
+        "keyword": "global entry login",
+        "volume": 135000,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 2.3
+      },
+      {
+        "keyword": "entry visa to us",
+        "volume": 74000,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 1.91
+      },
+      {
+        "keyword": "eta",
+        "volume": 74000,
+        "trend": "stable",
+        "cluster": "visa",
+        "cpc": 3.64
+      },
+      {
+        "keyword": "entry visa to us",
+        "volume": 74000,
+        "trend": "declining",
+        "cluster": "travel",
+        "cpc": 1.91
       },
       {
         "keyword": "visa requirements",
-        "volume": 201000,
-        "trend": "stable",
-        "cluster": "travel",
-        "cpc": 1.82
-      },
-      {
-        "keyword": "tourist visa",
-        "volume": 165000,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 2.1
-      },
-      {
-        "keyword": "e-visa",
-        "volume": 135000,
-        "trend": "rising",
-        "cluster": "visa",
-        "cpc": 1.95
-      },
-      {
-        "keyword": "countries without visa for us passport",
-        "volume": 110000,
-        "trend": "rising",
-        "cluster": "travel",
-        "cpc": 0.85
-      },
-      {
-        "keyword": "visa on arrival",
-        "volume": 90500,
-        "trend": "stable",
-        "cluster": "visa",
-        "cpc": 1.2
-      },
-      {
-        "keyword": "digital nomad visa",
-        "volume": 74000,
-        "trend": "rising",
-        "cluster": "visa",
-        "cpc": 2.8
-      },
-      {
-        "keyword": "how to get a visa",
         "volume": 60500,
-        "trend": "stable",
-        "cluster": "travel",
-        "cpc": 1.65
-      },
-      {
-        "keyword": "ivisa",
-        "volume": 49500,
         "trend": "rising",
-        "cluster": "brand",
-        "cpc": 0.45
+        "cluster": "visa",
+        "cpc": 1.35
       },
       {
-        "keyword": "visa application online",
+        "keyword": "visa requirements",
+        "volume": 60500,
+        "trend": "rising",
+        "cluster": "travel",
+        "cpc": 1.35
+      },
+      {
+        "keyword": "esta",
+        "volume": 49500,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 1.92
+      },
+      {
+        "keyword": "i94 online",
+        "volume": 49500,
+        "trend": "declining",
+        "cluster": "visa",
+        "cpc": 6.32
+      },
+      {
+        "keyword": "sentri login",
         "volume": 40500,
         "trend": "stable",
         "cluster": "visa",
-        "cpc": 3.2
+        "cpc": 0
       },
       {
-        "keyword": "ivisa review",
-        "volume": 33100,
-        "trend": "rising",
-        "cluster": "brand",
-        "cpc": 0.3
-      },
-      {
-        "keyword": "is ivisa legit",
-        "volume": 27200,
-        "trend": "rising",
-        "cluster": "brand",
-        "cpc": 0.25
-      },
-      {
-        "keyword": "govassist vs ivisa",
-        "volume": 14800,
-        "trend": "rising",
-        "cluster": "competitor",
-        "cpc": 1.1
-      },
-      {
-        "keyword": "atlys visa",
-        "volume": 12100,
+        "keyword": "us immigration",
+        "volume": 40500,
         "trend": "stable",
-        "cluster": "competitor",
-        "cpc": 0.95
+        "cluster": "visa",
+        "cpc": 2.08
       },
       {
-        "keyword": "passport requirements for travel",
-        "volume": 90000,
+        "keyword": "american travel",
+        "volume": 40500,
+        "trend": "rising",
+        "cluster": "travel",
+        "cpc": 1.81
+      },
+      {
+        "keyword": "us immigration",
+        "volume": 40500,
         "trend": "stable",
         "cluster": "travel",
-        "cpc": 0.7
+        "cpc": 2.08
       }
     ],
     "rising_keywords": [
       {
-        "keyword": "schengen visa summer 2026",
-        "volume": 18100,
+        "keyword": "visa requirements",
+        "volume": 60500,
         "cluster": "visa"
       },
       {
-        "keyword": "digital nomad visa europe",
-        "volume": 14800,
-        "cluster": "visa"
-      },
-      {
-        "keyword": "is ivisa legit",
-        "volume": 27200,
-        "cluster": "brand"
-      },
-      {
-        "keyword": "govassist vs ivisa",
-        "volume": 14800,
-        "cluster": "competitor"
-      },
-      {
-        "keyword": "countries without visa for us passport",
-        "volume": 110000,
+        "keyword": "visa requirements",
+        "volume": 60500,
         "cluster": "travel"
       },
       {
-        "keyword": "ivisa review 2026",
-        "volume": 9900,
-        "cluster": "brand"
+        "keyword": "american travel",
+        "volume": 40500,
+        "cluster": "travel"
       },
       {
-        "keyword": "umrah visa requirements",
-        "volume": 8100,
+        "keyword": "us embassy",
+        "volume": 33100,
         "cluster": "visa"
       },
       {
-        "keyword": "kenya eta",
+        "keyword": "us embassy",
+        "volume": 33100,
+        "cluster": "travel"
+      },
+      {
+        "keyword": "travel to visa",
         "volume": 22200,
         "cluster": "visa"
+      },
+      {
+        "keyword": "visa status check",
+        "volume": 22200,
+        "cluster": "visa"
+      },
+      {
+        "keyword": "travel to visa",
+        "volume": 22200,
+        "cluster": "travel"
+      },
+      {
+        "keyword": "us travel docs",
+        "volume": 18100,
+        "cluster": "travel"
+      },
+      {
+        "keyword": "immigration services u.s",
+        "volume": 14800,
+        "cluster": "travel"
       }
     ],
     "content_recommendations": [
       {
         "id": 1,
-        "keyword_insight": "'Is iVisa legit' gets 27K searches/month and is rising — high-intent users comparing us against competitors before converting",
-        "content_angle": "Behind the scenes: what actually happens when you submit a visa application through iVisa",
-        "hook": "POV: You submitted your visa application and you're wondering what happens next 👀",
-        "pillar": "Social Proof",
+        "keyword_insight": "Visa requirements searches are rising 60,500/month, outpacing general visa searches, indicating people need specific guidance on country-by-country rules.",
+        "content_angle": "Interactive flowchart/checklist: 'Do you need a visa to travel here?' — covering top 10 US destinations with YES/NO decision tree.",
+        "hook": "Swipe through to find out if you actually need a visa 👉 (Most people get this wrong)",
+        "pillar": "Educational",
         "platforms": [
           "Instagram",
           "TikTok"
         ],
-        "format": "Reel",
+        "format": "Carousel",
         "priority": "high",
-        "why_shareable": "Satisfies the curiosity gap of everyone who's wondered if online visa services are real — high save rate",
-        "cta": "Apply today — link in bio",
+        "why_shareable": "Directly solves confusion at the moment someone is planning travel and will be saved as a planning resource.",
+        "cta": "Save this for your next trip, then use iVisa to apply in 5 minutes.",
         "trend": "rising"
       },
       {
         "id": 2,
-        "keyword_insight": "Schengen visa searches up 34% WoW as summer Europe trips peak — 246K monthly searches",
-        "content_angle": "The Schengen visa checklist: everything US passport holders need for Europe this summer",
-        "hook": "Going to Europe this summer? Here's the ONE thing most Americans forget to check ✈️",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "TikTok"
-        ],
-        "format": "Carousel",
-        "priority": "high",
-        "why_shareable": "Saveable checklist format — people screenshot and share before their trip",
-        "cta": "Check your visa requirements — link in bio",
-        "trend": "rising"
-      },
-      {
-        "id": 3,
-        "keyword_insight": "'Countries without visa for US passport' has 110K monthly searches and rising — wanderlust + practicality combined",
-        "content_angle": "50 countries US passport holders can visit without a visa (ranked by most surprising)",
-        "hook": "Your US passport gets you into 50+ countries for FREE — but nobody talks about these ones 🌍",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "TikTok"
-        ],
-        "format": "Carousel",
-        "priority": "high",
-        "why_shareable": "Saves + shares through the roof — every traveler wants to screenshot their bucket list countries",
-        "cta": "For the ones that DO need a visa — we've got you covered",
-        "trend": "rising"
-      },
-      {
-        "id": 4,
-        "keyword_insight": "Digital nomad visa searches up 18% MoM — 74K/month and climbing fast",
-        "content_angle": "Digital nomad visa reality check: which countries actually make it easy (and which are a trap)",
-        "hook": "Everyone is talking about digital nomad visas. Here's what they don't tell you 💻🌴",
+        "keyword_insight": "US embassy searches are rising 33,100/month and often paired with confusion about which documents are needed.",
+        "content_angle": "Myth-busting video: 'What the US Embassy Actually Requires (vs. what TikTok told you)'",
+        "hook": "❌ You don't need to visit the embassy. Here's what actually happened when we applied online...",
         "pillar": "Educational",
         "platforms": [
           "TikTok",
@@ -4148,74 +4125,104 @@
         ],
         "format": "Reel",
         "priority": "high",
-        "why_shareable": "Hot topic in travel communities — gets forwarded in DMs and travel Slack groups",
-        "cta": "iVisa handles digital nomad visas — check yours at link in bio",
+        "why_shareable": "Dispels viral misinformation and positions iVisa as the trusted source vs. confusion on social.",
+        "cta": "Learn the real requirements — link in bio to start your application.",
         "trend": "rising"
       },
       {
-        "id": 5,
-        "keyword_insight": "33K monthly searches for 'ivisa review' — people actively researching before they trust us",
-        "content_angle": "Real iVisa customers share what happened when their visa approval came in (reaction series)",
-        "hook": "The moment your visa gets approved 🥹📲 Real iVisa customers only",
+        "id": 3,
+        "keyword_insight": "American travel searches are rising 40,500/month, showing summer travel surge is beginning and people are unprepared.",
+        "content_angle": "Customer transformation story: 'Panicked 48 hours before flying, got her ESTA approved in time'",
+        "hook": "Her flight was in 2 days. She had no idea about ESTA. Here's what happened next... 😅",
         "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "TikTok"
-        ],
-        "format": "Reel",
-        "priority": "high",
-        "why_shareable": "Emotional, relatable, shareable — people tag friends who are nervous about visa applications",
-        "cta": "Join 2.6M+ travelers — apply at ivisa.com",
-        "trend": "rising"
-      },
-      {
-        "id": 6,
-        "keyword_insight": "'Govassist vs ivisa' has 14K searches/month and rising — direct comparison traffic we can own",
-        "content_angle": "iVisa vs. the rest: what makes iVisa different (without naming names)",
-        "hook": "Not all visa services are the same. Here's what to look for before you apply 👇",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "LinkedIn"
-        ],
-        "format": "Carousel",
-        "priority": "medium",
-        "why_shareable": "Saves high — this becomes people's reference when recommending us to friends",
-        "cta": "See what 2.6M travelers already chose — link in bio",
-        "trend": "rising"
-      },
-      {
-        "id": 7,
-        "keyword_insight": "Kenya ETA searches spiking (22K/month) — new travel document requirement creating confusion",
-        "content_angle": "Kenya ETA explained: the new travel requirement Americans (and everyone else) need to know about",
-        "hook": "Kenya just changed the rules. Here's what you need before you travel 🇰🇪",
-        "pillar": "Educational",
-        "platforms": [
-          "Instagram",
-          "TikTok",
-          "Facebook"
-        ],
-        "format": "Reel",
-        "priority": "high",
-        "why_shareable": "Time-sensitive news format gets high reshares — people tag friends with Kenya trips planned",
-        "cta": "Get your Kenya ETA in 24 hours — link in bio",
-        "trend": "rising"
-      },
-      {
-        "id": 8,
-        "keyword_insight": "Umrah visa searches rising seasonally (8K+/month) — underserved niche with specific process questions",
-        "content_angle": "Umrah visa step-by-step: the complete guide from application to arrival",
-        "hook": "Planning Umrah? The visa process is simpler than you think — if you know the steps 🕌",
-        "pillar": "Educational",
         "platforms": [
           "Instagram",
           "YouTube"
         ],
+        "format": "Reel",
+        "priority": "high",
+        "why_shareable": "Relatable anxiety + happy ending creates emotional connection and proves iVisa solves real pain points.",
+        "cta": "Don't panic like she did. Apply now and get peace of mind before your trip.",
+        "trend": "rising"
+      },
+      {
+        "id": 4,
+        "keyword_insight": "Visa status check searches are rising 22,200/month, indicating people need real-time reassurance after applying.",
+        "content_angle": "Step-by-step walkthrough: 'How to check your visa status in 60 seconds (no stress)'",
+        "hook": "Waiting for visa approval? Here's exactly where to look (and why you shouldn't keep refreshing 😂)",
+        "pillar": "Educational",
+        "platforms": [
+          "TikTok"
+        ],
+        "format": "TikTok",
+        "priority": "medium",
+        "why_shareable": "Solves the nervous-waiting anxiety that applicants experience and reduces support ticket volume.",
+        "cta": "Applied with iVisa? Check your status in your dashboard — link in bio.",
+        "trend": "rising"
+      },
+      {
+        "id": 5,
+        "keyword_insight": "'Is iVisa legit' is searched 590/month with stable volume, showing trust concerns persist and reviews are key conversion lever.",
+        "content_angle": "Social proof compilation: 5-star customer reviews + screenshots of 'approved' notifications with real names.",
+        "hook": "5,000+ people trusted us last month. Here's what they said 👇",
+        "pillar": "Social Proof",
+        "platforms": [
+          "Facebook",
+          "Instagram"
+        ],
         "format": "Carousel",
         "priority": "medium",
-        "why_shareable": "Highly shareable within religious travel communities — gets forwarded in WhatsApp groups",
-        "cta": "Let iVisa handle your Umrah visa — link in bio",
-        "trend": "rising"
+        "why_shareable": "Direct trust-building content addresses skepticism at decision point and leverages authentic user testimonials.",
+        "cta": "Join thousands of approved applicants. Start your application today.",
+        "trend": "stable"
+      },
+      {
+        "id": 6,
+        "keyword_insight": "Global Entry and SENTRI login keywords (135k and 40.5k/mo) show people already approved need support accessing systems.",
+        "content_angle": "Quick-reference troubleshooting: 'Can't log into Global Entry? Try this first' — addressing common login fails.",
+        "hook": "Forgot your Global Entry password? Don't panic — this is the fix 🔧",
+        "pillar": "Educational",
+        "platforms": [
+          "LinkedIn",
+          "Facebook"
+        ],
+        "format": "Static post",
+        "priority": "medium",
+        "why_shareable": "Solves friction for iVisa alumni and positions brand as ongoing travel document partner, not one-time vendor.",
+        "cta": "Share this with anyone struggling with their account. Save it for your own reference.",
+        "trend": "stable"
+      },
+      {
+        "id": 7,
+        "keyword_insight": "Passport requirements searches remain high (550k/mo, declining) but still represent core first-step confusion.",
+        "content_angle": "Relatability humor: 'Things nobody tells you about passport applications' — funny but actionable fails.",
+        "hook": "POV: You show up to the passport office with the wrong photo and realize too late 📸😭",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "format": "Reel",
+        "priority": "medium",
+        "why_shareable": "Entertains first, educates second — drives views and shares through humor while subtly explaining real requirements.",
+        "cta": "Get the checklist right the first time. Link in bio.",
+        "trend": "declining"
+      },
+      {
+        "id": 8,
+        "keyword_insight": "I94 online and ETA searches (49.5k/mo each, declining) show seasonal dip but represent high-intent, ready-to-apply users.",
+        "content_angle": "Side-by-side comparison: 'ETA vs. ESTA vs. Visa — which one do YOU actually need?' Simple decision tree.",
+        "hook": "Confused about ETA vs. ESTA? This 30-second breakdown ends the debate 🎯",
+        "pillar": "Educational",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "format": "Reel",
+        "priority": "medium",
+        "why_shareable": "Solves the most common customer confusion question and gets tagged in travel planning group chats.",
+        "cta": "Tell us which one you need — we'll handle the rest.",
+        "trend": "declining"
       }
     ]
   },
