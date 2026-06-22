@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-22T17:30:48.583Z",
+    "last_updated": "2026-06-22T18:00:46.932Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -3738,30 +3738,6 @@
       "url": "https://app.clickup.com/t/86b9z375w"
     },
     {
-      "id": "86bafta1u",
-      "name": "Post: Pick an emoji",
-      "status": "ready for nic's creatives",
-      "platforms": [
-        "TikTok",
-        "Instagram"
-      ],
-      "content_pillar": [
-        "Educational"
-      ],
-      "type": "Carrousel",
-      "publication_date": "2026-06-22",
-      "publish_time": null,
-      "collaboration": false,
-      "boost_budget": 0,
-      "boost_goal": null,
-      "keyword_tag": null,
-      "assignees": [
-        "Maritza Gardner",
-        "Nicole Grimm Bertello"
-      ],
-      "url": "https://app.clickup.com/t/86bafta1u"
-    },
-    {
       "id": "86baft9kz",
       "name": "Reddit - iVisa AMA",
       "status": "writing",
@@ -3802,6 +3778,30 @@
       "keyword_tag": null,
       "assignees": [],
       "url": "https://app.clickup.com/t/86b9y70n2"
+    },
+    {
+      "id": "86bafta1u",
+      "name": "Post: Pick an emoji",
+      "status": "ready for nic's creatives",
+      "platforms": [
+        "TikTok",
+        "Instagram"
+      ],
+      "content_pillar": [
+        "Educational"
+      ],
+      "type": "Carrousel",
+      "publication_date": "2026-06-23",
+      "publish_time": null,
+      "collaboration": false,
+      "boost_budget": 0,
+      "boost_goal": null,
+      "keyword_tag": null,
+      "assignees": [
+        "Maritza Gardner",
+        "Nicole Grimm Bertello"
+      ],
+      "url": "https://app.clickup.com/t/86bafta1u"
     }
   ],
   "performance": {
