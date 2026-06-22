@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-22T10:00:31.519Z",
+    "last_updated": "2026-06-22T10:00:48.558Z",
     "month": "June 2026",
-    "generated_by": "n8n + claude-ai"
+    "generated_by": "n8n"
   },
   "pipeline": [
     {
@@ -4405,71 +4405,5 @@
     "month": null,
     "content": null,
     "slack_posted": false
-  },
-  "content_ideas": {
-    "status": "active",
-    "source": "csov + claude-ai",
-    "last_updated": "2026-06-22T10:00:31.132Z",
-    "ideas": [
-      {
-        "icon": "🛡️",
-        "title": "Security & Privacy Explainer Video Series",
-        "detail": "3-5 short-form videos (60-90 sec each) on TikTok & Instagram Reels breaking down encryption, data handling, GDPR compliance in relatable terms. Address AI Overview's data concern directly. Use animated graphics + iVisa team member testimonials for authenticity.",
-        "pillar": "Educational",
-        "platforms": [
-          "TikTok",
-          "Instagram",
-          "YouTube Shorts"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "✅",
-        "title": "Verified Customer Success Stories (Before/After Format)",
-        "detail": "Instagram carousel posts + LinkedIn articles featuring 4-5 customer journeys: visa type → approval timeline → specific challenge solved → quote. Include approval letter (redacted) or timeline comparison. Drives earned media mentions and counters scam narratives.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Instagram",
-          "LinkedIn",
-          "Facebook"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "💰",
-        "title": "'What You Actually Get' Cost Breakdown Content",
-        "detail": "Infographic-style posts (Pinterest, Instagram) + blog breaking down iVisa's fee: government filing fees (X) + expert review (Y) + 24/7 support (Z) + error prevention value. Compare DIY timeline cost (lost wages, rejections) vs. iVisa cost. Educational + values-based.",
-        "pillar": "Educational",
-        "platforms": [
-          "Pinterest",
-          "Instagram",
-          "LinkedIn"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "🤝",
-        "title": "Government Partnership & Accreditation Spotlight Series",
-        "detail": "LinkedIn posts + Twitter/X threads highlighting specific government agency partnerships, compliance certifications, and media coverage. Use press release repurposing. Directly counters AI Overview's 'not official government agency' statement with nuanced positioning.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "LinkedIn",
-          "Twitter/X"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "😅",
-        "title": "Relatable 'Visa Stress vs. iVisa Zen' Meme Series",
-        "detail": "TikTok + Instagram Reels using humor to show DIY visa chaos (forms, deadlines, rejections) vs. calm iVisa experience. Light-hearted tone, user-generated content style. Builds emotional connection without hard sell. Encourages shares and earned media.",
-        "pillar": "Humor/Relatability",
-        "platforms": [
-          "TikTok",
-          "Instagram",
-          "Twitter/X"
-        ],
-        "priority": "medium"
-      }
-    ]
   }
 }
