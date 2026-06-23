@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T13:00:46.984Z",
+    "last_updated": "2026-06-23T13:30:50.188Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -1783,8 +1783,8 @@
       "keyword_tag": null,
       "assignees": [
         "Nicole Grimm Bertello",
-        "Selin Small",
-        "Maritza Gardner"
+        "Maritza Gardner",
+        "Selin Small"
       ],
       "url": "https://app.clickup.com/t/86b9fzfpz"
     },
@@ -2857,8 +2857,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9xgw4t"
     },
@@ -3187,8 +3187,8 @@
       "boost_goal": null,
       "keyword_tag": null,
       "assignees": [
-        "Maritza Gardner",
-        "Selin Small"
+        "Selin Small",
+        "Maritza Gardner"
       ],
       "url": "https://app.clickup.com/t/86b9y6pj5"
     },
