@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T15:30:47.586Z",
+    "last_updated": "2026-06-23T16:00:50.000Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -3782,7 +3782,7 @@
     {
       "id": "86bafta1u",
       "name": "Post: Pick an emoji",
-      "status": "ready for nic's creatives",
+      "status": "scheduled",
       "platforms": [
         "TikTok",
         "Instagram"
