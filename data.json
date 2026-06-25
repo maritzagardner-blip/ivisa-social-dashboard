@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-25T10:00:47.044Z",
+    "last_updated": "2026-06-25T10:30:46.544Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -3657,7 +3657,7 @@
     {
       "id": "86ba890q1",
       "name": "Blog - Why paying a little more for your visa can save your trip",
-      "status": "writing",
+      "status": "done",
       "platforms": [],
       "content_pillar": [
         "Educational"
@@ -3740,7 +3740,7 @@
     {
       "id": "86baft9kz",
       "name": "Reddit - iVisa AMA",
-      "status": "writing",
+      "status": "done",
       "platforms": [
         "Reddit"
       ],
