@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-06-25T21:00:50.066Z",
+    "last_updated": "2026-06-25T21:30:47.859Z",
     "month": "June 2026",
     "generated_by": "n8n"
   },
@@ -3782,7 +3782,7 @@
     {
       "id": "86bafta1u",
       "name": "Post: Pick an emoji",
-      "status": "scheduled",
+      "status": "done",
       "platforms": [
         "TikTok",
         "Instagram"
