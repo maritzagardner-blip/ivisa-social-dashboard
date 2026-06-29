@@ -3935,8 +3935,8 @@
   "search_demand": {
     "status": "active",
     "source": "Semrush + Claude AI",
-    "last_updated": "2026-06-22T09:00:34.999Z",
-    "weekly_insight": "Visa requirements and US travel documentation searches are rising sharply, signaling increased travel planning intent post-summer. Educational content about entry requirements, ETA/ESTA processes, and visa status tracking will drive the highest engagement and conversions this week. iVisa should prioritize clarifying confusion around US entry documents while building trust through step-by-step guides and customer success stories.",
+    "last_updated": "2026-06-29T09:00:29.756Z",
+    "weekly_insight": "Visa requirements and US travel documentation are experiencing rising search demand, signaling peak summer travel planning season. iVisa should capitalize on this by creating educational content around visa requirements and US entry processes, while simultaneously addressing trust concerns (\"is ivisa legit\") through social proof and customer stories.",
     "top_keywords": [
       {
         "keyword": "passport requirements",
@@ -4099,9 +4099,9 @@
     "content_recommendations": [
       {
         "id": 1,
-        "keyword_insight": "Visa requirements searches are rising 60,500/month, outpacing general visa searches, indicating people need specific guidance on country-by-country rules.",
-        "content_angle": "Interactive flowchart/checklist: 'Do you need a visa to travel here?' — covering top 10 US destinations with YES/NO decision tree.",
-        "hook": "Swipe through to find out if you actually need a visa 👉 (Most people get this wrong)",
+        "keyword_insight": "Visa requirements is the fastest-growing keyword (60,500/mo, rising), indicating travelers are actively searching for requirement checklists before booking.",
+        "content_angle": "The Complete Visa Requirements Checklist by Destination — interactive guide showing 5 popular summer destinations and their exact visa requirements.",
+        "hook": "You're 2 weeks from your trip and just realized you don't know what documents you need 😰 Here's the checklist that saves you from the airport panic.",
         "pillar": "Educational",
         "platforms": [
           "Instagram",
@@ -4109,15 +4109,15 @@
         ],
         "format": "Carousel",
         "priority": "high",
-        "why_shareable": "Directly solves confusion at the moment someone is planning travel and will be saved as a planning resource.",
-        "cta": "Save this for your next trip, then use iVisa to apply in 5 minutes.",
+        "why_shareable": "Travelers bookmark and share this with travel companions because it answers their #1 pre-trip anxiety in one place.",
+        "cta": "Swipe through, screenshot, and save this post. Then use our visa checker tool to confirm YOUR destination's requirements (link in bio).",
         "trend": "rising"
       },
       {
         "id": 2,
-        "keyword_insight": "US embassy searches are rising 33,100/month and often paired with confusion about which documents are needed.",
-        "content_angle": "Myth-busting video: 'What the US Embassy Actually Requires (vs. what TikTok told you)'",
-        "hook": "❌ You don't need to visit the embassy. Here's what actually happened when we applied online...",
+        "keyword_insight": "US embassy and us travel docs keywords are rising (33,100/mo and 18,100/mo respectively), showing travelers need clarity on where to apply and what documents qualify.",
+        "content_angle": "Why Your US Visa Application Got Rejected — 3 Common Document Mistakes Explained (with fixes).",
+        "hook": "Your passport photo is too bright. Your bank statement is in the wrong currency. Your travel letter is dated wrong. We see these mistakes 50x a week.",
         "pillar": "Educational",
         "platforms": [
           "TikTok",
@@ -4125,78 +4125,47 @@
         ],
         "format": "Reel",
         "priority": "high",
-        "why_shareable": "Dispels viral misinformation and positions iVisa as the trusted source vs. confusion on social.",
-        "cta": "Learn the real requirements — link in bio to start your application.",
+        "why_shareable": "People who are nervous about US visa applications save this to review before submitting, and share it in travel planning group chats.",
+        "cta": "Not sure if your documents are correct? Reply with your visa type and we'll do a quick review.",
         "trend": "rising"
       },
       {
         "id": 3,
-        "keyword_insight": "American travel searches are rising 40,500/month, showing summer travel surge is beginning and people are unprepared.",
-        "content_angle": "Customer transformation story: 'Panicked 48 hours before flying, got her ESTA approved in time'",
-        "hook": "Her flight was in 2 days. She had no idea about ESTA. Here's what happened next... 😅",
-        "pillar": "Social Proof",
+        "keyword_insight": "American travel keyword is rising (40,500/mo), while traditional visa keywords are declining, suggesting travelers want inspiration and planning content, not just process info.",
+        "content_angle": "American Road Trip Visa Reality Check — what citizens from 5 different countries actually need to enter the US (spoiler: it varies wildly).",
+        "hook": "Canadian? You basically need a smile. Australian? You need an ESTA. Mexican? You need a full visa. Here's the breakdown nobody tells you.",
+        "pillar": "Educational",
         "platforms": [
           "Instagram",
-          "YouTube"
+          "TikTok"
         ],
         "format": "Reel",
         "priority": "high",
-        "why_shareable": "Relatable anxiety + happy ending creates emotional connection and proves iVisa solves real pain points.",
-        "cta": "Don't panic like she did. Apply now and get peace of mind before your trip.",
+        "why_shareable": "International travelers tag their friends in this because it finally explains why their friend's entry requirements are completely different from theirs.",
+        "cta": "Comment your nationality and we'll tell you exactly what you need in the replies.",
         "trend": "rising"
       },
       {
         "id": 4,
-        "keyword_insight": "Visa status check searches are rising 22,200/month, indicating people need real-time reassurance after applying.",
-        "content_angle": "Step-by-step walkthrough: 'How to check your visa status in 60 seconds (no stress)'",
-        "hook": "Waiting for visa approval? Here's exactly where to look (and why you shouldn't keep refreshing 😂)",
-        "pillar": "Educational",
+        "keyword_insight": "\"Is ivisa legit\" searches (590/mo, stable) and ivisa reviews (480/mo, stable) indicate trust is a barrier — social proof content directly addresses skeptical searchers.",
+        "content_angle": "Real Customer Stories: How iVisa Saved Their Trip (before it was too late) — micro case studies with before/after timelines.",
+        "hook": "She had 10 days to get a visa. The embassy's website didn't load. Here's how she left for her dream trip on time.",
+        "pillar": "Social Proof",
         "platforms": [
-          "TikTok"
+          "Instagram",
+          "LinkedIn"
         ],
-        "format": "TikTok",
-        "priority": "medium",
-        "why_shareable": "Solves the nervous-waiting anxiety that applicants experience and reduces support ticket volume.",
-        "cta": "Applied with iVisa? Check your status in your dashboard — link in bio.",
-        "trend": "rising"
+        "format": "Carousel",
+        "priority": "high",
+        "why_shareable": "Anxious travelers send this to friends as proof that iVisa actually works and is faster/easier than the DIY embassy route.",
+        "cta": "Your visa story could be next. DM us or comment below if you want to be featured.",
+        "trend": "stable"
       },
       {
         "id": 5,
-        "keyword_insight": "'Is iVisa legit' is searched 590/month with stable volume, showing trust concerns persist and reviews are key conversion lever.",
-        "content_angle": "Social proof compilation: 5-star customer reviews + screenshots of 'approved' notifications with real names.",
-        "hook": "5,000+ people trusted us last month. Here's what they said 👇",
-        "pillar": "Social Proof",
-        "platforms": [
-          "Facebook",
-          "Instagram"
-        ],
-        "format": "Carousel",
-        "priority": "medium",
-        "why_shareable": "Direct trust-building content addresses skepticism at decision point and leverages authentic user testimonials.",
-        "cta": "Join thousands of approved applicants. Start your application today.",
-        "trend": "stable"
-      },
-      {
-        "id": 6,
-        "keyword_insight": "Global Entry and SENTRI login keywords (135k and 40.5k/mo) show people already approved need support accessing systems.",
-        "content_angle": "Quick-reference troubleshooting: 'Can't log into Global Entry? Try this first' — addressing common login fails.",
-        "hook": "Forgot your Global Entry password? Don't panic — this is the fix 🔧",
-        "pillar": "Educational",
-        "platforms": [
-          "LinkedIn",
-          "Facebook"
-        ],
-        "format": "Static post",
-        "priority": "medium",
-        "why_shareable": "Solves friction for iVisa alumni and positions brand as ongoing travel document partner, not one-time vendor.",
-        "cta": "Share this with anyone struggling with their account. Save it for your own reference.",
-        "trend": "stable"
-      },
-      {
-        "id": 7,
-        "keyword_insight": "Passport requirements searches remain high (550k/mo, declining) but still represent core first-step confusion.",
-        "content_angle": "Relatability humor: 'Things nobody tells you about passport applications' — funny but actionable fails.",
-        "hook": "POV: You show up to the passport office with the wrong photo and realize too late 📸😭",
+        "keyword_insight": "Visa status check is rising (22,200/mo), showing travelers are mid-process and anxious about where their application stands.",
+        "content_angle": "Waiting for Your Visa Decision? Here's What's Actually Happening Behind the Scenes — demystify embassy processing timelines and what they're doing right now.",
+        "hook": "Your visa application is in a literal pile of 10,000 others. But that's not a bad thing. Here's why.",
         "pillar": "Humor/Relatability/Entertainment",
         "platforms": [
           "TikTok",
@@ -4204,15 +4173,31 @@
         ],
         "format": "Reel",
         "priority": "medium",
-        "why_shareable": "Entertains first, educates second — drives views and shares through humor while subtly explaining real requirements.",
-        "cta": "Get the checklist right the first time. Link in bio.",
+        "why_shareable": "People anxiously waiting for visa decisions watch this repeatedly and share it with fellow stressed travelers for reassurance.",
+        "cta": "Use our visa status tracker in the app to get real-time updates on your specific application.",
+        "trend": "rising"
+      },
+      {
+        "id": 6,
+        "keyword_insight": "Passport requirements keyword is still high (550,000/mo, declining) — massive volume means even slight content improvements reach huge audiences.",
+        "content_angle": "Passport Renewal in 2026 — Updated Timeline & Hidden Requirements the Government Doesn't Advertise.",
+        "hook": "Your passport expired 6 months ago and you thought renewal was a 4-week process. Plot twist: it's faster now, but only if you know this one trick.",
+        "pillar": "Educational",
+        "platforms": [
+          "YouTube",
+          "Instagram"
+        ],
+        "format": "Video (YouTube) + Reel (Instagram)",
+        "priority": "high",
+        "why_shareable": "People actively planning trips bookmark this and refer to it during passport renewal, and share it when friends say 'I don't have time to renew my passport.'",
+        "cta": "Watch the full guide on YouTube (link in bio) or check our instant passport checker to see your renewal timeline.",
         "trend": "declining"
       },
       {
-        "id": 8,
-        "keyword_insight": "I94 online and ETA searches (49.5k/mo each, declining) show seasonal dip but represent high-intent, ready-to-apply users.",
-        "content_angle": "Side-by-side comparison: 'ETA vs. ESTA vs. Visa — which one do YOU actually need?' Simple decision tree.",
-        "hook": "Confused about ETA vs. ESTA? This 30-second breakdown ends the debate 🎯",
+        "id": 7,
+        "keyword_insight": "Travel visa keyword is declining (33,100/mo), but when combined with rising 'american travel' searches, there's an opportunity to teach US-specific visa rules to international audiences.",
+        "content_angle": "23 Countries That Don't Need a US Visa (But You Thought You Did) — ESTA vs. Visa breakdown for 2026.",
+        "hook": "You've been saving for a US visa for 6 months. Stop. You might not need one at all.",
         "pillar": "Educational",
         "platforms": [
           "TikTok",
@@ -4220,9 +4205,25 @@
         ],
         "format": "Reel",
         "priority": "medium",
-        "why_shareable": "Solves the most common customer confusion question and gets tagged in travel planning group chats.",
-        "cta": "Tell us which one you need — we'll handle the rest.",
+        "why_shareable": "International travelers who were planning to use iVisa's paid visa service learn they qualify for ESTA instead — building trust that iVisa tells you the truth, even if it costs them a sale.",
+        "cta": "Not sure if you need a visa or ESTA? Use our eligibility checker (link in bio) — it's free and takes 60 seconds.",
         "trend": "declining"
+      },
+      {
+        "id": 8,
+        "keyword_insight": "Global Entry, SENTRI, and I94 keywords (135,000/mo, 40,500/mo, 49,500/mo) show steady interest in expedited/trusted traveler programs that iVisa can help with.",
+        "content_angle": "Global Entry vs. SENTRI vs. TSA PreCheck — Which One Actually Saves You Time? (Fun visualization of security line speeds).",
+        "hook": "You're waiting 45 minutes in the security line while a smirking TSA PreCheck member walks by in 5 minutes. Here's how you never wait again.",
+        "pillar": "Humor/Relatability/Entertainment",
+        "platforms": [
+          "TikTok",
+          "Instagram"
+        ],
+        "format": "Reel",
+        "priority": "medium",
+        "why_shareable": "Frequent travelers send this to friends as a 'you NEED this' moment, and it positions iVisa as helpful even for trusted traveler programs.",
+        "cta": "We help you apply for Global Entry, SENTRI, and NEXUS. Click the link in bio to see which program saves you the most time.",
+        "trend": "stable"
       }
     ]
   },
