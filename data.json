@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-06-29T10:00:32.660Z",
+    "last_updated": "2026-06-29T10:30:52.741Z",
     "month": "June 2026",
-    "generated_by": "n8n + claude-ai"
+    "generated_by": "n8n"
   },
   "pipeline": [
     {
@@ -4405,70 +4405,5 @@
     "month": null,
     "content": null,
     "slack_posted": false
-  },
-  "content_ideas": {
-    "status": "active",
-    "source": "csov + claude-ai",
-    "last_updated": "2026-06-29T10:00:32.364Z",
-    "ideas": [
-      {
-        "icon": "🛡️",
-        "title": "Security & Trust Certification Showcase",
-        "detail": "Post carousel or infographic on LinkedIn and Instagram highlighting iVisa's ISO 27001, encryption standards, and data compliance. Format: 3-part carousel post with close-ups of certifications + brief explainer text. Why: directly addresses AI Overview's data/security concern; LinkedIn drives professional credibility.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "LinkedIn",
-          "Instagram"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "💬",
-        "title": "Real Customer Success Stories—Fee Justification",
-        "detail": "Short-form video testimonials (TikTok/Reels, 30–45 sec) from 3-4 customers explaining how iVisa's support saved them time/money/stress vs. DIY. Subtitle: 'Worth every penny.' Why: humanizes value-add narrative; counters 'expensive' framing; user-generated credibility signals boost LLM training data.",
-        "pillar": "Social Proof",
-        "platforms": [
-          "TikTok",
-          "Instagram Reels",
-          "YouTube Shorts"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "📚",
-        "title": "'We're Not the Government—Here's Why That's Good' Educational Series",
-        "detail": "3-part blog + social snippets (LinkedIn, Twitter/X) explaining iVisa's licensed facilitator status, government partnerships (list specific countries/agreements), and how the service *complements* official processes. Format: explainer blog post + 1-minute animated explainer video. Why: directly refutes AI Overview's 'not official' concern; builds trust through transparency.",
-        "pillar": "Educational",
-        "platforms": [
-          "Blog",
-          "LinkedIn",
-          "Twitter/X"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "🎯",
-        "title": "FAQ Video Series—Addressing Common Scam Concerns",
-        "detail": "Short TikTok/Reels series (15–30 sec each) answering 'Is iVisa legit?', 'Why is iVisa more expensive?', 'Is my data safe with iVisa?' Format: direct-to-camera or animated text overlays. Why: targets exact negative search phrases; schema-optimized FAQ content feeds AI Overview; builds trust through directness.",
-        "pillar": "Educational",
-        "platforms": [
-          "TikTok",
-          "Instagram Reels",
-          "YouTube Shorts"
-        ],
-        "priority": "high"
-      },
-      {
-        "icon": "😄",
-        "title": "Relatable 'Visa Stress' Meme/Comedy Content",
-        "detail": "Instagram Reels or TikTok skit: compare 'DIY visa nightmare' vs. 'iVisa stress-free experience' using humor (e.g., overwhelmed applicant vs. calm iVisa user). Format: short comedy skit (30–45 sec). Why: breaks trust-messaging clutter; drives engagement and shares; humanizes brand; indirectly counters 'scam' narrative through relatability.",
-        "pillar": "Humor/Relatability/Entertainment",
-        "platforms": [
-          "TikTok",
-          "Instagram Reels"
-        ],
-        "priority": "medium"
-      }
-    ]
   }
 }
